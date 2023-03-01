@@ -1,0 +1,327 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.nav-menu{
+	background-color: #1C1B1F;
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.leftArea{
+	height: 100%;
+	width: 500px;
+	display: flex;
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.COANLogo{
+	/* background-color: aqua; */
+	height: 100%;
+	width: 75px;
+	margin-left: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.COANLogo img{
+	height: 90%;
+	width: 90%;
+	border: 0ch;
+}
+
+.COANTitle{
+	/* background-color: coral; */
+	height: 100%;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.titleText{
+	font-weight: 600;
+	font-size: normal;
+	line-height: 30px;
+	font-size: 32px;
+	letter-spacing: 0.5px;
+	background: linear-gradient(
+		97.33deg,
+		#3ACEFD 26.97%,
+		#6E99F6 53.31%,
+		#837BF3 75.94%,
+		#995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.searchArea{
+	/* background-color: brown; */
+	height: 100%;
+	width: 275px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.searchAreaAndIcon{
+	background-color: #302D38;
+	display: flex;
+	height: 40px;
+	align-items: center;
+	width: 225px;
+	border-radius: 100000px;
+}
+
+.searchBar{
+	height: 25px;
+	background-color: #302D38;
+	border: 0;
+	margin-left: 20px;
+	font-size: 15px;
+	width: 160px;
+}
+
+.searchImg{
+	/* background-color: #6E99F6; */
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.searchImg img{
+	height: 80%;
+	width: 80%;
+}
+
+.rightArea{
+	height: 100%;
+	display: flex;
+}
+
+.menuEntry{
+	/* background-color: beige; */
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.menuItem{
+	height: 100%;
+	width: 150px;
+	/* background-color: #995BF0; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	color: #CAC4D0;
+}
+
+/* 选中时,背景色改为: */
+/* background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%); */
+.menuItemChosen{
+	height: 100%;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	color: white;
+}
+
+.loginAndRegistArea{
+	/* background-color: cornflowerblue; */
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 130px;
+}
+
+.userheadArea{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.userheadArea img{
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+
+.loginAndRegistText{
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	color: #CAC4D0;
+}
+
+.contactUs{
+	/* background-color: bisque; */
+	height: 100%;
+	width: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.contactUs img{
+	height: 40px;
+	width: 40px;
+}
+
+.contactText{
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	color: #CAC4D0;
+	margin-left: 10px;
+}
+
+.content{
+	height: 1500px;
+	width: 100%;
+	/* background-color: aquamarine; */
+	background-color: #1C1B1F;
+}
+/* 用于占位 */
+.nav-menu-zw{
+	height: 75px;
+	width: 100%;
+}
+
+.firstContentPage{
+	height: 670px;
+	width: 100%;
+	/* background-color: #837BF3; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.firstContentPageLeftArea{
+	height: 670px;
+	width: 600px;
+	background-color: #1C1B1F;
+	padding-right: -100px;
+}
+
+.COANBigTitle{
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 42px;
+	letter-spacing: -0.02em;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 65.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	/* border: 1px solid #000000; */
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 420px;
+	margin-left: 100px;
+	padding-top: 200px;
+}
+
+.COANSmallTitle{
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	color: #CAC4D0;
+	width: 420px;
+	margin-left: 100px;
+	margin-top: 25px;
+}
+
+@keyframes entryButtonAni {
+	to{
+	    background-position: 180px;
+	}
+}
+
+.entryButton{
+	margin-left: 100px;
+	margin-top: 25px;
+	background: linear-gradient(99.33deg, #3ACEFD 26.97%, #6E99F6 48.31%, #837BF3 75.94%, #995BF0 87.08%);
+	width: 180px;
+	height: 55px;
+	border-radius: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	animation: entryButtonAni 2s  linear infinite;
+}
+
+.entryButtonChosen{
+	margin-left: 100px;
+	margin-top: 25px;
+	background: linear-gradient(97.33deg, #3ACEFD 1.97%, #6E99F6 28.31%, #837BF3 55.94%, #995BF0 87.08%);
+	width: 180px;
+	height: 55px;
+	border-radius: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 18px;
+	font-weight: 550;
+	letter-spacing: 0.02em;
+}
+
+.firstContentPageRightArea{
+	background-color: #1C1B1F;
+	overflow: hidden;
+	background-attachment: fixed;
+	background: url(../img/xqbg.png);
+	height: 670px;
+}
+
+.firstContentPageRightArea ul{
+	list-style: none;
+	/* background: url(img/xq4.png); */
+}
+
+.layer img{
+	height: 670px;
+}

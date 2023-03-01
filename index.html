@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COAN-China</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="js/parallax.js"></script>
+</head>
+<body>
+	<div class="nav-menu">
+		<div class="leftArea">
+			<div class="COANLogo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="COANTitle">
+				<div class="titleText"">COAN</div>
+			</div>
+			<div class="searchArea">
+				<div class="searchAreaAndIcon">
+					<input type="text" class="searchBar" placeholder="搜你想要">
+					<div class="searchImg">
+						<img src="img/searchIcon.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rightArea">
+			<div class="menuEntry">
+				<div class="menuItem" id="menuItem0">NFT交易区</div>
+				<div class="menuItem" id="menuItem1">游戏资产交易区</div>
+				<div class="menuItem" id="menuItem2">COAN Daily</div>
+				<div class="menuItem" id="menuItem3">COAN Space</div>
+			</div>
+			<div class="loginAndRegistArea">
+				<div class="userheadArea">
+					<img src="img/userhead.png" alt="">
+				</div>
+				<div class="loginAndRegistText">登录</div>
+			</div>
+			<div class="contactUs">
+				<img src="img/contactUs.png" alt="">
+				<div class="contactText">联系我们</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="nav-menu-zw"> </div>
+		<div class="firstContentPage">
+			 <div class="firstContentPageLeftArea">
+			 	<div class="COANBigTitle">COAN——基于综合安全系统的虚拟资产服务平台</div>
+				<div class="COANSmallTitle">COAN（可安）致力于打造一个安全、透明、共赢的虚拟资产服务平台，解决虚拟资产安全问题的同时提升用户体验，让用户交易放心，存储安心，使用舒心。</div>
+				<div class="entryButton" id="entryButton">开启COAN之旅</div>
+			 </div>
+			 <div class="firstContentPageRightArea">
+				 <ul id="scene">
+				 	<li class="layer" data-depth=".0"><img src="img/xqmain.png" alt=""></li>
+					<li class="layer" data-depth=".1"><img src="img/xqother.png" alt=""></li>
+					<li class="layer" data-depth=".2"><img src="img/xqlight.png" alt=""></li>
+					<li class="layer" data-depth=".3"><img src="img/xqcloud.png" alt=""></li>
+					<li class="layer" data-depth=".4"><img src="img/xqstar.png" alt=""></li>
+				 </ul>
+			 </div>
+		</div>
+		<div class="secondContentPage"></div>
+	</div>
+	<script>
+		//引入parallax.js实现鼠标跟随
+		let scene = document.getElementById("scene");
+		let parallax = new Parallax(scene);
+	</script>
+	<script type="text/javascript">
+		//为导航栏菜单添加鼠标经过事件
+		let menuItem0 = document.getElementById("menuItem0");
+		let menuItem1 = document.getElementById("menuItem1");
+		let menuItem2 = document.getElementById("menuItem2");
+		let menuItem3 = document.getElementById("menuItem3");
+		menuItem0.onmouseover = function(){
+			menuItem0.className = 'menuItemChosen';
+		}
+		menuItem0.onmouseout = function(){
+			menuItem0.className = 'menuItem';
+		}
+		menuItem1.onmouseover = function(){
+			menuItem1.className = 'menuItemChosen';
+		}
+		menuItem1.onmouseout = function(){
+			menuItem1.className = 'menuItem';
+		}
+		menuItem2.onmouseover = function(){
+			menuItem2.className = 'menuItemChosen';
+		}
+		menuItem2.onmouseout = function(){
+			menuItem2.className = 'menuItem';
+		}
+		menuItem3.onmouseover = function(){
+			menuItem3.className = 'menuItemChosen';
+		}
+		menuItem3.onmouseout = function(){
+			menuItem3.className = 'menuItem';
+		}
+		
+		//给主按钮添加鼠标经过效果
+		let entryButton = document.getElementById("entryButton");
+		entryButton.onmouseover = function(){
+			entryButton.className = 'entryButtonChosen';
+			console.log("11");
+		}
+		entryButton.onmouseout = function(){
+			entryButton.className = 'entryButton';
+			console.log("22");
+		}
+	</script>
+</body>
+</html>
