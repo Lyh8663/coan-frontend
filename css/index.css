@@ -12,6 +12,8 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	/* 好东西!让导航栏在最上面 */
+	z-index: 999;
 }
 
 .leftArea{
@@ -112,16 +114,23 @@
 }
 
 .menuEntry{
-	/* background-color: beige; */
 	height: 100%;
 	display: flex;
 	align-items: center;
+}
+/* 调节menuEntry中的链接 */
+.menuEntry a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .menuItem{
 	height: 100%;
 	width: 150px;
-	/* background-color: #995BF0; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -132,10 +141,86 @@
 	line-height: 34px;
 	letter-spacing: -0.02em;
 	color: #CAC4D0;
+	overflow: hidden;
 }
 
-/* 选中时,背景色改为: */
-/* background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%); */
+/* 下拉容器 */
+.dropdown {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 下拉按钮 */
+.dropdown .dropbtn {
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* 对手机垂直对齐很重要 */
+  margin: 0; /* 对手机垂直对齐很重要 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #CAC4D0;
+}
+
+/* 下拉内容（默认隐藏）*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1C1B1F;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 150px;
+}
+
+/* 下拉列表中的链接 */
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #CAC4D0;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+}
+
+/* 为悬停时的下拉链接添加文字颜色 */
+.dropdown-content a:hover {
+  /* Linear */
+  background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+.dropbtn:hover{
+	color: white;
+}
+
+/* 悬停时显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 选中时,按钮样式改为: */
 .menuItemChosen{
 	height: 100%;
 	width: 150px;

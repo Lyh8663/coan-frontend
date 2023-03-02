@@ -28,7 +28,18 @@
 		</div>
 		<div class="rightArea">
 			<div class="menuEntry">
-				<div class="menuItem" id="menuItem0">NFT交易区</div>
+				<!-- <div class="menuItem" id="menuItem0">NFT交易区</div> -->
+				<div class="menuItem" id="menuItem0">
+					<div class="dropdown">
+					    <button class="dropbtn">NFT交易区
+					      <i class="fa fa-caret-down"></i>
+					    </button>
+					    <div class="dropdown-content">
+					      <a href="#">NFT交易</a>
+					      <a href="#">创作NFT</a>
+					    </div>
+					  </div>
+				</div>
 				<div class="menuItem" id="menuItem1">游戏资产交易区</div>
 				<div class="menuItem" id="menuItem2">COAN Daily</div>
 				<div class="menuItem" id="menuItem3">COAN Space</div>
@@ -55,7 +66,7 @@
 			 </div>
 			 <div class="firstContentPageRightArea">
 				 <ul id="scene">
-				 	<li class="layer" data-depth=".0"><img src="img/xqmain.png" alt=""></li>
+				 	<li class="layer" data-depth=".1"><img src="img/xqmain.png" alt=""></li>
 					<li class="layer" data-depth=".1"><img src="img/xqother.png" alt=""></li>
 					<li class="layer" data-depth=".2"><img src="img/xqlight.png" alt=""></li>
 					<li class="layer" data-depth=".3"><img src="img/xqcloud.png" alt=""></li>
@@ -70,47 +81,7 @@
 		let scene = document.getElementById("scene");
 		let parallax = new Parallax(scene);
 	</script>
-	<script type="text/javascript">
-		//为导航栏菜单添加鼠标经过事件
-		let menuItem0 = document.getElementById("menuItem0");
-		let menuItem1 = document.getElementById("menuItem1");
-		let menuItem2 = document.getElementById("menuItem2");
-		let menuItem3 = document.getElementById("menuItem3");
-		menuItem0.onmouseover = function(){
-			menuItem0.className = 'menuItemChosen';
-		}
-		menuItem0.onmouseout = function(){
-			menuItem0.className = 'menuItem';
-		}
-		menuItem1.onmouseover = function(){
-			menuItem1.className = 'menuItemChosen';
-		}
-		menuItem1.onmouseout = function(){
-			menuItem1.className = 'menuItem';
-		}
-		menuItem2.onmouseover = function(){
-			menuItem2.className = 'menuItemChosen';
-		}
-		menuItem2.onmouseout = function(){
-			menuItem2.className = 'menuItem';
-		}
-		menuItem3.onmouseover = function(){
-			menuItem3.className = 'menuItemChosen';
-		}
-		menuItem3.onmouseout = function(){
-			menuItem3.className = 'menuItem';
-		}
-		
-		//给主按钮添加鼠标经过效果
-		let entryButton = document.getElementById("entryButton");
-		entryButton.onmouseover = function(){
-			entryButton.className = 'entryButtonChosen';
-			console.log("11");
-		}
-		entryButton.onmouseout = function(){
-			entryButton.className = 'entryButton';
-			console.log("22");
-		}
-	</script>
+	<!-- 引入自己写的js -->
+	<script src="js/index.js"></script>
 </body>
 </html>
