@@ -3,7 +3,60 @@
 	<head>
 		<meta charset="utf-8">
 		<title>NFT交易</title>
+		<!-- 引入导航栏样式 -->
+		<link rel="stylesheet" href="./css/navbar.css">
 	</head>
 	<body>
+		<!-- 引入nav-menu -->
+		<div class="nav-menu">
+			<div class="leftArea">
+				<div class="COANLogo">
+					<img src="img/logo.png" alt="" id="COANLogo">
+				</div>
+				<div class="COANTitle">
+					<div class="titleText"" id="COANTitle">COAN</div>
+				</div>
+				<div class="searchArea">
+					<div class="searchAreaAndIcon">
+						<input type="text" class="searchBar" placeholder="搜你想要">
+						<div class="searchImg">
+							<img src="img/searchIcon.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightArea">
+				<div class="menuEntry">
+					<!-- <div class="menuItem" id="menuItem0">NFT交易区</div> -->
+					<div class="menuItem" id="menuItem0">
+						<div class="dropdown">
+						    <button class="dropbtn">NFT交易区
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="NFTTransactions.html" id="nftjy">NFT交易</a>
+						      <a href="NFTAuthoring.html" id="cznft">创作NFT</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="menuItem" id="menuItem1">游戏资产交易区</div>
+					<div class="menuItem" id="menuItem2">COAN Daily</div>
+					<div class="menuItem" id="menuItem3">COAN Space</div>
+				</div>
+				<div class="loginAndRegistArea">
+					<div class="userheadArea" id="userhead">
+						<img src="img/userhead.png" alt="" >
+					</div>
+					<div class="loginAndRegistText" id="usertitle">登录</div>
+				</div>
+				<div class="contactUs" id="ContactLogo">
+					<img src="img/contactUs.png" alt="" >
+					<div class="contactText">联系我们</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 引入导航的js -->
+		<script src="js/navbar.js"></script>
 	</body>
 </html>

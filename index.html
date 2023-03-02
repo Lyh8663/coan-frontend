@@ -5,17 +5,22 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>COAN-China</title>
+	<!-- 引入导航栏样式 -->
+	<link rel="stylesheet" href="./css/navbar.css">
+	<!-- 引入页面样式 -->
 	<link rel="stylesheet" href="./css/index.css">
+	<!-- 引入parallax.js -->
 	<script src="js/parallax.js"></script>
 </head>
 <body>
+	<!-- 引入nav-menu -->
 	<div class="nav-menu">
 		<div class="leftArea">
 			<div class="COANLogo">
-				<img src="img/logo.png" alt="">
+				<img src="img/logo.png" alt="" id="COANLogo">
 			</div>
 			<div class="COANTitle">
-				<div class="titleText"">COAN</div>
+				<div class="titleText"" id="COANTitle">COAN</div>
 			</div>
 			<div class="searchArea">
 				<div class="searchAreaAndIcon">
@@ -35,8 +40,8 @@
 					      <i class="fa fa-caret-down"></i>
 					    </button>
 					    <div class="dropdown-content">
-					      <a href="#">NFT交易</a>
-					      <a href="#">创作NFT</a>
+					      <a href="NFTTransactions.html" id="nftjy">NFT交易</a>
+					      <a href="NFTAuthoring.html" id="cznft">创作NFT</a>
 					    </div>
 					  </div>
 				</div>
@@ -45,18 +50,19 @@
 				<div class="menuItem" id="menuItem3">COAN Space</div>
 			</div>
 			<div class="loginAndRegistArea">
-				<div class="userheadArea">
-					<img src="img/userhead.png" alt="">
+				<div class="userheadArea" id="userhead">
+					<img src="img/userhead.png" alt="" >
 				</div>
-				<div class="loginAndRegistText">登录</div>
+				<div class="loginAndRegistText" id="usertitle">登录</div>
 			</div>
-			<div class="contactUs">
-				<img src="img/contactUs.png" alt="">
+			<div class="contactUs" id="ContactLogo">
+				<img src="img/contactUs.png" alt="" >
 				<div class="contactText">联系我们</div>
 			</div>
 		</div>
 	</div>
 	<div class="content">
+		<!-- nav-menu是fixed的，所以需要在内容中留出它的空间 -->
 		<div class="nav-menu-zw"> </div>
 		<div class="firstContentPage">
 			 <div class="firstContentPageLeftArea">
@@ -81,8 +87,9 @@
 		let scene = document.getElementById("scene");
 		let parallax = new Parallax(scene);
 	</script>
-	<!-- 引入自己写的js -->
+	<!-- 引入导航的js -->
 	<script src="js/navbar.js"></script>
+	<!-- 引入页面的js -->
 	<script src="js/index.js"></script>
 </body>
 </html>
