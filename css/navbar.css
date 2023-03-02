@@ -16,7 +16,7 @@
 	z-index: 999;
 }
 
-.leftArea{
+.nav-leftArea{
 	height: 100%;
 	width: 500px;
 	display: flex;
@@ -24,7 +24,7 @@
 	justify-content: center; */
 }
 
-.COANLogo{
+.nav-COANLogo{
 	/* background-color: aqua; */
 	height: 100%;
 	width: 75px;
@@ -34,13 +34,13 @@
 	justify-content: center;
 }
 
-.COANLogo img{
+.nav-COANLogo img{
 	height: 90%;
 	width: 90%;
 	border: 0ch;
 }
 
-.COANTitle{
+.nav-COANTitle{
 	/* background-color: coral; */
 	height: 100%;
 	width: 100px;
@@ -49,7 +49,7 @@
 	justify-content: center;
 }
 
-.titleText{
+.nav-titleText{
 	font-weight: 600;
 	font-size: normal;
 	line-height: 30px;
@@ -67,7 +67,7 @@
 	text-fill-color: transparent;
 }
 
-.searchArea{
+.nav-searchArea{
 	/* background-color: brown; */
 	height: 100%;
 	width: 275px;
@@ -76,7 +76,7 @@
 	justify-content: center;
 }
 
-.searchAreaAndIcon{
+.nav-searchAreaAndIcon{
 	background-color: #302D38;
 	display: flex;
 	height: 40px;
@@ -85,7 +85,7 @@
 	border-radius: 100000px;
 }
 
-.searchBar{
+.nav-searchBar{
 	height: 25px;
 	background-color: #302D38;
 	border: 0;
@@ -94,7 +94,7 @@
 	width: 160px;
 }
 
-.searchImg{
+.nav-searchImg{
 	/* background-color: #6E99F6; */
 	width: 25px;
 	height: 25px;
@@ -103,23 +103,23 @@
 	justify-content: center;
 }
 
-.searchImg img{
+.nav-searchImg img{
 	height: 80%;
 	width: 80%;
 }
 
-.rightArea{
+.nav-rightArea{
 	height: 100%;
 	display: flex;
 }
 
-.menuEntry{
+.nav-menuEntry{
 	height: 100%;
 	display: flex;
 	align-items: center;
 }
 /* 调节menuEntry中的链接 */
-.menuEntry a {
+.nav-menuEntry a {
   float: left;
   font-size: 16px;
   color: white;
@@ -128,7 +128,7 @@
   text-decoration: none;
 }
 
-.menuItem{
+.nav-menuItem{
 	height: 100%;
 	width: 150px;
 	display: flex;
@@ -145,14 +145,14 @@
 }
 
 /* 下拉容器 */
-.dropdown {
+.nav-dropdown {
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
 /* 下拉按钮 */
-.dropdown .dropbtn {
+.nav-dropdown .nav-dropbtn {
   font-family: 'PingFang SC';
   font-style: normal;
   font-weight: 400;
@@ -174,7 +174,7 @@
 }
 
 /* 下拉内容（默认隐藏）*/
-.dropdown-content {
+.nav-dropdown-content {
   display: none;
   position: absolute;
   background-color: #1C1B1F;
@@ -184,7 +184,7 @@
 }
 
 /* 下拉列表中的链接 */
-.dropdown-content a {
+.nav-dropdown-content a {
   float: none;
   padding: 12px 16px;
   text-decoration: none;
@@ -201,7 +201,7 @@
 }
 
 /* 为悬停时的下拉链接添加文字颜色 */
-.dropdown-content a:hover {
+.nav-dropdown-content a:hover {
   /* Linear */
   background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
   -webkit-background-clip: text;
@@ -211,17 +211,17 @@
 }
 
 
-.dropbtn:hover{
+.nav-dropbtn:hover{
 	color: white;
 }
 
 /* 悬停时显示下拉菜单 */
-.dropdown:hover .dropdown-content {
+.nav-dropdown:hover .nav-dropdown-content {
   display: block;
 }
 
 /* 选中时,按钮样式改为: */
-.menuItemChosen{
+.nav-menuItemChosen{
 	height: 100%;
 	width: 150px;
 	display: flex;
@@ -237,7 +237,7 @@
 	color: white;
 }
 
-.loginAndRegistArea{
+.nav-loginAndRegistArea{
 	/* background-color: cornflowerblue; */
 	height: 100%;
 	display: flex;
@@ -246,20 +246,20 @@
 	width: 130px;
 }
 
-.userheadArea{
+.nav-userheadArea{
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.userheadArea img{
+.nav-userheadArea img{
 	height: 40px;
 	width: 40px;
 	margin-right: 10px;
 }
 
-.loginAndRegistText{
+.nav-loginAndRegistText{
 	font-family: 'PingFang SC';
 	font-style: normal;
 	font-weight: 400;
@@ -269,7 +269,7 @@
 	color: #CAC4D0;
 }
 
-.contactUs{
+.nav-contactUs{
 	/* background-color: bisque; */
 	height: 100%;
 	width: 180px;
@@ -279,12 +279,12 @@
 	margin-right: 10px;
 }
 
-.contactUs img{
+.nav-contactUs img{
 	height: 40px;
 	width: 40px;
 }
 
-.contactText{
+.nav-contactText{
 	font-family: 'PingFang SC';
 	font-style: normal;
 	font-weight: 400;

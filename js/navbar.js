@@ -1,35 +1,35 @@
-let menuItem0 = document.getElementById("menuItem0");
-let menuItem1 = document.getElementById("menuItem1");
-let menuItem2 = document.getElementById("menuItem2");
-let menuItem3 = document.getElementById("menuItem3");
-let COANLogo = document.getElementById("COANLogo")
-let COANTitle = document.getElementById("COANTitle");
-let userhead = document.getElementById("userhead");
-let usertitle = document.getElementById("usertitle");
-let ContactLogo = document.getElementById("ContactLogo");
-menuItem0.onmouseover = function(){
-	menuItem0.className = 'menuItemChosen';
+let nav_menuItem0 = document.getElementById("nav-menuItem0");
+let nav_menuItem1 = document.getElementById("nav-menuItem1");
+let nav_menuItem2 = document.getElementById("nav-menuItem2");
+let nav_menuItem3 = document.getElementById("nav-menuItem3");
+let nav_COANLogo = document.getElementById("COANLogo")
+let nav_COANTitle = document.getElementById("COANTitle");
+let nav_userhead = document.getElementById("userhead");
+let nav_usertitle = document.getElementById("usertitle");
+let nav_ContactLogo = document.getElementById("ContactLogo");
+nav_menuItem0.onmouseover = function(){
+	nav_menuItem0.className = 'nav-menuItemChosen';
 }
-menuItem0.onmouseout = function(){
-	menuItem0.className = 'menuItem';
+nav_menuItem0.onmouseout = function(){
+	nav_menuItem0.className = 'nav-menuItem';
 }
-menuItem1.onmouseover = function(){
-	menuItem1.className = 'menuItemChosen';
+nav_menuItem1.onmouseover = function(){
+	nav_menuItem1.className = 'nav-menuItemChosen';
 }
-menuItem1.onmouseout = function(){
-	menuItem1.className = 'menuItem';
+nav_menuItem1.onmouseout = function(){
+	nav_menuItem1.className = 'nav-menuItem';
 }
-menuItem2.onmouseover = function(){
-	menuItem2.className = 'menuItemChosen';
+nav_menuItem2.onmouseover = function(){
+	nav_menuItem2.className = 'nav-menuItemChosen';
 }
-menuItem2.onmouseout = function(){
-	menuItem2.className = 'menuItem';
+nav_menuItem2.onmouseout = function(){
+	nav_menuItem2.className = 'nav-menuItem';
 }
-menuItem3.onmouseover = function(){
-	menuItem3.className = 'menuItemChosen';
+nav_menuItem3.onmouseover = function(){
+	nav_menuItem3.className = 'nav-menuItemChosen';
 }
-menuItem3.onmouseout = function(){
-	menuItem3.className = 'menuItem';
+nav_menuItem3.onmouseout = function(){
+	nav_menuItem3.className = 'nav-menuItem';
 }
 
 //点击跳转
@@ -37,34 +37,34 @@ menuItem3.onmouseout = function(){
 //     window.location.href="NFTTransactions.html";
 // });
 
-menuItem1.addEventListener("click", function(){
+nav_menuItem1.addEventListener("click", function(){
     window.location.href="GameAssetTrading.html";
 });
 
-menuItem2.addEventListener("click", function(){
+nav_menuItem2.addEventListener("click", function(){
     window.location.href="COANDaily.html";
 });
 
-menuItem3.addEventListener("click", function(){
+nav_menuItem3.addEventListener("click", function(){
     window.location.href="COANSpace.html";
 });
 
-COANLogo.addEventListener("click", function(){
+nav_COANLogo.addEventListener("click", function(){
     window.location.href="index.html";
 });
 
-COANTitle.addEventListener("click", function(){
+nav_COANTitle.addEventListener("click", function(){
     window.location.href="index.html";
 });
 		
-userhead.addEventListener("click", function(){
+nav_userhead.addEventListener("click", function(){
     window.location.href="LoginAndRegist.html";
 });
 
-usertitle.addEventListener("click", function(){
+nav_usertitle.addEventListener("click", function(){
     window.location.href="LoginAndRegist.html";
 });
 
-ContactLogo.addEventListener("click", function(){
+nav_ContactLogo.addEventListener("click", function(){
     window.location.href="ContactUs.html";
 });
