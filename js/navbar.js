@@ -2,11 +2,11 @@ let nav_menuItem0 = document.getElementById("nav-menuItem0");
 let nav_menuItem1 = document.getElementById("nav-menuItem1");
 let nav_menuItem2 = document.getElementById("nav-menuItem2");
 let nav_menuItem3 = document.getElementById("nav-menuItem3");
-let nav_COANLogo = document.getElementById("COANLogo")
-let nav_COANTitle = document.getElementById("COANTitle");
-let nav_userhead = document.getElementById("userhead");
-let nav_usertitle = document.getElementById("usertitle");
-let nav_ContactLogo = document.getElementById("ContactLogo");
+let nav_COANLogo = document.getElementById("nav-COANLogo")
+let nav_COANTitle = document.getElementById("nav-COANTitle");
+let nav_userhead = document.getElementById("nav-userhead");
+let nav_usertitle = document.getElementById("nav-usertitle");
+let nav_ContactLogo = document.getElementById("nav-ContactLogo");
 nav_menuItem0.onmouseover = function(){
 	nav_menuItem0.className = 'nav-menuItemChosen';
 }
