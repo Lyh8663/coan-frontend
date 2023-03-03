@@ -1,0 +1,242 @@
+body{
+	background-color: #1C1B1F;
+}
+
+.content{
+	width: 100%;
+	height: 745px;
+	/* background-color: aquamarine; */
+}
+
+.content img{
+	position: fixed;
+	margin-top: 180px;
+	z-index: -1;
+}
+
+.nav-menu-zw{
+	height: 75px;
+	width: 100%;
+}
+
+.info-left-area{
+	height: 580px;
+	width: 300px;
+	background-color: black;
+	margin-left: 50px;
+	margin-top: 30px;
+	z-index: 1;
+	opacity: 0.75;
+}
+
+.selectTitle{
+	width: 100%;
+	height: 50px;
+	/* background-color: aquamarine; */
+	display: flex;
+	align-items: center;
+}
+
+.rectangle{
+	height: 18px;
+	width: 4px;
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+	border-radius: 2px;
+	margin-left: 20px;
+}
+
+.selectTitleText{
+	margin-left: 5px;
+	font-size: 16px;
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 600;
+	/* font-size: 20px; */
+	line-height: 28px;
+	color: white;
+}
+
+.selectIcon{
+	height: 14px;
+	width: 14px;
+	/* background-color: #995BF0; */
+	margin-left: 5px;
+	background-size: cover;
+	background-image: url(../img/selectIcon.png);
+}
+
+.selectContent{
+	width: 100%;
+	height: 520px;
+	/* background-color: #995BF0; */
+	margin-top: -10px;
+}
+
+.sel-accordion {
+  /* background-color: #eee; */
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  padding-left: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.sel-active, .sel-accordion:hover {
+}
+
+.sel-panel {
+  padding-right: 40px;
+  display: none;
+  /* background-color: white; */
+  overflow: hidden;
+  padding-left: 40px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.sel-newestArea{
+	/* background-color: #3AE6FD; */
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sel-newestArea input{
+	width: 14px;
+	height: 14px;  
+}
+
+input[type=checkbox]::before{  
+    content:'';  
+    position: absolute;  
+    width: 14px;  
+    height: 14px;  
+    background: url(../img/cbunc.png) no-repeat;  
+	background-size: cover;
+}  
+
+input[type=checkbox]:checked::before {  
+    background: url(../img/cbc.png) no-repeat;
+	background-size: cover;
+    content: '';  
+} 
+
+.selectContent hr{
+	width: 250px;
+	margin-left: 25px;
+	/* background-color: #995BF0; */
+	/* color: #995BF0; */
+	background-color: darkgray;
+}
+
+.sel-selectPriceArea{
+	height: 45px;
+	/* background-color: #995BF0; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sel-lowestPrice{
+	height: 30px;
+	width: 95px;
+	/* background-color: aliceblue; */
+	background: rgba(107, 99, 126, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10000px;
+}
+
+.sel-lowestPrice input{
+	width: 80px;
+	font-size: 15px;
+	border: 0;
+	text-align: center;
+	background-color: #2f2d39;
+}
+
+.sel-priceop{
+	height: 2px;
+	width: 12px;
+	background-color: #2f2d39;
+}
+
+.sel-highestPrice{
+	height: 30px;
+	width: 95px;
+	/* background-color: aliceblue; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10000px;
+	background: rgba(107, 99, 126, 0.5);
+}
+
+.sel-highestPrice input{
+	width: 80px;
+	font-size: 15px;
+	border: 0;
+	text-align: center;
+	background-color: #2f2d39;
+}
+
+.sel-selectNumArea{
+	height: 45px;
+	/* background-color: #995BF0; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sel-lowestNum{
+	height: 30px;
+	width: 95px;
+	/* background-color: aliceblue; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10000px;
+	background: rgba(107, 99, 126, 0.5);
+}
+
+.sel-lowestNum input{
+	width: 80px;
+	font-size: 15px;
+	border: 0;
+	text-align: center;
+	background-color: #2f2d39;
+}
+
+.sel-numop{
+	height: 2px;
+	width: 12px;
+	background-color: #2f2d39;
+}
+
+.sel-highestNum{
+	height: 30px;
+	width: 95px;
+	/* background-color: aliceblue; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10000px;
+	background: rgba(107, 99, 126, 0.5);
+}
+
+.sel-highestNum input{
+	width: 80px;
+	font-size: 15px;
+	border: 0;
+	text-align: center;
+	background-color: #2f2d39;
+}

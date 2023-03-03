@@ -5,6 +5,8 @@
 		<title>NFT交易</title>
 		<!-- 引入导航栏样式 -->
 		<link rel="stylesheet" href="./css/navbar.css">
+		<!-- 引入本文件样式 -->
+		<link rel="stylesheet" href="./css/NFTTransactions.css">
 	</head>
 	<body>
 		<!-- 引入nav-menu -->
@@ -55,7 +57,81 @@
 				</div>
 			</div>
 		</div>
+		<!-- 刚好占一屏幕的页面 -->
+		<div class="content">
+			<img src="./img/pagebg.png" alt="">
+			<div class="nav-menu-zw"></div>
+			<div class="info-left-area">
+				<div class="selectTitle">
+					<div class="rectangle"></div>
+					<div class="selectTitleText">
+						综合筛选
+					</div>
+					<div class="selectIcon"></div>
+				</div>
+				<!-- 接下来制作折叠列表 -->
+				<div class="selectContent">
+					<button class="sel-accordion">状态</button>
+					<div class="sel-panel">
+						<div class="sel-newestArea">
+							<div class="sel-newestTest">最新</div>
+							<input type="checkbox" name="" id="">
+						</div>
+						<div class="sel-newestArea">
+							<div class="sel-buyableTest">可购买</div>
+							<input type="checkbox" name="" id="">
+						</div>
+						<div class="sel-newestArea">
+							<div class="sel-newestTest">未拥有</div>
+							<input type="checkbox" name="" id="">
+						</div>
+					</div>
+					<hr>
+					<button class="sel-accordion">价格区间（元）</button>
+					<div class="sel-panel">
+						<div class="sel-selectPriceArea">
+							<div class="sel-lowestPrice">
+								<input type="text" placeholder="最低价">
+							</div>
+							<div class="sel-priceop">
+								
+							</div>
+							<div class="sel-highestPrice">
+								<input type="text" placeholder="最高价">
+							</div>
+						</div>
+					</div>
+					<hr>
+					<button class="sel-accordion">发行量</button>
+					<div class="sel-panel">
+						<div class="sel-selectNumArea">
+							<div class="sel-lowestNum">
+								<input type="text" placeholder="最少量">
+							</div>
+							<div class="sel-numop">
+								
+							</div>
+							<div class="sel-highestNum">
+								<input type="text" placeholder="最大量">
+							</div>
+						</div>
+					</div>
+					<hr>
+					<button class="sel-accordion">系列</button>
+					<div class="sel-panel">
+						<p>333</p>
+					</div>
+					<hr>
+					<button class="sel-accordion">品牌方</button>
+					<div class="sel-panel">
+						<p>333</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- 引入导航的js -->
 		<script src="js/navbar.js"></script>
+		<!-- 引入文件的js -->
+		<script src="js/NFTTransactions.js"></script>
 	</body>
 </html>
