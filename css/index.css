@@ -17,13 +17,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-image: url(../img/littleStars.png);
+	background-position: center;
+	background-size: cover;
 }
 
 .firstContentPageLeftArea{
 	height: 670px;
 	width: 600px;
 	background-color: #1C1B1F;
-	padding-right: -100px;
+	padding-right: 100px;
+	/* background-color: antiquewhite; */
+	background-image: url(../img/littleStars.png);
+	background-position: center;
+	/* background-size: cover; */
 }
 
 .COANBigTitle{
@@ -129,11 +136,21 @@
 	background-attachment: fixed;
 	background: url(../img/xqbg.png);
 	height: 670px;
+	
 }
 
 .firstContentPageRightArea ul{
 	list-style: none;
 	/* background: url(img/xq4.png); */
+	/* margin-left: -100rpx; */
+}
+
+.background-too{
+	height: 670px;
+	width: 670px;
+	background: url(../img/littleStars.png);
+	/* background-size: cover; */
+	background-position: center;
 }
 
 .layer img{
