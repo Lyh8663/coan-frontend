@@ -1,5 +1,5 @@
 .content{
-	height: 2100px;
+	height: 2800px;
 	width: 100%;
 	/* background-color: aquamarine; */
 	background-color: #1C1B1F;
@@ -94,6 +94,7 @@
 	letter-spacing: 0.02em;
 	animation: entryButtonAni 2s  linear infinite;
 	/* border: 1px solid violet; */
+	 box-shadow: -1px 15px 30px -12px #000;
 }
 
 .entryButton2{
@@ -113,6 +114,7 @@
 	animation: entryButtonAni 2s  linear infinite;
 	background-color: rgba(82, 77, 96, 0.5);
 	margin-left: 20px;
+	 box-shadow: -1px 15px 30px -12px #000;
 }
 
 .entryButtonChosen{
@@ -129,6 +131,7 @@
 	font-size: 18px;
 	font-weight: 550;
 	letter-spacing: 0.02em;
+	box-shadow: -1px 15px 30px -12px #000;
 }
 
 .firstContentPageRightArea{
@@ -219,5 +222,341 @@
 .our-function-big-title{
 	width: 100%;
 	height: 75px;
-	background-color: #837BF3;
+	/* background-color: #837BF3; */
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+}
+
+.our-function-big-title-left{
+	display: flex;
+}
+
+.our-function-icon{
+	width: 15px;
+	height: 45px;
+	margin-left: 45px;
+	margin-top: 15px;
+	background: linear-gradient(0deg, #596DFF 0%, #F87BFF 100%);
+	/* background-color: #596DFF; */
+	border-radius: 20px;
+}
+
+.our-function-text{
+	color: white;
+	font-size: 30px;
+	margin-left: 20px;
+	letter-spacing: 0.05em;
+}
+
+.our-function-big-title-right{
+	width: 60px;
+	height: 60px;
+	margin-right: 45px;
+}
+
+.our-function-big-title-right img{
+	width: 100%;
+	height: 100%;
+	margin-top: 6px;
+	/* margin-right: 45px; */
+}
+
+.our-function-en-text{
+	width: 100%;
+	height: 70px;
+	/* background-color: #6E99F6; */
+	font-size: 50px;
+	background: linear-gradient(0deg, rgba(89, 109, 255, 0.4) 0%, rgba(248, 123, 255, 0.4) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	margin-left: 75px;
+	margin-top: -60px;
+	font-weight: 600;
+}
+
+.our-function-big-title-bg{
+	background: linear-gradient(270deg, rgba(220, 121, 255, 0.5) 0%, rgba(220, 121, 255, 0) 100%);
+	border-radius: 20px;
+	height: 75px;
+	width: calc(100vw - 90px);
+	margin-left: 45px;
+	margin-right: 45px;
+	margin-top: -85px;
+	 box-shadow: -1px 15px 30px -12px #000;
+}
+
+.four-function-area{
+	height: 600px;
+	width: 100%;
+	/* background-color: #596DFF; */
+	margin-top: 40px;
+}
+
+.four-function-area-first{
+	/* background-color: #995BF0; */
+	width: 100%;
+	height: 250px;
+	display: flex;
+	/* flex-wrap: wrap; */
+	/* align-items: center; */
+	justify-content: center;
+}
+
+.four-function-area-first-left{
+	height: 200px;
+	width: 500px;
+	/* background-color: #CAC4D0; */
+	margin-left: 45px;
+	/* margin-right: 45px; */
+	margin-top: 25px;
+}
+
+.four-function-area-first-right{
+	height: 200px;
+	width: 500px;
+	/* background-color: #CAC4D0; */
+	margin-right: 45px;
+	margin-left: 95px;
+	margin-top: 25px;
+}
+
+.four-function-area-second{
+	/* background-color: #995BF0; */
+	width: 100%;
+	height: 250px;
+	display: flex;
+	/* flex-wrap: wrap; */
+	/* align-items: center; */
+	justify-content: center;
+	/* margin-top: 45px; */
+	margin-top: 50px;
+}
+
+.four-function-area-second-left{
+	height: 200px;
+	width: 500px;
+	/* background-color: #CAC4D0; */
+	margin-left: 45px;
+	/* margin-right: 45px; */
+	margin-top: 25px;
+}
+
+.four-function-area-second-right{
+	height: 200px;
+	width: 500px;
+	/* background-color: #CAC4D0; */
+	margin-right: 45px;
+	margin-left: 95px;
+	margin-top: 25px;
+}
+
+.function-card{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.card-num-area{
+	height: 150px;
+	width: 70px;
+	background-color: #3ACEFD;
+	font-size: 130px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.02em;
+	/* 渐变1 */
+	background: linear-gradient(0deg, #596DFF 0%, #F87BFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-family: 'Acme';
+	font-style: normal;
+	font-weight: 400;
+}
+
+.card-detail-area{
+	height: 100%;
+	width: 435px;
+	/* margin-left: 15px; */
+	/* background-color: #596DFF; */
+	
+}
+
+.card-detail-title{
+	color: white;
+	font-size: 40px;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.card-detail-desc{
+	color: white;
+	margin-left: 15px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.card-detail-title-special{
+	display: flex;
+	color: white;
+	align-items: flex-end;
+}
+
+.card-detail-area:hover{
+	background: linear-gradient(0deg, rgba(89, 109, 255, 0.5) 0%, rgba(248, 123, 255, 0.5) 100%);
+	border-radius: 30px;
+}
+
+.forthContentPage{
+	width: 100%;
+	height: 480px;
+	/* background-color: #837BF3; */
+	background-image: url(../img/littleStars.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.wrap-security{
+	width: 80%;
+	height: 100%;
+	min-height: 100px;
+	margin-left: 10%;
+	/* 使用了grid布局 */
+	display: grid;
+	grid-template-columns: 300px 300px 300px ;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.card-item-security {
+    width: 100%;
+    border-radius: 20px;
+    /* background-color: #fff; */
+    box-shadow: -1px 15px 30px -12px #000;
+    /* 让卡片里的元素都具有透视的效果 */
+    transform-style: preserve-3d;
+	color: #fff;
+	height: 400px;
+}
+
+.role-security1 {
+    width: 100%;
+    height: 170px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: radial-gradient(50% 50% at 50.11% 50%, rgba(255, 18, 231, 0.5) 0%, rgba(248, 123, 255, 0.5) 100%);
+    position: relative;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.role-security1 img {
+    width: 125px;
+    /* position: absolute; */
+    /* top: -30%; */
+    /* left: -5%; */
+    /* 实现游戏角色突出来的效果 */
+    /* transform: translateZ(50px); */
+}
+
+.role-security2 {
+    width: 100%;
+    height: 170px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(123, 113, 255, 0.5) 0%, rgba(136, 169, 255, 0.5) 100%);
+    position: relative;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.role-security2 img {
+    /* width: 350px; */
+	width: 140px;
+    /* position: absolute; */
+    /* top: -30%; */
+    /* left: -5%; */
+    /* 实现游戏角色突出来的效果 */
+    /* transform: translateZ(50px); */
+}
+
+.role-security3 {
+    width: 100%;
+    height: 170px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+	background: radial-gradient(50% 50% at 50.11% 50%, rgba(31, 215, 255, 0.5) 0%, rgba(188, 239, 255, 0.5) 100%);
+    position: relative;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.role-security3 img {
+    /* width: 350px; */
+    /* position: absolute; */
+    /* top: -30%; */
+    /* left: -5%; */
+    /* transform: translateZ(50px); */
+	width: 125px;
+}
+
+.des-sucurity {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    transform: translateZ(50px);
+	height:200px;
+	/* font-size: 18px; */
+}
+
+.des-sucurity h6 {
+    /* color: #F6901A; */
+	color: blueviolet;
+    font-weight: 400;
+}
+
+.des-sucurity h1 {
+    padding: 10px;
+    font-size: 26px;
+}
+
+.des-sucurity h1:hover {
+    padding: 10px;
+    font-size: 26px;
+	background: linear-gradient(0deg, #596DFF 0%, #F87BFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.des-sucurity p {
+    text-align: left;
+    font-size: 15px;
+    padding: 0 16px;
+    color: #9e9e9e;
+}
+
+.title-line{
+	background-color: #9e9e9e;
+	width: 70%;
+	margin-left: 15%;
+	height: 0.5px;
+	margin-bottom: 20px;
 }
