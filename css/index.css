@@ -1,8 +1,9 @@
 .content{
-	height: 1500px;
+	height: 2100px;
 	width: 100%;
 	/* background-color: aquamarine; */
 	background-color: #1C1B1F;
+	
 }
 /* 用于占位 */
 .nav-menu-zw{
@@ -25,10 +26,10 @@
 .firstContentPageLeftArea{
 	height: 670px;
 	width: 600px;
-	background-color: #1C1B1F;
+	/* background-color: #1C1B1F; */
 	padding-right: 100px;
 	/* background-color: antiquewhite; */
-	background-image: url(../img/littleStars.png);
+	/* background-image: url(../img/littleStars.png); */
 	background-position: center;
 	/* background-size: cover; */
 }
@@ -148,11 +149,75 @@
 .background-too{
 	height: 670px;
 	width: 670px;
-	background: url(../img/littleStars.png);
-	/* background-size: cover; */
-	background-position: center;
+	
 }
 
 .layer img{
 	height: 670px;
+}
+
+.secondContentPage{
+	width: 100%;
+	height: 670px;
+	/* background-color: #837BF3; */
+	background-image: url(../img/littleStars.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.whychooseus-title{
+	width: 100%;
+	/* background-color: #3ACEFD; */
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.whychooseus-text{
+	font-size: 40px;
+	/* font-weight: 600; */
+	color: white;
+	z-index: 3;
+	/* padding-top: 50px; */
+}
+
+.whychooseus-img{
+	/* width: 40vw; */
+	/* height: 50px; */
+	/* width: 200px; */
+	/* background-color: #CAC4D0; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: -30px;
+	margin-bottom: 80px;
+}
+
+.whychooseus-img img{
+	width: 35%;
+}
+
+.intro-card-area{
+	width: 100%;
+	height: 400px;
+	/* background-color: #837BF3; */
+	margin-top: 30px;
+}
+
+.thirdContentPage{
+	width: 100%;
+	height: 670px;
+	/* background-color: #837BF3; */
+	background-image: url(../img/littleStars.png);
+	background-position: center;
+	background-size: cover;
+	/* background-color: #837BF3; */
+}
+
+.our-function-big-title{
+	width: 100%;
+	height: 75px;
+	background-color: #837BF3;
 }

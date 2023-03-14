@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="./css/navbar.css">
 	<!-- 引入页面样式 -->
 	<link rel="stylesheet" href="./css/index.css">
+	<!-- 引入翻动卡片样式 -->
+	<link rel="stylesheet" href="./css/indexcards.css">
 	<!-- 引入parallax.js -->
 	<script src="js/parallax.js"></script>
 </head>
@@ -95,13 +97,82 @@
 				 </ul>
 			 </div>
 		</div>
-		<div class="secondContentPage"></div>
+		<div class="secondContentPage">
+			<div class="whychooseus-title">
+				<div class="whychooseus-text">为什么选择我们</div>	
+			</div>
+			<div class="whychooseus-img">
+				<img src="./img/whychooseus.png" alt="">
+			</div>
+			<div class="intro-card-area">
+				<div class="wrap">
+				        <div class="card-item">
+				            <div class="role"><img src="./img/kelihead.png" alt="" /></div>
+				            <div class="des">
+				                <h6>LEVEL 1</h6>
+				                <h1>COAN</h1>
+				                <p>
+				                    COAN分为中国版与国际版，面向全球市场，保证平台在各地区法律监管条件下满足客户对虚拟资产的多样化需求。
+				                </p>
+				            </div>
+				        </div>
+						<div class="card-item">
+						    <div class="role"><img src="./img/kelihead.png" alt="" /></div>
+						    <div class="des">
+						        <h6>LEVEL 2</h6>
+						        <h1>COAN</h1>
+						        <p>
+						            COAN提供虚拟资产全面综合交易平台，采用C2C交易模式，满足客户对于传统网络游戏资产与区块链数字资产的交易、置换、认证需求，提供丰富便捷的交易体验。
+						        </p>
+						    </div>
+						</div>
+				        <div class="card-item">
+				            <div class="role"><img src="./img/kelihead.png" alt="" /></div>
+				            <div class="des">
+				                <h6>LEVEL 3</h6>
+				                <h1>COAN</h1>
+				                <p>
+				                    COAN打造衍生元宇宙平台—COAN SPACE，承载用户社交功能与虚拟资产交易功能，实现虚拟资产的可视化与用户沉浸式体验。
+				                </p>
+				            </div>
+				        </div>
+				        <div class="card-item">
+				            <div class="role"><img src="./img/kelihead.png" alt="" /></div>
+				            <div class="des">
+				                <h6>LEVEL 4</h6>
+				                <h1>COAN</h1>
+				                <p>
+				                    COAN构建全面安全系统。建立用户可信数字身份评价体系，实现用户信用等级动态更新，提升交易行为安全性；建立反洗钱预警，实时监测账户数据，保障交易合法性，实现平台平稳运行。
+				                </p>
+				            </div>
+				        </div>
+				    </div>
+			</div>
+		</div>
+		<div class="thirdContentPage">
+			<div class="our-function-big-title">
+				1
+			</div>
+		</div>
 	</div>
+	
 	<script>
 		//引入parallax.js实现鼠标跟随
 		let scene = document.getElementById("scene");
 		let parallax = new Parallax(scene);
 	</script>
+	<!-- 还要引入tilt.js -->
+	    <!-- 这是一个轻量的倾斜角度视差的库 -->
+	    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+	    <script type="text/javascript">
+	        //初始化倾斜透视的元素
+	        VanillaTilt.init(document.querySelectorAll(".card-item"), {
+	            //max用于控制最大倾斜角
+	            max: 25,
+	            //speed用于控制倾斜变化的速度
+	            speed: 400,
+	        });
+	    </script>
 	<!-- 引入导航的js -->
 	<script src="js/navbar.js"></script>
 	<!-- 引入页面的js -->
