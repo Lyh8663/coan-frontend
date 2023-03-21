@@ -37,18 +37,22 @@ nav_menuItem3.onmouseout = function(){
 //     window.location.href="NFTTransactions.html";
 // });
 
+//NFT艺术品区
 nav_menuItem1.addEventListener("click", function(){
-    window.location.href="GameAssetTrading.html";
+    window.location.href="NFTArts.html";
 });
 
+//COAN Daily
 nav_menuItem2.addEventListener("click", function(){
     window.location.href="COANDaily.html";
 });
 
+//COAN Space
 nav_menuItem3.addEventListener("click", function(){
     window.location.href="COANSpace.html";
 });
 
+//首页
 nav_COANLogo.addEventListener("click", function(){
     window.location.href="index.html";
 });

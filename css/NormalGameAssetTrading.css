@@ -1,0 +1,23 @@
+.alert-area{
+	height: 650px;
+	width: 100%;
+	/* background-color: aquamarine; */
+	font-size: 60px;
+}
+
+/* 用于占位 */
+.nav-menu-zw{
+	height: 75px;
+	width: 100%;
+}
+
+.alert-content{
+	height: 100%;
+	width: 100%;
+	background-color: #1C1B1F;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 50px;
+}

@@ -34,7 +34,7 @@
 .role img {
     width: 350px;
     position: absolute;
-    top: -30%;
+    top: -60%;
     left: -15%;
     /* 实现游戏角色突出来的效果 */
     transform: translateZ(50px);

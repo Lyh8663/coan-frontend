@@ -1,5 +1,5 @@
 .content{
-	height: 2800px;
+	height: 3100px;
 	width: 100%;
 	/* background-color: aquamarine; */
 	background-color: #1C1B1F;
@@ -202,12 +202,110 @@
 	width: 35%;
 }
 
+.wrap {
+    width: 80%;
+	height: 100%;
+    min-height: 100px;
+	margin-left: 10%;
+    /* 使用了grid布局 */
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: space-between;
+}
+
+.card-item {
+    width: 100%;
+    border-radius: 20px;
+    /* background-color: #fff; */
+    box-shadow: -1px 15px 30px -12px #000;
+    /* 让卡片里的元素都具有透视的效果 */
+    transform-style: preserve-3d;
+	color: #fff;
+}
+
+.role {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    /* background: url(); */
+    position: relative;
+	background-position: center;
+	background-size: cover;
+}
+
+.role img {
+    width: 350px;
+    position: absolute;
+    top: -60%;
+    left: -15%;
+    /* 实现游戏角色突出来的效果 */
+    transform: translateZ(50px);
+}
+
+.des {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    transform: translateZ(50px);
+	height:200px;
+	/* font-size: 18px; */
+}
+
+.des h6 {
+    /* color: #F6901A; */
+	color: blueviolet;
+    font-weight: 400;
+}
+
+.des h1 {
+    padding: 10px;
+    font-size: 26px;
+}
+
+.des p {
+    text-align: left;
+    font-size: 15px;
+    padding: 0 16px;
+    color: #9e9e9e;
+}
+
+.btn-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F6901A;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn h3 {
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.btn span {
+    font-size: 14px;
+    color: #fff;
+}
+
 .intro-card-area{
 	width: 100%;
 	height: 400px;
 	/* background-color: #837BF3; */
 	margin-top: 30px;
 }
+
+
 
 .thirdContentPage{
 	width: 100%;
@@ -559,4 +657,139 @@
 	margin-left: 15%;
 	height: 0.5px;
 	margin-bottom: 20px;
+}
+
+.index-page-bottom-area{
+	background-color: #302D38;
+	width: 100%;
+	height: 300px;
+	margin-top: 185px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.index-page-bottom-area-content{
+	height: 80%;
+	width: 80%;
+	/* margin-left: 15%; */
+	/* background-color: #596DFF; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.index-page-bottom-area-content-left{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	/* background-color: #995BF0; */
+}
+
+.index-page-bottom-area-content-left-COAN{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.index-page-bottom-area-coan-title{
+	/* Linear */
+	
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.index-page-bottom-area-content-left-desc{
+	color: #CAC4D0;
+	font-size: 14px;
+}
+
+.index-page-bottom-area-content-right{
+	/* background-color: #995BF0; */
+	width: 60%;
+	height: 200px;
+}
+
+.index-page-bottom-area-content-right-menu{
+	display: flex;
+	/* align-items: center; */
+	/* justify-content: center; */
+	justify-content: space-around;
+	width: 100%;
+}
+
+.bottom-area-menu-title{
+	color: #CAC4D0;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.bottom-area-menu-title :hover{
+	/* background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent; */
+}
+
+.bottom-area-menu-item{
+	color: #CAC4D0;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.bottom-area-memu-area div:hover{
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.index-page-bottom-area-cotent-right-btnarea{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-top: 20px;
+	margin-right: 60px;
+}
+
+.btnarea-title{
+	color: #CAC4D0;
+	margin-right: 25px;
+}
+
+.btn-items{
+	height: 40px;
+	width: 40px;
+	/* background-color: #F6901A; */
+	border-radius: 100000px;
+	margin-left: 20px;
+}
+
+.btn-items img{
+	height: 100%;
+	width: 100%;
+}
+
+.btn-items1{
+	height: 40px;
+	width: 40px;
+	/* background-color: #F6901A; */
+	border-radius: 100000px;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-items1 img{
+	height: 120%;
+	width: 120%;
 }
