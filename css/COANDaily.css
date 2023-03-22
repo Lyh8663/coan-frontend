@@ -1,0 +1,469 @@
+body{
+    
+}
+
+.content {
+    /* height: 760px; */
+    height: 900px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-color: #1C1B1F;
+
+}
+
+/* 用于占位 */
+.nav-menu-zw {
+    height: 75px;
+    width: 100%;
+}
+
+
+/* 左上-banner */
+.coan-daily-banner {
+    position: absolute;
+    width: 62%;
+    height: 114px;
+    left: 4%;
+    top: 115px;
+    background-image: url(../img/COAN_Daily_banner.png);
+    /* 自适应宽高 */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 左中下-内容列表 */
+.content-list {
+    box-sizing: border-box;
+    position: absolute;
+    width: 62%;
+    height: 619px;
+    left: 4%;
+    top: 245px;
+
+    background: #232121;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 表头栏分割线 */
+.header-divide {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(111, 109, 109, 1);
+    border: none;
+}
+
+/* 内容分割线 */
+.content-divide1 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(111, 109, 109, 1);
+    border: none;
+}
+
+/* 内容分割线 */
+.content-divide2 {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(111, 109, 109, 1);
+    border: none;
+}
+
+/* 内容按钮 */
+.content-list ul {
+    margin-top: 1%;
+    height: 10%;
+}
+
+.content-list a {
+    height: 100%;
+    width: 100%;
+
+    /* 字体设置 */
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    color: #C9C5C5;
+}
+
+.colorful-button {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    /* 字体设置 */
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.minst-button {
+    list-style: none;
+    display: inline;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+/* 文字 */
+.content-list .articlebox {
+    /* 垂直居中 */
+    height: 30%;
+    width: 80%;
+    /* margin-top: 10px; */
+    margin-left: 2%;
+    margin-right: 2%;
+
+    overflow: hidden;
+}
+
+.articlebox .article-title {
+    /* 居左 字号较大 */
+    margin-bottom: 3px;
+
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+
+    color: #CAC4D0;
+}
+
+.articlebox .article-content p {
+    /* 字号较小 */
+    position: absolute;
+    width: 95%;
+    overflow: hidden;
+
+    /* 字体 */
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+
+    /* #CAC4D0 */
+    color: #CAC4D0;
+}
+
+.fullmap {}
+
+/* 右中-推荐关注 */
+.recommendation {
+    position: absolute;
+    width: 30%;
+    height: 200px;
+    left: 68%;
+    top: 420px;
+
+    background: #232121;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.recommendation p {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+
+    /* 字体 */
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    align-items: center;
+    color: #CAC4D0;
+}
+
+.recommendation ul {
+    position: absolute;
+    top: 45%;
+    height: 60%;
+    width: 100%;
+}
+
+.recommendation li {
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+    margin-left: 5%;
+    margin-right: 2.5%;
+    /* 自适应宽高 */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.recommendation a {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    /* margin-left: 2.5%; */
+    /* margin-right: 2.5%; */
+}
+
+/* 右下-我的信息 */
+.my-info {
+    position: absolute;
+    width: 30%;
+    height: 225px;
+    left: 68%;
+    top: 640px;
+
+    background: #232121;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.my-info ul {
+    margin-top: 2.5%;
+}
+
+.my-info li {
+    list-style: none;
+    /* display: inline; */
+}
+
+.my-info img{
+    height: 18px;
+    width: 18px;
+
+    margin-left: 10%;
+}
+
+.my-info a {
+    margin-left: 5%;
+
+    /* 字体 */
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 34px;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    color: #CAC4D0;
+
+}
+
+/* 右上-选择框 */
+.editor-wrap {
+    position: absolute;
+    width: 30%;
+    height: 290px;
+    left: 68%;
+    top: 115px;
+    background: #232121;
+
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.editor-item1 {
+    position: relative;
+    display: inline;
+    width: 25%;
+    height: ;
+}
+
+.editor-item2 {
+    grid-row: icon2-start / icon2-end;
+    grid-column: icon2-start / icon2-end;
+}
+
+.editor-item3 {
+    grid-row: icon3-start / icon3-end;
+    grid-column: icon3-start / icon3-end;
+}
+
+.editor-item4 {
+    grid-row: icon4-start / icon4-end;
+    grid-column: icon4-start / icon4-end;
+}
+
+.button1 {
+    grid-row: button1-start / button1-end;
+    grid-column: button1-start / button1-end;
+}
+
+.button2 {
+    grid-row: button2-start / button2-end;
+    grid-column: button2-start / button2-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.index-page-bottom-area{
+	background-color: #302D38;
+	width: 100%;
+	height: 300px;
+	/* margin-top: 185px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.index-page-bottom-area-content{
+	height: 80%;
+	width: 80%;
+	/* margin-left: 15%; */
+	/* background-color: #596DFF; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.index-page-bottom-area-content-left{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	/* background-color: #995BF0; */
+}
+
+.index-page-bottom-area-content-left-COAN{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.index-page-bottom-area-coan-title{
+	/* Linear */
+	
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.index-page-bottom-area-content-left-desc{
+	color: #CAC4D0;
+	font-size: 14px;
+}
+
+.index-page-bottom-area-content-right{
+	/* background-color: #995BF0; */
+	width: 60%;
+	height: 200px;
+}
+
+.index-page-bottom-area-content-right-menu{
+	display: flex;
+	/* align-items: center; */
+	/* justify-content: center; */
+	justify-content: space-around;
+	width: 100%;
+}
+
+.bottom-area-menu-title{
+	color: #CAC4D0;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.bottom-area-menu-title :hover{
+	/* background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent; */
+}
+
+.bottom-area-menu-item{
+	color: #CAC4D0;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.bottom-area-memu-area div:hover{
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.index-page-bottom-area-cotent-right-btnarea{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-top: 20px;
+	margin-right: 60px;
+}
+
+.btnarea-title{
+	color: #CAC4D0;
+	margin-right: 25px;
+}
+
+.btn-items{
+	height: 40px;
+	width: 40px;
+	/* background-color: #F6901A; */
+	border-radius: 100000px;
+	margin-left: 20px;
+}
+
+.btn-items img{
+	height: 100%;
+	width: 100%;
+}
+
+.btn-items1{
+	height: 40px;
+	width: 40px;
+	/* background-color: #F6901A; */
+	border-radius: 100000px;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-items1 img{
+	height: 120%;
+	width: 120%;
+}

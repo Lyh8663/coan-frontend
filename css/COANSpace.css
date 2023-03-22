@@ -1,0 +1,74 @@
+.bg {
+    height: 760px;
+    width: 1535.2px;
+
+    background-image: url(../img/Space_background.png);
+    /* 自适应宽高 */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.plannet1{
+    position: absolute;
+    width: 363px;
+    height: 513px;
+    left: 596px;
+    top: 140px;
+
+    background-image: url(../img/Space_plannet1.png);
+    /* 自适应宽高 */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.plannet2{
+    position: absolute;
+    width: 214px;
+    height: 214px;
+    left: 90px;
+    top: 60px;
+
+    background-image: url(../img/Space_plannet2.png);
+    /* 自适应宽高 */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.plannet3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 120px;
+    top: 300px;
+
+    background-image: url(../img/Space_plannet3.png);
+    /* 自适应宽高 */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.plannet4{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    left: 580px;
+    top: 620px;
+
+    background-image: url(../img/Space_plannet4.png);
+    /* 自适应宽高 */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.plannet5{
+    position: absolute;
+    width: 173px;
+    height: 110px;
+    left: 900px;
+    top: 396px;
+
+    background-image: url(../img/Space_plannet5.png);
+    /* 自适应宽高 */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
