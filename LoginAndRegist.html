@@ -3,7 +3,11 @@
 <head>
     <title>COAN CHINA Official</title>
     <link rel="stylesheet" href="./css/LoginAndRegist.css">
+	<!-- 使用cdn的方式引入jquery -->
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script> 
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+	<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
     <!-- NAVBAR CREATION -->
@@ -40,7 +44,7 @@
         </div>
         <div class="login-section">
             <div class="form-box login">
-                <form action="">
+                <div action="">
                     <h2>Sign In</h2>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
@@ -55,45 +59,11 @@
 						<input type="password" required id="code">
                         <label>Code</label>
                     </div>
-                    <div class="remember-password">
-                        <!-- <label for=""><input type="checkbox">Remember Me</label> -->
-                        <!-- <a href="#">Forget Password</a> -->
-                    </div>
-                    <button class="btn" onclick="login()">Login In</button>
-                    <div class="create-account">
-                        <p>Create A New Account? <a href="#" class="register-link">Sign Up</a></p>
-                    </div>
-                </form>
+					<button class="btn" onclick="login()">Login In</button>
+                </div>
+				
             </div>
-            <div class="form-box register">
-                <form action="">
-
-                    <h2>Sign Up</h2>
-
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-user'></i></span>
-                        <input type="text" required">
-                        <label >Username</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
-                        <label >Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-password">
-                        <label for=""><input type="checkbox">I agree with this statment</label>
-                    </div>
-                    <button class="btn">Login In</button>
-                    <div class="create-account">
-                        <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
-                    </div>
-                </form>
-            </div>
+            
         </div>
     </div>
      <!-- SIGN UP FORM CREATION -->

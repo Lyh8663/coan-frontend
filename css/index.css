@@ -1,9 +1,14 @@
+html{
+	/* padding-right: -1000px; */
+	/* overflow: hidden; */
+	overflow-x: hidden;
+}
+
 .content{
 	height: 3100px;
 	width: 100%;
 	/* background-color: aquamarine; */
 	background-color: #1C1B1F;
-	
 }
 /* 用于占位 */
 .nav-menu-zw{

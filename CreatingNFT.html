@@ -2,12 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>普通游戏资产交易</title>
-		<!-- 引入导航栏样式 -->
-		<link rel="stylesheet" href="./css/navbar.css">
-		<link rel="stylesheet" href="./css/NormalGameAssetTrading.css">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>用户铸造NFT</title>
 		<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no">
+		<link rel="stylesheet" href="./css/navbar.css">
+		<link rel="stylesheet" href="./css/CreatingNFT.css">
 	</head>
 	<body>
 		<!-- 引入nav-menu -->
@@ -69,15 +67,58 @@
 				</div>
 			</div>
 		</div>
-		<div class="alert-area">
-			<div class="nav-menu-zw">
-				
-			</div>
-			<div class="alert-content">
-				暂无内容
+		<div class="nav-menu-zw">
+			1
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="w-50">
+						<div class="main-card">
+							<h3 class="main-header">
+								<img src="./img/Rectangle%2062.png" alt=""/>
+								<span>用户上传展示区</span>
+							</h3>
+							<form action="" method="post">
+								<div class="form-group">
+									<label>图片上传</label>
+									<div class="upload-group">
+										<div class="upload-item">
+											<img src="./img/img_21.png" alt=""/>
+										</div>
+										<div class="upload-item plus">
+											<img src="./img/img_22.png" alt=""/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>是否为原创</label>
+									<div class="custom-radio-group">
+										<div class="custom-radio-item">
+											<label for="myself">原创</label>
+											<input id="myself" name="yuanchuang" type="radio">
+										</div>
+										<div class="custom-radio-item">
+											<label for="yourself">二次创作</label>
+											<input id="yourself" name="yuanchuang" type="radio">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="remark">创作灵感</label>
+									<textarea id="remark" class="form-control" name="remark"  rows="7"></textarea>
+								</div>
+								<div class="form-group form-group-static">
+									<button>取消</button>
+									<button>提交</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<!-- 引入导航的js -->
 		<script src="js/navbar.js"></script>
 	</body>
 </html>
