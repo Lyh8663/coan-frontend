@@ -1,6 +1,7 @@
 html{
 	/* padding-right: -1000px; */
-	overflow: hidden;
+	/* overflow: hidden; */
+	overflow-x: hidden;
 }
 
 .content{
