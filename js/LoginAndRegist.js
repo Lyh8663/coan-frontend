@@ -35,8 +35,9 @@ function login(){
 	var email = document.getElementById('email').value;
 	var code = document.getElementById('code').value;
 	if(email=='123@qq.com'&&code=='123456'){//后门
-		window.open("index.html");
-		window.close("LoginAndRegist.html");
+		// window.open("index.html");
+		// window.close("LoginAndRegist.html");
+		location.href="index.html";
 		console.log("登录成功");
 		return;
 	}
@@ -58,9 +59,12 @@ function login(){
 			console.log(res);
 			console.log("请求发起成功");
 			if(res.success){
-				alert("Login was successful！");
-				window.open("index.html");
-				window.close("LoginAndRegist.html");
+				// alert("Login was successful!");
+				window.sessionStorage.setItem("userinfo",res.data.userInfo);
+				console.log(res.data.userInfo);
+				// window.open("index.html");
+				// window.close("LoginAndRegist.html");
+				location.href="index.html";
 			}
 			else{
 				alert("Email or verification code error.");
