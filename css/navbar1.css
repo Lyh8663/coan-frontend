@@ -1,53 +1,91 @@
 *{
 	margin: 0;
 	padding: 0;
+	/* box-sizing: border-box; */
 }
 
-html{
+body{
 	font-size:14px;
+	background-color: #1C1B1F;
 }
 
 .nav-menu{
 	background-color: #1C1B1F;
-	height: 75px;
-	width: 100%;
+	/* height: 20rem; */
+	/* background-color: #3ACEFD; */
 	position: fixed;
+	margin-left: 1.5rem;
+	z-index: 999;
+	/* background-color: #837BF3; */
+}
+
+.container-nav{
+    width: 88rem;
+    margin: 0 auto;
+	/* margin-top: 0.5rem; */
+	/* margin-bottom: 0.5rem; */
+	/* background-color: #6E99F6; */
+	/* position: fixed; */
+	/* left: auto; */
+}
+
+.w-15{
+	width: 15%;
+}
+
+.w-25{
+	width: 25%;
+}
+
+.w-30{
+	width: 30%;
+}
+
+.w-35{
+	width: 35%;
+}
+
+.w-40{
+	width: 40%;
+}
+
+.w-50{
+	width: 50%;
+}
+
+.w-70{
+	width: 70%;
+}
+
+.w-auto{
+	width: auto;
+}
+
+.nav-area{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	/* 好东西!让导航栏在最上面 */
-	z-index: 999;
 }
 
 .nav-leftArea{
-	height: 100%;
-	width: 500px;
 	display: flex;
-	/* align-items: center;
-	justify-content: center; */
+	align-items: center;
+	/* justify-content: space-around; */
+	/* background-color: beige; */
 }
 
 .nav-COANLogo{
-	/* background-color: aqua; */
-	height: 100%;
-	width: 75px;
-	margin-left: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .nav-COANLogo img{
-	height: 90%;
-	width: 90%;
-	border: 0ch;
+	height: 60%;
+	width: 60%;
 }
 
 .nav-COANTitle{
-	/* background-color: coral; */
-	height: 100%;
-	width: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -56,8 +94,8 @@ html{
 .nav-titleText{
 	font-weight: 600;
 	font-size: normal;
-	line-height: 30px;
-	font-size: 32px;
+	line-height: 2.5rem;
+	font-size: 2.2rem;
 	letter-spacing: 0.5px;
 	background: linear-gradient(
 		97.33deg,
@@ -69,23 +107,24 @@ html{
 	-webkit-text-fill-color:transparent;
 	background-clip: text;
 	text-fill-color: transparent;
+	margin-right: 2rem;
 }
 
 .nav-searchArea{
-	/* background-color: brown; */
-	height: 100%;
-	width: 275px;
+	/* display: flex; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 100%;
+	/* width: px; */
 }
 
 .nav-searchAreaAndIcon{
+	/* display: flex; */
 	background-color: #302D38;
 	display: flex;
 	height: 40px;
 	align-items: center;
-	width: 225px;
 	border-radius: 100000px;
 }
 
@@ -99,42 +138,44 @@ html{
 }
 
 .nav-searchImg{
-	/* background-color: #6E99F6; */
 	width: 25px;
 	height: 25px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/* margin-left: -1rem; */
 }
 
 .nav-searchImg img{
 	height: 80%;
 	width: 80%;
+	margin-left: -1rem;
 }
 
 .nav-rightArea{
-	height: 100%;
 	display: flex;
+	/* background-color: beige; */
+	align-items: center;
+	justify-content: space-between;
 }
 
 .nav-menuEntry{
 	height: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	/* background-color: #3ACEFD; */
+	margin-left: 0.5rem;
 }
 /* 调节menuEntry中的链接 */
 .nav-menuEntry a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  
 }
 
 .nav-menuItem{
 	height: 100%;
-	width: 150px;
+	/* width: 150px; */
+	flex: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -179,39 +220,41 @@ html{
 
 /* 下拉内容（默认隐藏）*/
 .nav-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #302D38;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  width: 150px;
+	display: none;
+	position: absolute;
+	background-color: #302D38;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	width: 150px;
 }
 
 /* 下拉列表中的链接 */
 .nav-dropdown-content a {
-  float: none;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  color: #CAC4D0;
-  font-family: 'PingFang SC';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 34px;
-  /* identical to box height */
-  letter-spacing: 0.04em;
+	float: none;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #CAC4D0;
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 34px;
+	/* identical to box height */
+	letter-spacing: 0.04em;
 }
 
 /* 为悬停时的下拉链接添加文字颜色 */
 .nav-dropdown-content a:hover {
-  /* Linear */
-  background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+	/* Linear */
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	/* height: 100%; */
+	/* width: 100%; */
 }
 
 
@@ -221,13 +264,14 @@ html{
 
 /* 悬停时显示下拉菜单 */
 .nav-dropdown:hover .nav-dropdown-content {
-  display: block;
+	display: block;
 }
 
 /* 选中时,按钮样式改为: */
 .nav-menuItemChosen{
 	height: 100%;
 	width: 150px;
+	/* width: auto; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -247,7 +291,8 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 130px;
+	/* width: 130px; */
+	color: white;
 }
 
 .nav-userheadArea{
@@ -255,6 +300,7 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/* background-color: #3ACEFD; */
 }
 
 .nav-userheadArea img{
@@ -274,18 +320,17 @@ html{
 }
 
 .nav-contactUs{
-	/* background-color: bisque; */
 	height: 100%;
-	width: 180px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-right: 10px;
+	color: white;
 }
 
 .nav-contactUs img{
 	height: 40px;
 	width: 40px;
+	margin-right: 10px;
 }
 
 .nav-contactText{

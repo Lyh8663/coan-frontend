@@ -23,7 +23,7 @@ function sendEmailCode(){
 		},
         dataType: "json",
 	    success: function(data){
-	        alert("邮箱验证码已发送")
+	        alert("Email verification code has been sent.")
 	    },
 	    error: function(msg){
 	        // alert("ajax连接异常："+msg);
@@ -41,7 +41,7 @@ function login(){
 		return;
 	}
 	if(code==''){
-		alert("还未输入验证码");
+		alert("The verification code has not been entered yet.");
 		return;
 	}
 	console.log("正在发起请求")
@@ -57,13 +57,13 @@ function login(){
 			// alert("发起登录请求");
 			console.log(res);
 			console.log("请求发起成功");
-			if(res.message=="登陆成功"){
-				alert("注册成功");
+			if(res.success){
+				alert("Login was successful！");
 				window.open("index.html");
 				window.close("LoginAndRegist.html");
 			}
 			else{
-				alert("邮箱或验证码错误");
+				alert("Email or verification code error.");
 			}
 	    },
 	    error: function(msg){
