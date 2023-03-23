@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+html{
+	background-color: #1C1B1F;
+}
+
+
 .nav-menu{
 	background-color: #1C1B1F;
 	height: 75px;

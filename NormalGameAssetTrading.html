@@ -3,18 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>普通游戏资产交易</title>
-		<!-- 引入导航栏样式 -->
-		<link rel="stylesheet" href="./css/navbar.css">
-		<link rel="stylesheet" href="./css/NormalGameAssetTrading.css">
+		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/MetaGameAssetTrading.css">
+		<link rel="stylesheet" href="css/game.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no"> -->
 	</head>
 	<body>
 		<!-- 引入nav-menu -->
 		<div class="nav-menu">
 			<div class="nav-leftArea">
 				<div class="nav-COANLogo">
-					<img src="img/logo.png" alt="" id="nav-COANLogo">
+					<img src="img/logo花旗杯secai 1.png" alt="" id="nav-COANLogo">
 				</div>
 				<div class="nav-COANTitle">
 					<div class="nav-titleText"" id="nav-COANTitle">COAN</div>
@@ -69,15 +70,655 @@
 				</div>
 			</div>
 		</div>
-		<div class="alert-area">
-			<div class="nav-menu-zw">
-				
-			</div>
-			<div class="alert-content">
-				暂无内容
+		<!-- 中间部分 -->
+		<div class="nav-menu-zw">
+			1
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<div class="container">
+				<!-- 轮播图 -->
+				<div class="carousel">
+					<ul class="carousel-indicators">
+						<li class="active"></li>
+						<li></li>
+					</ul>
+		
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="w-100" src="./img/banner%201.png" alt=""/>
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="./img/banner.png" alt=""/>
+						</div>
+					</div>
+		
+					<a class="carousel-control carousel-control-prev" href="javascript:void(0);">
+						<img src="./img/Group%20129.png" alt=""/>
+					</a>
+		
+					<a class="carousel-control carousel-control-next" href="javascript:void(0);">
+						<img src="./img/Group%20130.png" alt=""/>
+					</a>
+				</div>
+				<!-- 成交信息 -->
+				<div class="row">
+					<div class="table-container w-100">
+						<table>
+							<thead>
+							<tr>
+								<th>产品名称</th>
+								<th>
+									当日价格¥
+								</th>
+								<th>
+									价格波动(一个月内)¥
+								</th>
+								<th>
+									当前存量
+								</th>
+								<th>
+									存量波动（一个月内）
+								</th>
+								<th>
+									当日价格¥
+								</th>
+								<th>
+									成交量（一个月内）
+								</th>
+								<th>
+									总成交量
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>原神·海灯节活动限定系列</td>
+								<td>1699</td>
+								<td class="text-success">4.71%</td>
+								<td>5</td>
+								<td>6</td>
+								<td>13</td>
+								<td>221</td>
+								<td>221</td>
+							</tr>
+							<tr>
+								<td>原神·韶光抚月系列</td>
+								<td>1699</td>
+								<td class="text-danger">4.71%</td>
+								<td>5</td>
+								<td>6</td>
+								<td>13</td>
+								<td>221</td>
+								<td>221</td>
+							</tr>
+							<tr>
+								<td>原神·白垩与黑龙系列</td>
+								<td>1699</td>
+								<td class="text-success">4.71%</td>
+								<td>5</td>
+								<td>6</td>
+								<td>13</td>
+								<td>221</td>
+								<td>221</td>
+							</tr>
+							<tr>
+								<td>APEX系列</td>
+								<td>1699</td>
+								<td class="text-success">4.71%</td>
+								<td>5</td>
+								<td>6</td>
+								<td>13</td>
+								<td>221</td>
+								<td>221</td>
+							</tr>
+							<tr>
+								<td>王者荣耀·燃星之曲系列</td>
+								<td>1699</td>
+								<td class="text-success">4.71%</td>
+								<td>5</td>
+								<td>6</td>
+								<td>13</td>
+								<td>221</td>
+								<td>221</td>
+							</tr>
+							<tr>
+								<td>王者荣耀·无限倾心系列</td>
+								<td>1699</td>
+								<td class="text-success">4.71%</td>
+								<td>5</td>
+								<td>6</td>
+								<td>13</td>
+								<td>221</td>
+								<td>221</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- 发现游戏资产 -->
+				<div class="row">
+					<div class="w-30">
+						<h3 style="padding: 0;" class="main-header">
+							<img src="./img/Rectangle%2062.png" alt=""/>
+							<span>发现游戏资产</span>
+						</h3>
+					</div>
+					<form class="w-40 main-search">
+						<input id="main-search" class="w-100" type="text" placeholder="通过名称或TOKEN ID搜索NFT"/>
+						<label for="main-search">搜索</label>
+					</form>
+					<div class="w-30 main-sort">
+						<div class="dropdown">
+							<a class="dropdown-toggler" href="">综合排序</a>
+							<div class="dropdown-menu">
+								<div>
+									<a href="">综合排序</a>
+									<a href="">按热度排序</a>
+									<a href="">价格升序</a>
+									<a href="">价格降序</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div style="color: #c2bec8; padding-left: 15px; padding-right: 15px;" class="w-100">共 3,783 个物品在售
+					</div>
+				</div>
+				<div class="row">
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets1.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets2.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets3.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets4.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets5.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets6.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets7.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets8.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets9.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets10.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets11.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets12.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets13.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets14.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets15.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets16.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets17.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets18.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets19.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+					<div class="w-auto">
+						<div class="card">
+							<div class="card-header">
+								<span class="number">余量 21 份</span>
+								<img class="w-100" src="./img/normalgameassets20.png" alt=""/>
+								<a class="buy-btn" href="GameAssetExchange.html">现在购买</a>
+							</div>
+							<div class="card-body">
+								<div class="card-title">
+									<span>CryptoPunks</span>
+									<img src="./img/img_2.png" alt=""/>
+								</div>
+								<p class="card-number">0083</p>
+								<span class="card-count">总量</span>
+								<span class="card-quantity">180份</span>
+								<p class="card-price">¥1600 <small>起</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 分页 -->
+				<div class="row pagination">
+					<a class="active" href="">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">6</a>
+					<a href="">7</a>
+					<a href="">8</a>
+					<a href="">...</a>
+				</div>
 			</div>
 		</div>
-		<!-- 引入导航的js -->
+		<div class="index-page-bottom-area">
+			<div class="index-page-bottom-area-content">
+				<div class="index-page-bottom-area-content-left">
+					<!-- 左上COAN Logo -->
+					<div class="index-page-bottom-area-content-left-COAN">
+						<div class="index-page-bottom-area-coan-head">
+							<img src="./img/logo.png" alt="">
+						</div>
+						<div class="index-page-bottom-area-coan-title">
+							COAN
+						</div>
+					</div>
+					<!-- 底下灰色文字 -->
+					<div class="index-page-bottom-area-content-left-desc">
+						©COAN, powered by WHU Security World.<br>
+						转载内容版权归作者及来源网站所有，本站原创内容转载请注明来源。
+					</div>
+				</div>
+				<div class="index-page-bottom-area-content-right">
+					<div class="index-page-bottom-area-content-right-menu">
+						<div class="bottom-area-memu-area">
+							<div class="bottom-area-menu-title">
+								探索
+							</div>
+							<div class="bottom-area-menu-item">
+								所有游戏
+							</div>
+							<div class="bottom-area-menu-item">
+								所有NFT
+							</div>
+							<div class="bottom-area-menu-item">
+								账户中心
+							</div>
+						</div>
+						<div class="bottom-area-memu-area">
+							<div class="bottom-area-menu-title">
+								支持
+							</div>
+							<div class="bottom-area-menu-item">
+								帮助中心
+							</div>
+							<div class="bottom-area-menu-item">
+								什么是NFT
+							</div>
+						</div>
+						<div class="bottom-area-memu-area">
+							<div class="bottom-area-menu-title">
+								服务
+							</div>
+							<div class="bottom-area-menu-item">
+								交换
+							</div>
+							<div class="bottom-area-menu-item">
+								购买
+							</div>
+						</div>
+						<div class="bottom-area-memu-area">
+							<div class="bottom-area-menu-title">
+								关于我们
+							</div>
+							<div class="bottom-area-menu-item">
+								联系我们
+							</div>
+							<div class="bottom-area-menu-item">
+								使用条款
+							</div>
+							<div class="bottom-area-menu-item">
+								隐私政策
+							</div>
+						</div>
+					</div>
+					<div class="index-page-bottom-area-cotent-right-btnarea">
+						<div class="btnarea-title">
+							Community
+						</div>
+						<div class="btn-items">
+							<img src="./img/微信.png" alt="">
+						</div>
+						<div class="btn-items">
+							<img src="./img/支付宝.png" alt="">
+						</div>
+						<div class="btn-items1">
+							<img src="./img/淘宝 1.png" alt="">
+						</div>
+						<div class="btn-items1">
+							<img src="./img/知乎 1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="js/navbar.js"></script>
 	</body>
 </html>
