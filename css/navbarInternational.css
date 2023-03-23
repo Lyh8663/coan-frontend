@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	background-color: #1C1B1F;
+}
+
+
+.nav-menu{
+	background-color: #1C1B1F;
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/* 好东西!让导航栏在最上面 */
+	z-index: 999;
+}
+
+.nav-leftArea{
+	height: 100%;
+	width: 500px;
+	display: flex;
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.nav-COANLogo{
+	/* background-color: aqua; */
+	height: 100%;
+	width: 75px;
+	margin-left: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-COANLogo img{
+	height: 90%;
+	width: 90%;
+	border: 0ch;
+}
+
+.nav-COANTitle{
+	/* background-color: coral; */
+	height: 100%;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-titleText{
+	font-weight: 600;
+	font-size: normal;
+	line-height: 30px;
+	font-size: 32px;
+	letter-spacing: 0.5px;
+	background: linear-gradient(
+		97.33deg,
+		#3ACEFD 26.97%,
+		#6E99F6 53.31%,
+		#837BF3 75.94%,
+		#995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.nav-searchArea{
+	/* background-color: brown; */
+	height: 100%;
+	width: 275px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-searchAreaAndIcon{
+	background-color: #302D38;
+	display: flex;
+	height: 40px;
+	align-items: center;
+	width: 225px;
+	border-radius: 100000px;
+}
+
+.nav-searchBar{
+	height: 25px;
+	background-color: #302D38;
+	border: 0;
+	margin-left: 20px;
+	font-size: 15px;
+	width: 160px;
+}
+
+.nav-searchImg{
+	/* background-color: #6E99F6; */
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-searchImg img{
+	height: 80%;
+	width: 80%;
+}
+
+.nav-rightArea{
+	height: 100%;
+	display: flex;
+}
+
+.nav-menuEntry{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+/* 调节menuEntry中的链接 */
+.nav-menuEntry a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-menuItem{
+	height: 100%;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	color: #CAC4D0;
+	overflow: hidden;
+}
+
+/* 下拉容器 */
+.nav-dropdown {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 下拉按钮 */
+.nav-dropdown .nav-dropbtn {
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* 对手机垂直对齐很重要 */
+  margin: 0; /* 对手机垂直对齐很重要 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #CAC4D0;
+}
+
+/* 下拉内容（默认隐藏）*/
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #302D38;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 150px;
+}
+
+/* 下拉列表中的链接 */
+.nav-dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #CAC4D0;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+}
+
+/* 为悬停时的下拉链接添加文字颜色 */
+.nav-dropdown-content a:hover {
+  /* Linear */
+  background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+.nav-dropbtn:hover{
+	color: white;
+}
+
+/* 悬停时显示下拉菜单 */
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+/* 选中时,按钮样式改为: */
+.nav-menuItemChosen{
+	height: 100%;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	color: white;
+}
+
+.nav-loginAndRegistArea{
+	/* background-color: cornflowerblue; */
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 130px;
+}
+
+.nav-userheadArea{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-userheadArea img{
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+
+.nav-loginAndRegistText{
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	color: #CAC4D0;
+}
+
+.nav-contactUs{
+	/* background-color: bisque; */
+	height: 100%;
+	width: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.nav-contactUs img{
+	height: 40px;
+	width: 40px;
+}
+
+.nav-contactText{
+	font-family: 'PingFang SC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	color: #CAC4D0;
+	margin-left: 10px;
+}

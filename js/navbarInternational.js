@@ -1,4 +1,4 @@
-console.log("执行navbar.js")
+console.log("执行navbarInternational.js")
 
 //登录以后，显示用户头像
 window.onload = function(){
@@ -22,6 +22,7 @@ let nav_menuItem0 = document.getElementById("nav-menuItem0");
 let nav_menuItem1 = document.getElementById("nav-menuItem1");
 let nav_menuItem2 = document.getElementById("nav-menuItem2");
 let nav_menuItem3 = document.getElementById("nav-menuItem3");
+let nav_menuItem4 = document.getElementById("nav-menuItem4");
 let nav_COANLogo = document.getElementById("nav-COANLogo")
 let nav_COANTitle = document.getElementById("nav-COANTitle");
 let nav_userhead = document.getElementById("nav-userhead");
@@ -51,6 +52,12 @@ nav_menuItem3.onmouseover = function(){
 nav_menuItem3.onmouseout = function(){
 	nav_menuItem3.className = 'nav-menuItem';
 }
+nav_menuItem4.onmouseover = function(){
+	nav_menuItem4.className = 'nav-menuItemChosen';
+}
+nav_menuItem4.onmouseout = function(){
+	nav_menuItem4.className = 'nav-menuItem';
+}
 
 //点击跳转
 // menuItem0.addEventListener("click", function(){
@@ -59,32 +66,36 @@ nav_menuItem3.onmouseout = function(){
 
 //NFT艺术品区
 nav_menuItem1.addEventListener("click", function(){
-    window.location.href="NFTArts.html";
+    window.location.href="NFTArtsInternational.html";
 });
 
 //COAN Daily
 nav_menuItem2.addEventListener("click", function(){
-    window.location.href="COANDaily.html";
+    window.location.href="COANDailyInternational.html";
 });
 
 //COAN Space
 nav_menuItem3.addEventListener("click", function(){
-    window.location.href="COANSpace.html";
+    window.location.href="COANSpaceInternational.html";
+});
+
+nav_menuItem4.addEventListener("click", function(){
+    window.location.href="VirtualAssetTransactions.html";
 });
 
 //首页
 nav_COANLogo.addEventListener("click", function(){
-    window.location.href="index.html";
+    window.location.href="indexInternational.html";
 });
 
 nav_COANTitle.addEventListener("click", function(){
-    window.location.href="index.html";
+    window.location.href="indexInternational.html";
 });
 
 //用户头像/名字被点击的事件
 nav_userhead.addEventListener("click", function(){
 	if(window.sessionStorage.getItem("username")!=null){//已经登录了
-		window.location.href = "Self-infomation.html";
+		window.location.href = "Self-infomationInternational.html";
 		return;
 	}
     window.location.href="LoginAndRegist.html";
@@ -92,12 +103,12 @@ nav_userhead.addEventListener("click", function(){
 
 nav_usertitle.addEventListener("click", function(){
 	if(window.sessionStorage.getItem("username")!=null){//已经登录了
-		window.location.href = "Self-infomation.html";
+		window.location.href = "Self-infomationInternational.html";
 		return;
 	}
     window.location.href="LoginAndRegist.html";
 });
 
 nav_ContactLogo.addEventListener("click", function(){
-    window.location.href="ContactUs.html";
+    window.location.href="ContactUsInternational.html";
 });
