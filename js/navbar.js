@@ -1,3 +1,5 @@
+console.log("执行navbar.js")
+
 //登录以后，显示用户头像
 window.onload = function(){
 	console.log(window.sessionStorage.getItem("username"));
