@@ -1,74 +1,303 @@
 .bg {
-    height: 760px;
-    width: 1535.2px;
+    height: 685px;
+    width: 1536px;
 
-    background-image: url(../img/Space_background.png);
+    background-image: url(../img/space_background.png);
     /* 自适应宽高 */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.plannet1{
+/* 用于占位 */
+.nav-menu-zw {
+    height: 75px;
+    width: 100%;
+}
+
+div p {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
+    color: #FEFAFA;
+}
+
+.plannet1 {
     position: absolute;
-    width: 363px;
-    height: 513px;
-    left: 596px;
-    top: 140px;
+    width: 290px;
+    height: 410px;
+    left: 610px;
+    top: 220px;
 
     background-image: url(../img/Space_plannet1.png);
     /* 自适应宽高 */
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    /* 动画向 */
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
 }
 
-.plannet2{
+.plannet1:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.plannet1 #position {
     position: absolute;
-    width: 214px;
-    height: 214px;
-    left: 90px;
+    width: 35px;
+    height: 50px;
+    left: 42%;
     top: 60px;
+    background-image: url(../img/space_position.png);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.plannet1 p {
+    position: relative;
+    left: 38%;
+    top: 305px;
+}
+
+.plannet2 {
+    position: absolute;
+    width: 224px;
+    height: 224px;
+    left: 110px;
+    top: 100px;
 
     background-image: url(../img/Space_plannet2.png);
     /* 自适应宽高 */
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    /* 动画向 */
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
 }
 
-.plannet3{
+.plannet2:hover{
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.plannet2 p {
+    position: relative;
+    left: 35%;
+    top: 200px;
+    font-size: 24px;
+}
+
+.plannet3 {
     position: absolute;
     width: 200px;
     height: 200px;
-    left: 120px;
-    top: 300px;
+    left: 160px;
+    top: 335px;
 
     background-image: url(../img/Space_plannet3.png);
     /* 自适应宽高 */
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    /* 动画向 */
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
 }
 
-.plannet4{
+.plannet3:hover{
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.plannet3 p {
+    position: relative;
+    left: 12%;
+    top: 165px;
+    font-size: 24px;
+}
+
+.plannet4 {
     position: absolute;
-    width: 125px;
-    height: 125px;
-    left: 580px;
-    top: 620px;
+    width: 126px;
+    height: 126px;
+    left: 590px;
+    top: 630px;
 
     background-image: url(../img/Space_plannet4.png);
     /* 自适应宽高 */
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    /* 动画向 */
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+    /* rotate: -0.2rad; */
 }
 
-.plannet5{
+.plannet4:hover{
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.plannet4 p {
+    position: relative;
+    left: 30%;
+    top: -40px;
+    font-size: 24px;
+}
+
+.plannet5 {
     position: absolute;
-    width: 173px;
-    height: 110px;
-    left: 900px;
-    top: 396px;
+    width: 150px;
+    height: 100px;
+    left: 925px;
+    top: 380px;
 
     background-image: url(../img/Space_plannet5.png);
     /* 自适应宽高 */
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    /* 动画向 */
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.plannet5:hover{
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.plannet5 p {
+    position: relative;
+    left: 30%;
+    top: -40px;
+    font-size: 24px;
+}
+
+.chatting {
+    position: absolute;
+    width: 500px;
+    left: 20px;
+    top: 550px;
+}
+
+.chatting p {
+    position: relative;
+    left: 20px;
+    margin-bottom: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    color: #C1BBBB;
+}
+
+.chatting span {
+    margin-right: 20px;
+    /* margin-bottom: 10px; */
+
+
+
+    background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.chatting #bar {
+    position: relative;
+    height: 40px;
+    width: 550px;
+    background: #302D38;
+
+    border: #302D38;
+    border-radius: 25px;
+}
+
+#bar #discription {
+    display: inline-block;
+    line-height: 38px;
+}
+
+#bar #button {
+    position: relative;
+    left: 390px;
+    top: 0px;
+    height: 30px;
+    width: 85px;
+    display: inline-block;
+
+    line-height: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+
+    border: #995BF0;
+    border-radius: 19px;
+
 }
