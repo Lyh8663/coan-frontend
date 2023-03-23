@@ -1,10 +1,7 @@
-body{
-    
-}
 
 .content {
     /* height: 760px; */
-    height: 900px;
+    height: 1080px;
     width: 100%;
     /* background-color: aquamarine; */
     background-color: #1C1B1F;
@@ -151,7 +148,7 @@ body{
     color: #CAC4D0;
 }
 
-.articlebox .article-content p {
+.articlebox .article-content a {
     /* 字号较小 */
     position: absolute;
     width: 95%;
