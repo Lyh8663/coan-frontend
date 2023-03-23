@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no">
+		<title>实名认证</title>
+		<!-- 引入导航栏样式 -->
+		<link rel="stylesheet" href="./css/navbar.css">
+		<!-- 引入该页样式 -->
+		<link rel="stylesheet" href="./css/RealNameAuthentication.css">
+	</head>
+	<body>
+		<!-- 引入nav-menu -->
+		<div class="nav-menu">
+			<div class="nav-leftArea">
+				<div class="nav-COANLogo">
+					<img src="img/logo花旗杯secai 1.png" alt="" id="nav-COANLogo">
+				</div>
+				<div class="nav-COANTitle">
+					<div class="nav-titleText"" id="nav-COANTitle">COAN</div>
+				</div>
+				<div class="nav-searchArea">
+					<div class="nav-searchAreaAndIcon">
+						<input type="text" class="nav-searchBar" placeholder="搜你想要">
+						<div class="nav-searchImg">
+							<img src="img/searchIcon.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-rightArea">
+				<div class="nav-menuEntry">
+					<!-- <div class="menuItem" id="menuItem0">NFT交易区</div> -->
+					<div class="nav-menuItem" id="nav-menuItem1">
+						
+						<div class="nav-dropdown">
+						    <button class="nav-dropbtn">游戏资产交易
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="nav-dropdown-content">
+						      <a href="NormalGameAssetTrading.html">普通游戏资产</a>
+						      <a href="MetaGameAssetTrading.html" style="font-size: 15px;">元宇宙游戏资产</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem0">
+						<div class="nav-dropdown">
+						    <button class="nav-dropbtn">NFT艺术品
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="nav-dropdown-content">
+						      <a href="NFTArts.html">NFT艺术品</a>
+						      <a href="NFTAuthoring.html">创作者专区</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem2">
+						COAN Daily
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem3">COAN Space</div>
+				</div>
+				<div class="nav-loginAndRegistArea">
+					<div class="nav-userheadArea" id="nav-userhead">
+						<img src="img/userhead.png" alt="" id="userheadPic">
+					</div>
+					<div class="nav-loginAndRegistText" id="nav-usertitle">登录</div>
+				</div>
+				<div class="nav-contactUs" id="nav-ContactLogo">
+					<img src="img/contactUs.png" alt="" >
+					<div class="nav-contactText">联系我们</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏占位 -->
+		<div class="nav-menu-zw"> </div>
+		<div class="main-area">
+			<div class="main-card">
+				<div class="card-title">
+					实名认证
+				</div>
+				<div class="big-title">
+					<div class="big-title-area">
+						<div class="title-box">
+							
+						</div>
+						<div class="title-text">
+							短信验证
+						</div>
+					</div>
+				</div>
+				<div class="phone-area">
+					<div class="input-area">
+						<div class="row1">
+							<div class="input-prefix-area">
+								<button onclick="myFunction()" id="prefix-title" class="dropbtn prefix-title">+86(大陆)</button>
+								<!-- <div class="prefix-item">
+									<ul>
+										<li>+852（香港）</li>
+										<li>+886（台湾）</li>
+										<li>+853（澳门）</li>
+										<li>+65（新加坡）</li>
+									</ul>
+								</div> -->
+								<div id="myDropdown" class="dropdown-content">
+								    <a href="">+852（香港）</a>
+								    <a href="">+886（台湾）</a>
+								    <a href="">+853（澳门）</a>
+									<a href="">+65（新加坡）</a>
+								  </div>
+							</div>
+							<div class="input-num-area">
+								<input type="text" class="input-text" placeholder="请输入手机号">
+							</div>
+							<div class="input-sendbtn-area">
+								<button class="input-send-btn">发送验证码</button>
+							</div>
+						</div>
+						<div class="line">
+							
+						</div>
+						<div class="row2">
+							<div class="row2-left-area">
+								验证码
+							</div>
+							<div class="row2-right-area">
+								<input type="text" class="code-input-area" placeholder="请输入验证码">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="big-title">
+					<div class="big-title-area">
+						<div class="title-box">
+							
+						</div>
+						<div class="title-text">
+							身份信息
+						</div>
+					</div>
+				</div>
+				<div class="type-row">
+					<div class="type-row-title">
+						<div class="type-row-title-text">
+							证件类型：
+						</div>
+					</div>
+				</div>
+				<div class="type-row">
+					<div class="type-row-title">
+						<form class="checkbox-area">
+							<div class="checkbox-item">
+								<input type="radio" id="" name="optradio">
+								居民身份证
+							</div>
+							<div class="checkbox-item">
+								<input type="radio" id="" name="optradio">
+								港澳台通行证
+							</div>
+							<div class="checkbox-item">
+								<input type="radio" id="" name="optradio">
+								外国人永久居住证
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="type-row">
+					<div class="type-row-title">
+						<div class="type-row-title-text">
+							您的真实姓名：
+						</div>
+						<div class="nameandid-info-input-area">
+							<input type="text"">
+						</div>
+					</div>
+				</div>
+				<div class="type-row">
+					<div class="type-row-title">
+						<div class="type-row-title-text">
+							证件号码：
+						</div>
+						<div class="nameandid-info-input-area">
+							<input type="text">
+						</div>
+					</div>
+				</div>
+				<div class="type-row">
+					<div class="type-row-title-btn">
+						<button id="finish-btn">登记</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 下拉菜单的脚本 -->
+		<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+		
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+		</script>
+		<script src="./js/RealNameAuthentication.js"></script>
+	</body>
+</html>

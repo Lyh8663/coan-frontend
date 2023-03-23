@@ -59,11 +59,23 @@ function login(){
 			console.log(res);
 			console.log("请求发起成功");
 			if(res.success){
-				// alert("Login was successful!");
 				window.sessionStorage.setItem("userinfo",res.data.userInfo);
-				console.log(res.data.userInfo);
-				// window.open("index.html");
-				// window.close("LoginAndRegist.html");
+				window.sessionStorage.setItem("username",res.data.userInfo.username);
+				window.sessionStorage.setItem("userId",res.data.userInfo.id);
+				if(res.data.isFirstLogin){//如果第一次登录，则需要实名认证
+					location.href="RealNameAuthentication.html";
+					alert("welcome! Dear "+ res.data.userInfo.username);
+				}
+				/*
+				"userInfo": {
+				            "id": 1638489971167010817,
+				            "username": "e_1005772685@qq.com",
+				            "phone": null,
+				            "email": "1005772685@qq.com",
+				            "registTime": "2023-03-22 18:37:05"
+				        },
+				*/
+				alert("welcome! Dear "+ res.data.userInfo.username);
 				location.href="index.html";
 			}
 			else{
