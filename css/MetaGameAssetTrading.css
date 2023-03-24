@@ -1214,3 +1214,31 @@ body {
 	height: 120%;
 	width: 120%;
 }
+
+.publish-entry{
+	position: fixed;
+	height: 60px;
+	width: 160px;
+	z-index: 999;
+	top: 550px;
+	/* left: 100px; */
+	right: 100px;
+	/* background-color: #3ACEFD; */
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	/* color: white; */
+	border-radius: 200px;
+	/* box-shadow: #2f2d37 1 1; */
+	box-shadow: 1px 1px 10px black;
+}
+
+.publish-entry a{
+	text-decoration:none;
+	color: white;
+	/* text-shadow: 0px 0px 100px 10PX black; */
+	text-shadow: 1px 1px 10px black;
+}
