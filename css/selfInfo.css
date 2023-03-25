@@ -16,9 +16,9 @@
 /* upper框样式 */
 .up {
     position: absolute;
-    width: 70%;
+    width: 1065px;
     height: 197px;
-    left: 15%;
+    left: 227.5px;
     top: 128px;
 
     background: #302D38;
@@ -137,7 +137,7 @@
     line-height: 30px;
 }
 
-#edit-info{
+#edit-info {
     position: absolute;
     width: 15%;
     height: 30px;
@@ -150,7 +150,7 @@
     border-image-slice: 1;
 }
 
-#edit-info p{
+#edit-info p {
     width: 97%;
     height: 42px;
 
@@ -253,9 +253,9 @@
 /* down-left框样式 */
 .down-left {
     position: absolute;
-    width: 20%;
-    height: 500px;
-    left: 15%;
+    width: 310px;
+    height: 525px;
+    left: 227.5px;
     top: 340px;
 
     background: #302D38;
@@ -337,9 +337,9 @@
 /* down-right-fabu框样式 */
 .down-right-fabu {
     position: absolute;
-    width: 49%;
-    height: 500px;
-    left: 36%;
+    width: 745px;
+    height: 525px;
+    left: 547.5px;
     top: 340px;
 
     background: #302D38;
@@ -588,8 +588,8 @@
 .down-right-zichan {
     position: absolute;
     height: 700px;
-    width: 49%;
-    left: 36%;
+    width: 745px;
+    left: 547.5px;
     top: 340px;
 
     background: #302D38;
@@ -903,11 +903,274 @@
 }
 
 
+/* COAN分样式 */
+.down-right-COANscore {
+    position: absolute;
+    width: 745px;
+    height: 700px;
+    left: 547.5px;
+    top: 340px;
+
+    background: #302D38;
+    backdrop-filter: blur(5px);
+
+
+    border-radius: 6px;
+}
+
+.down-right-COANscore #right-title {
+    position: absolute;
+    width: 100%;
+    height: 53px;
+    left: 5%;
+    top: 10px;
+
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+
+.down-right-COANscore #right-first-divider {
+    position: absolute;
+    /* left: 100%; */
+    top: 70px;
+
+    background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 0%, #995BF0 47.45%, rgba(110, 153, 246, 0) 92.02%);
+
+    border: 0.5px solid;
+
+    border-image-source: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 0%, #995BF0 47.45%, rgba(110, 153, 246, 0) 92.02%);
+
+    height: 0.5px;
+    width: 100%;
+}
+
+.down-right-COANscore .content-box {
+    position: relative;
+    top: 95px;
+    height: 180px;
+    width: 90%;
+    left: 3%;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+
+    font-family: 'PingFang SC';
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.content-box #title {
+    position: relative;
+    left: 3%;
+    top: 10px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+}
+
+.content-box img {
+    position: relative;
+    height: 70px;
+    left: 15%;
+    top: 20px;
+}
+
+.content-box .level {
+    position: relative;
+    left: 6.5%;
+    top: 56px;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+
+    display: inline-block;
+}
+
+.content-box #value {
+    position: relative;
+    left: 40%;
+    top: 0px;
+
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 56px;
+
+    display: inline-block;
+}
+
+.content-box #loading-bar {
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 40%;
+    top: 122px;
+
+    background: #6F6F6F;
+}
+
+.content-box #color-padding{
+    width: 100px;
+    height: 40px;
+    left: 40%;
+    top: 122px;
+
+    background: #8875F2;
+}
 
 
 
 
+.down-right-COANscore #right-second-divider {
+    position: absolute;
+    /* left: 100%; */
+    top: 300px;
 
+    background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 0%, #995BF0 47.45%, rgba(110, 153, 246, 0) 92.02%);
+
+    border: 0.5px solid;
+
+    border-image-source: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 0%, #995BF0 47.45%, rgba(110, 153, 246, 0) 92.02%);
+
+    height: 0.5px;
+    width: 100%;
+}
+
+.down-right-COANscore table {
+    position: relative;
+    top: 135px;
+    left: 8%;
+    width: 80%;
+
+    border-collapse: collapse;
+}
+
+tr {
+    height: 70px;
+    border-top: 0.1px solid;
+    border-bottom: 0.1px solid;
+    border-color: linear-gradient(270deg, rgba(202, 196, 208, 0) 0%, rgba(202, 196, 208, 0.3) 19.13%, rgba(202, 196, 208, 0.3) 51.53%, rgba(202, 196, 208, 0.3) 83.41%, rgba(202, 196, 208, 0) 102%);
+}
+
+thead tr {
+    height: 50px;
+
+}
+
+tbody tr:hover {
+    background: linear-gradient(90deg, rgba(82, 193, 255, 0) 0%, rgba(100, 168, 251, 0.457959) 14.9%, rgba(116, 145, 248, 0.88) 50.37%, rgba(141, 108, 243, 0.280851) 83.26%, rgba(153, 91, 240, 0) 98.68%);
+    opacity: 0.8;
+    border-radius: 2px;
+}
+
+
+.down-right-COANscore #division-title {
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+
+    color: #FFFFFF;
+}
+
+.down-right-COANscore thead {
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.down-right-COANscore thead #one {
+    position: relative;
+    width: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.down-right-COANscore thead #two {
+    position: relative;
+    width: 50px;
+    padding-left: 30px;
+    padding-right: 25px;
+}
+
+.down-right-COANscore thead #thr {
+    position: relative;
+    width: 240px;
+    padding-left: 100px;
+    /* padding-right: 25px; */
+}
+
+.down-right-COANscore thead #fou {
+    position: relative;
+    width: 50px;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+.down-right-COANscore thead td {}
+
+.down-right-COANscore tbody {
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.down-right-COANscore tbody #one {
+    position: relative;
+    width: 50px;
+    padding-left: 35px;
+    padding-right: 25px;
+}
+
+.down-right-COANscore tbody #two {
+    position: relative;
+    width: 50px;
+    padding-left: 30px;
+    padding-right: 25px;
+}
+
+.down-right-COANscore tbody #thr {
+    position: relative;
+    width: 240px;
+    padding-left: 20px;
+    /* padding-right: 25px; */
+}
+
+.down-right-COANscore tbody #fou {
+    position: relative;
+    width: 50px;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+table #divider {
+    position: absolute;
+    width: 900px;
+    height: 2.05px;
+    left: 672px;
+    top: 86px;
+
+    background: linear-gradient(270deg, rgba(202, 196, 208, 0) 0%, rgba(202, 196, 208, 0.3) 19.13%, rgba(202, 196, 208, 0.3) 51.53%, rgba(202, 196, 208, 0.3) 83.41%, rgba(202, 196, 208, 0) 102%);
+}
 
 
 
