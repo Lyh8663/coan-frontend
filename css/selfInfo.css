@@ -139,9 +139,9 @@
 
 #edit-info{
     position: absolute;
-    width: 10%;
+    width: 15%;
     height: 30px;
-    left: 86%;
+    left: 81%;
     top: 40px;
 
     clip-path: inset(0 round 5px);
@@ -254,7 +254,7 @@
 .down-left {
     position: absolute;
     width: 20%;
-    height: 463px;
+    height: 500px;
     left: 15%;
     top: 340px;
 
@@ -338,7 +338,7 @@
 .down-right-fabu {
     position: absolute;
     width: 49%;
-    height: 463px;
+    height: 500px;
     left: 36%;
     top: 340px;
 
