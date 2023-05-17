@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- 国际版登录注册页面 -->
-    <title>COAN CHINA Official</title>
+	<!-- 国内版登录注册页面 -->
+    <title>COAN中国官网</title>
     <link rel="stylesheet" href="./css/LoginAndRegist.css">
 	<!-- 使用cdn的方式引入jquery -->
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script> 
@@ -14,10 +14,10 @@
     <!-- NAVBAR CREATION -->
    <header class="header">
     <nav class="navbar">
-        <a href="indexInternational.html">Home</a>
-          <a href="indexInternational.html">About</a>
-          <a href="indexInternational.html">Contact</a>
-          <a href="indexInternational.html">Help</a>
+        <a href="index.html">首页</a>
+          <a href="index.html">关于</a>
+          <a href="index.html">联系</a>
+          <a href="index.html">帮助</a>
     </nav>
     <!-- <form action="" class="search-bar">
        <input type="text" placeholder="Search...">
@@ -28,12 +28,12 @@
     <div class="background"></div>
     <div class="container">
         <div class="item">
-            <h2 class="logo"><i class='bx bxl-xing'></i>COAN China</h2>
+            <h2 class="logo"><i class='bx bxl-xing'></i>COAN 中国</h2>
             <div class="text-item">
-                <h2>Welcome! <br><span>
-                    To Our Channel
+                <h2>欢迎您! <br><span>
+                    访问我们的官网
                 </span></h2>
-                <p>COAN is a comprehensive platform for virtual asset trading and security management.</p>
+                <p>COAN是一个致力于虚拟资产交易和安全管理的综合平台。</p>
                 <div class="social-icon">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -46,21 +46,21 @@
         <div class="login-section">
             <div class="form-box login">
                 <div action="">
-                    <h2>Sign In</h2>
+                    <h2>登 录</h2>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
                         <input type="email" required id="email">
-                        <label >Email</label>
+                        <label>邮箱</label>
                     </div>
 					<div class="sendEmailCode" onclick="sendEmailCode()">
-						<label for="">sendEmailCode</label>
+						<label for="">发送邮件验证码</label>
 					</div>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
 						<input type="password" required id="code">
-                        <label>Code</label>
+                        <label>验证码</label>
                     </div>
-					<button class="btn" onclick="login()">Login In</button>
+					<button class="btn" onclick="login()">开启COAN之旅</button>
                 </div>
 				
             </div>

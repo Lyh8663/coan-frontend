@@ -4,6 +4,9 @@ console.log("执行navbar.js")
 window.onload = function(){
 	// console.log(window.sessionStorage.getItem("username"));
 	var username = window.sessionStorage.getItem("username");//获取到userInfo
+	if(username == null){
+		console.log("用户尚未登陆");
+	}
 	if(username != null){//如果userInfo不为null，说明已经登录
 		let usernameArea = document.getElementById("nav-usertitle");
 		if(username.length>=5){
@@ -83,19 +86,21 @@ nav_COANTitle.addEventListener("click", function(){
 
 //用户头像/名字被点击的事件
 nav_userhead.addEventListener("click", function(){
+	console.log("国内版的登录/用户区被点击了")
 	if(window.sessionStorage.getItem("username")!=null){//已经登录了
 		window.location.href = "Self-infomation.html";
 		return;
 	}
-    window.location.href="LoginAndRegist.html";
+    window.location.href="LoginAndRegistZH.html";
 });
 
 nav_usertitle.addEventListener("click", function(){
+	console.log("国内版的登录/用户区被点击了")
 	if(window.sessionStorage.getItem("username")!=null){//已经登录了
 		window.location.href = "Self-infomation.html";
 		return;
 	}
-    window.location.href="LoginAndRegist.html";
+    window.location.href="LoginAndRegistZH.html";
 });
 
 nav_ContactLogo.addEventListener("click", function(){

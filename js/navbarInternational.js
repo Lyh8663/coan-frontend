@@ -4,7 +4,13 @@ console.log("执行navbarInternational.js")
 window.onload = function(){
 	// console.log(window.sessionStorage.getItem("username"));
 	var username = window.sessionStorage.getItem("username");//获取到userInfo
+	console.log(username);
+	
+	if(username == null){
+		console.log("用户尚未登陆");
+	}
 	if(username != null){//如果userInfo不为null，说明已经登录
+		console.log("用户已经登陆");
 		let usernameArea = document.getElementById("nav-usertitle");
 		if(username.length>=5){
 			usernameArea.innerHTML = username.slice(0,5) + "...";//省略写法
@@ -85,6 +91,7 @@ nav_menuItem4.addEventListener("click", function(){
 
 //首页
 nav_COANLogo.addEventListener("click", function(){
+	console.log("国际版的logo被点击了")
     window.location.href="indexInternational.html";
 });
 
@@ -94,6 +101,7 @@ nav_COANTitle.addEventListener("click", function(){
 
 //用户头像/名字被点击的事件
 nav_userhead.addEventListener("click", function(){
+	console.log("国际版的登录/用户区被点击了")
 	if(window.sessionStorage.getItem("username")!=null){//已经登录了
 		window.location.href = "Self-infomationInternational.html";
 		return;
@@ -102,6 +110,7 @@ nav_userhead.addEventListener("click", function(){
 });
 
 nav_usertitle.addEventListener("click", function(){
+	console.log("国际版的登录/用户区被点击了")
 	if(window.sessionStorage.getItem("username")!=null){//已经登录了
 		window.location.href = "Self-infomationInternational.html";
 		return;
