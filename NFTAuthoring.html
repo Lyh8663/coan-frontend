@@ -9,7 +9,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no">
 	</head>
-	<body>
+	<body onclick="hidePopup()">
 		<!-- 引入nav-menu -->
 		<div class="nav-menu">
 			<div class="nav-leftArea">
@@ -17,7 +17,7 @@
 					<img src="img/logohqbsecai 1.png" alt="" id="nav-COANLogo">
 				</div>
 				<div class="nav-COANTitle">
-					<div class="nav-titleText"" id="nav-COANTitle">COAN</div>
+					<div class="nav-titleText" id="nav-COANTitle">COAN</div>
 				</div>
 				<div class="nav-searchArea">
 					<div class="nav-searchAreaAndIcon">
@@ -288,9 +288,17 @@
 										<label for="setting">引导力度：</label>
 										<input id="setting" class="form-control" placeholder="请输入0-25的数字(默认为7.5)"
 											   type="text"/>
-										<a href="">
+										<a href="#" id="showPopup" onclick="showPopup()">
 											<img src="./img/img_18.png" alt=""/>
 										</a>
+									</div>
+									<div id="overlay">
+										<div class="popup">
+											<p class="popup_title">说明</p>
+											<p class="popup_content">
+												对于引导力度的描述
+											</p>
+										</div>
 									</div>
 								</div>
 								<div class="form-group">
@@ -359,5 +367,22 @@
 		</div>
 		<!-- 引入导航的js -->
 		<script src="js/navbar.js"></script>
+
+		<script>
+			var i;
+			function showPopup(){
+				i = 2;
+				var overlay = document.getElementById("overlay");
+				overlay.style.display = "block";
+			}
+			function hidePopup(){
+				i--;
+				var overlay = document.getElementById("overlay");
+				if (overlay.style.display == "block" && i == 0){
+					overlay.style.display = "none";
+				};
+			}
+		</script>
 	</body>
+
 </html>
