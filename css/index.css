@@ -25,8 +25,9 @@ html{
 	justify-content: space-between;
 	/* 星球图层有点糊,需要进行适当修改 */
 	background-image: url(../img/littleStars.png);
-	background-position: center;
+	background-position: top;
 	background-size: cover;
+	background-repeat: repeat;
 }
 
 .firstContentPageLeftArea{
