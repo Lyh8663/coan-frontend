@@ -301,3 +301,116 @@ div p {
     border-radius: 19px;
 
 }
+
+/* 这一块是用户信息的样式 */
+.space-user-infobg{
+	height:130px;
+	width: 300px;
+	background-color: #302D38;
+	opacity: 0.8;
+	position: absolute;
+	top: 100px;
+	left: 30px;
+	z-index: 79;
+	border-radius: 20px;
+}
+.space-user-infotitle{
+	position: absolute;
+	top: 100px;
+	left: 30px;
+	/* background-color: black; */
+	height: 50px;
+	width: 300px;
+	z-index: 80;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-around; */
+}
+.space-user-infotitle img{
+	width: 25px;
+	height: 25px;
+	margin-left: 20px;
+}
+.user-info-title-text{
+	color: white;
+	margin-left: 20px;
+}
+.space-user-infounderline{
+	height: 1px;
+	width: 270px;
+	z-index: 80;
+	position: absolute;
+	top: 145px;
+	left: 45px;
+	background-color: #CAC4D0;
+	opacity: 0.8;
+}
+.space-user-infodetail{
+	z-index: 80;
+	position: absolute;
+	top: 150px;
+	left: 30px;
+	width: 300px;
+	height: 80px;
+	/* background-color: #fff; */
+	display: flex;
+	align-items: center;
+}
+.space-user-infohead{
+	/* background-color: #995BF0; */
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.space-user-infohead img{
+	width: 100%;
+	height: 100%;
+}
+.space-user-infonameandpage{
+	/* background-color: #995BF0; */
+	width: 200px;
+	height: 60px;
+	
+}
+.space-user-infofirstrow{
+	margin-left: 20px;
+	letter-spacing: 0.05em;
+	color: white;
+	font-weight: 400;
+}
+.space-user-infosecondline{
+	display: flex;
+	width: 100%;
+	height: 40px;
+	/* background-color: #3ACEFD; */
+	align-items: center;
+}
+.space-user-infolevel{
+	margin-left: 20px;
+	width: 50px;
+	height: 25px;
+	background-color: #7D7884;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border-radius: 100000000px;
+}
+.spacce-user-infoentry{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100000000px;
+	margin-left: 20px;
+	margin-left: 20px;
+	width: 100px;
+	height: 25px;
+	/* background-color: #7D7884; */
+	border: border: 1px solid;
+	color: white;
+	font-size: 14px;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+}
