@@ -31,10 +31,13 @@ div p {
 
 .plannet1 {
     position: absolute;
+	/* position: relative; */
     width: 290px;
     height: 410px;
     left: 610px;
     top: 220px;
+	/* left: 40vw; */
+	/* top: 15vh; */
 
     background-image: url(../img/Space_plannet1.png);
     /* 自适应宽高 */
@@ -79,10 +82,13 @@ div p {
 
 .plannet2 {
     position: absolute;
+	/* position: relative; */
     width: 224px;
     height: 224px;
     left: 110px;
     top: 100px;
+	/* left: 10%; */
+	/* top: -50vh; */
 
     background-image: url(../img/Space_plannet2.png);
     /* 自适应宽高 */
@@ -115,10 +121,13 @@ div p {
 
 .plannet3 {
     position: absolute;
+	/* position: relative; */
     width: 200px;
     height: 200px;
     left: 160px;
     top: 335px;
+	/* left: 10%; */
+	/* top: -40%; */
 
     background-image: url(../img/Space_plannet3.png);
     /* 自适应宽高 */
@@ -151,10 +160,13 @@ div p {
 
 .plannet4 {
     position: absolute;
+	/* position: relative; */
     width: 126px;
     height: 126px;
     left: 590px;
     top: 630px;
+	/* left: 40%; */
+	/* top: -25%; */
 
     background-image: url(../img/Space_plannet4.png);
     /* 自适应宽高 */
@@ -189,10 +201,13 @@ div p {
 
 .plannet5 {
     position: absolute;
+	/* position: relative; */
     width: 150px;
     height: 100px;
     left: 925px;
     top: 380px;
+	/* left: 58%; */
+	/* top: -68%; */
 
     background-image: url(../img/Space_plannet5.png);
     /* 自适应宽高 */

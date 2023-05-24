@@ -122,6 +122,7 @@
 	height: calc(100vh - 75px);
 	/* background-color: antiquewhite; */
 	background: url(../img/Squarebg.png);
+	background-repeat: no-repeat;
 }
 
 /* 接下来为聊天框样式 */
