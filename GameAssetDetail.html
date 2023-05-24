@@ -135,15 +135,49 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-right-area">{{assetImgSrc}}</div>
+			<div class="container-right-area">
+				<div class="trade-title-area">
+					<div class="trade-title">
+						交易信息
+					</div>
+					<div class="trade-sort-btn">
+						<div class="trade-sort-btn-title">
+							综合排序
+						</div>
+					</div>
+				</div>
+				<div class="kind-choose-title-area">
+					<!-- 为什么点击回调没效果,现在成功啦 -->
+					<div class="buy-way-title title-unchosen" @click="changeIndex(0)">
+						购买渠道
+					</div>
+					<div class="exchange-way-title title-unchosen" @click="changeIndex(1)">
+						交换渠道
+					</div>
+				</div>
+				{{this.chosenIndex}}
+				<div class="kind-choose-underline-area">
+					<div class="buy-way-underline underline-unchosen">
+						
+					</div>
+					<div class="exchange-way-underline underline-unchosen">
+						
+					</div>
+				</div>
+			</div>
 		</div>
 		<script>
 		    const vm = new Vue({
 		        el: "#app",
 		        data: {
-					assetImgSrc:"./img/img_23.png"
+					assetImgSrc:"./img/img_23.png",
+					chosenIndex:0,
 				},
-		        methods: {}
+		        methods: {
+					changeIndex(i){
+						this.chosenIndex = i;
+					}
+				}
 		    })
 		</script>
 		<!-- 引入导航的js -->
