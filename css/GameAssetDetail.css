@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #1c1b1f no-repeat url("../img/背景.png");
+}
+
+body {
+    font-size: 14px;
+}
+
+.container {
+    width: 76rem;
+    margin: 0 auto;
+	/* background-color: aliceblue; */
+	display: flex;
+	margin-top: 3vh;
+}
+
+.container-left-area{
+	flex: 4;
+	background-color: #302D38;
+	margin-right: .75rem;
+	border-radius: 10px;
+}
+
+.container-right-area{
+	flex: 6;
+	background-color: aquamarine;
+	margin-left: .75rem;
+}
+
+.assetImg-area{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: antiquewhite; */
+	width: 92%;
+	margin-left: 4%;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 4%;
+	margin-bottom: 5%;
+}
+
+.assetImg{
+	width: 100%;
+}
+
+.assettitle-area{
+	display: flex;
+	width: 90%;
+	margin-left: 5%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.asset-title{
+	color: white;
+	font-size: 25px;
+	letter-spacing: 0.075em;
+	font-weight: 600;
+}
+
+.asset-kind{
+	color: #CAC4D0;
+	font-size: 18px;
+}
+
+.asset-info-title{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 4%;
+	font-size: 18px;
+	color: white;
+	letter-spacing: 0.075em;
+	margin-bottom: 4%;
+}
+
+.asset-info-line{
+	width: 90%;
+	margin-left: 5%;
+	height: 1%;
+	/* background-color: aqua; */
+	margin-bottom: 4%;
+	background: linear-gradient(270deg, rgba(202, 196, 208, 0) 0%, rgba(202, 196, 208, 0.3) 26.03%, rgba(202, 196, 208, 0.3) 51.53%, rgba(202, 196, 208, 0.3) 77.03%, rgba(202, 196, 208, 0) 102%);
+}
+
+.asset-detail-row{
+	width: 90%;
+	margin-left: 5%;
+	display: flex;
+	align-items: center;
+	font-weight: 300;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.asset-detail-label{
+	flex: 4;
+	color: white;
+	font-weight: 300;
+	font-size: 18px;
+	height: 100%;
+}
+
+.asset-detail-tags{
+	flex: 15;
+	display: flex;
+	height: 100%;
+}
+
+.asset-detail-tag{
+	width: 20%;
+	background-color: #28262F;
+	margin-right: 5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+
