@@ -219,13 +219,107 @@
 					</div>
 				</div>
 				<div class="buyorexchangebtn-area">
-					<button class="buyorexchangebtn">
+					<button class="buyorexchangebtn" @click="openDialog()">
 						{{this.chosenIndex==0?'购买':'交换'}}
 					</button> 
 				</div>
 			</div>
-			<!-- 列表展示 -->
-			
+			<!-- 弹出框 -->
+			<div id="light" class="pay-popup">
+			    <div class="pay-title-bar">
+			    	<div class="pay-title-text">
+			    		等待支付
+			    	</div>
+					<div class="exit-btn-area" @click="closeDialog()">
+						<img src="./img/exit.png" alt="">
+					</div>
+			    </div>
+				<div class="price-need-pay-area">
+					<div class="price-tag">
+						￥
+					</div>
+					<div class="price-num">
+						200
+					</div>
+				</div>
+				<div class="pay-accountAndway">
+					<div class="pay-account-row">
+						<div class="pay-account-row-label">
+							支付账号
+						</div>
+						<div class="pay-account-row-info">
+							小A (token ID：12345)
+						</div>
+					</div>
+					<div class="pay-way-row">
+						<div class="pay-way-row-label">
+							支付方式
+						</div>
+						<div class="pay-way-row-info">
+							<img src="img/qianbaoicon.png" alt="">
+							<div class="pay-way-row-info-text">
+								COAN钱包
+							</div>
+						</div>
+					</div>
+					<div class="popup-underline">
+						
+					</div>
+					<div class="recommend-pay-way-row">
+						<div class="recommend-pay-way-row-label">
+							推荐支付方式
+						</div>
+						<div class="pay-way-row-info">
+							
+						</div>
+					</div>
+					<div class="recommend-pay-way-area">
+						<div class="recommend-pay-way-leftarea">
+							<img src="./img/qianbaoicon.png" alt="">
+							<div class="recommend-pay-way-text">
+								COAN钱包 （余额：114514.00）
+							</div>
+						</div>
+						<div class="recommend-pay-way-rightarea">
+							<img src="./img/chosenicon.png" alt="">
+						</div>
+					</div>
+					<div class="recommend-pay-way-row">
+						<div class="recommend-pay-way-row-label">
+							余额不够了？可以适用一下方式充值余额
+						</div>
+						<div class="pay-way-row-info">
+							
+						</div>
+					</div>
+					<div class="recharge-ways-area">
+						<div class="recharge-way">
+							<img src="./img/charge_zfb.png" alt="">
+							<div class="recharge-way-name">
+								支付宝充值
+							</div>
+						</div>
+						<div class="recharge-way">
+							<img src="./img/charge_wx.png" alt="">
+							<div class="recharge-way-name">
+								微信充值
+							</div>
+						</div>
+						<div class="recharge-way">
+							<img src="./img/charge_wy.png" style="height: 6rem;" alt="">
+							<div class="recharge-way-name">
+								银联充值
+							</div>
+						</div>
+					</div>
+					<div class="popup-confirm-btn-area">
+						<button class="popup-confirm-btn">确认支付</button>
+					</div>
+				</div>
+		    </div> 
+			<div id="black-bg">
+				
+			</div>
 		</div>
 		<script>
 		    const vm = new Vue({
@@ -529,6 +623,14 @@
 		        methods: {
 					changeIndex(i){
 						this.chosenIndex = i;
+					},
+					closeDialog(){
+						document.getElementById('light').style.display='none';
+						document.getElementById('black-bg').style.display='none';
+					},
+					openDialog(){
+						document.getElementById('light').style.display='block';
+						document.getElementById('black-bg').style.display='block';
 					}
 				}
 		    })
