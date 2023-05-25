@@ -126,6 +126,12 @@ body {
 	font-size: 12px;
 }
 
+.left-area-zw{
+	height: 2vh;
+	width: 100%;
+	/* background-color: #3ACEFD; */
+}
+
 .container-right-area{
 	flex: 6;
 	background-color: #302D38;
@@ -204,6 +210,14 @@ body {
 	color: #CAC4D0;
 }
 
+.title-chosen{
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
 .kind-choose-underline-area{
 	height: 0.5vh;
 	width: 60%;
@@ -235,4 +249,228 @@ body {
 	/* background-color: #3ACEFD; */
 }
 
+.underline-chosen{
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	/* border-radius: 10px; */
+}
 
+.sell-list-area{
+	margin-top: 1.5rem;
+	width: 90%;
+	margin-left: 5%;
+	height: 34rem;
+	/* background-color: #6E99F6; */
+	overflow-y: scroll;
+}
+
+.sell-list-area::-webkit-scrollbar-track{background-color:#28262F;}
+.sell-list-area::-webkit-scrollbar{width:10px;}
+.sell-list-area::-webkit-scrollbar-thumb{background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+border-radius: 8px;
+transform: rotate(-180deg);;border-radius:100000px;}
+
+.sell-list-items{
+	width: 100%;
+	background-color: #302D38;
+}
+
+.sell-list-item{
+	background-color: #28262F;
+	width: 97%;
+	height: 4.5rem;
+	margin-bottom: 0.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sell-list-item:hover{
+	border: #837BF3 solid 0.5px;
+}
+
+.sell-list-item-leftarea{
+	/* background-color: #6E99F6; */
+	height: 100%;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	margin-left: 12px;
+}
+
+.sell-list-item-avater{
+	/* background-color: #837BF3; */
+	height: 3rem;
+	width: 3rem;
+	overflow: hidden;
+	border-radius: 100000px;
+}
+
+.sell-list-item-avater img{
+	width: 100%;
+	height: 100%;
+}
+
+.sell-list-item-info{
+	margin-left: 12px;
+}
+
+.seller-name{
+	color: white;
+	margin-bottom: 0.5rem;
+}
+
+.seller-level{
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	border-radius: 2px;
+	width: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sell-list-item-rightarea{
+	background-color: #6E99F6;
+	height: 100%;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	/* justify-content: end; */
+	justify-content: flex-end;
+	margin-right: 18px;
+	font-size: 1.6rem;
+	/* Linear */
+	
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.exchange-list-area{
+	margin-top: 1.5rem;
+	width: 90%;
+	margin-left: 5%;
+	height: 34rem;
+	/* background-color: #6E99F6; */
+	overflow-y: scroll;
+}
+
+.exchange-list-area::-webkit-scrollbar-track{background-color:#28262F;}
+.exchange-list-area::-webkit-scrollbar{width:10px;}
+.exchange-list-area::-webkit-scrollbar-thumb{background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+border-radius: 8px;
+transform: rotate(-180deg);;border-radius:100000px;}
+
+.exchange-list-items{
+	width: 100%;
+	background-color: #302D38;
+}
+
+.exchange-list-item{
+	background-color: #28262F;
+	width: 97%;
+	height: 4.5rem;
+	margin-bottom: 0.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.exchange-list-item:hover{
+	border: #837BF3 solid 0.5px;
+}
+
+.exchange-list-item-leftarea{
+	/* background-color: #6E99F6; */
+	height: 100%;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	margin-left: 12px;
+}
+
+.exchange-list-item-avater{
+	/* background-color: #837BF3; */
+	height: 3rem;
+	width: 3rem;
+	overflow: hidden;
+	border-radius: 100000px;
+}
+
+.exchange-list-item-avater img{
+	width: 100%;
+	height: 100%;
+}
+
+.exchange-list-item-info{
+	margin-left: 12px;
+}
+
+.exchanger-name{
+	color: white;
+	margin-bottom: 0.5rem;
+}
+
+.exchanger-level{
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	border-radius: 2px;
+	width: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.exchange-list-item-rightarea{
+	/* background-color: #000; */
+	height: 100%;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	/* justify-content: end; */
+	justify-content: flex-end;
+}
+
+.exchange-list-item-rightarea img{
+	height: 3.5rem;
+	width: 3.5rem;
+	margin-right: 0.5rem;
+	border-radius: 5px;
+}
+
+.item-rightarea-more{
+	height: 100%;
+	width: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.buyorexchangebtn-area{
+	width: 90%;
+	margin-left: 5%;
+	/* background-color: #3AE6FD; */
+	height: 3rem;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.buyorexchangebtn{
+	height: 90%;
+	width: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	border-radius: 50px;
+	border-radius: 1000000000000px;
+	font-size: 18px;
+	letter-spacing: 0.2em;
+	border: none;
+}
