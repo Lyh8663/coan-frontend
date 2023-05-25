@@ -170,22 +170,22 @@
 				<!-- 列表1：出售列表 -->
 				<div class="sell-list-area" id="dome" v-if="this.chosenIndex==0">
 					<div class="sell-list-items" id="dome1">
-						<div class="sell-list-item" v-for="(item,index) in 10">
+						<div class="sell-list-item" v-for="(item,index) in sellinfo">
 							<div class="sell-list-item-leftarea">
 								<div class="sell-list-item-avater">
-									<img src="./img/img_32.png" alt="">
+									<img :src="item.avater" alt="">
 								</div>
 								<div class="sell-list-item-info">
 									<div class="seller-name">
-										一颗土豆子
+										{{item.name}}
 									</div>
 									<div class="seller-level">
-										LV7
+										LV{{item.level}}
 									</div>
 								</div>
 							</div>
 							<div class="sell-list-item-rightarea">
-								￥200
+								￥{{item.price}}
 							</div>
 						</div>
 					</div>
@@ -193,17 +193,17 @@
 				<!-- 列表2：交换列表 -->
 				<div class="exchange-list-area" id="dome" v-if="this.chosenIndex==1">
 					<div class="exchange-list-items" id="dome1">
-						<div class="exchange-list-item" v-for="(item,index) in 10">
+						<div class="exchange-list-item" v-for="(item,index) in exchangeinfo">
 							<div class="exchange-list-item-leftarea">
 								<div class="exchange-list-item-avater">
-									<img src="./img/img_32.png" alt="">
+									<img :src="item.avater" alt="">
 								</div>
 								<div class="exchange-list-item-info">
 									<div class="exchanger-name">
-										一颗土豆子
+										{{item.name}}
 									</div>
 									<div class="exchanger-level">
-										LV7
+										LV{{item.level}}
 									</div>
 								</div>
 							</div>
@@ -233,6 +233,298 @@
 		        data: {
 					assetImgSrc:"./img/img_23.png",
 					chosenIndex:0,
+					sellinfo:[
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+					],
+					exchangeinfo:[
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+					],
 				},
 		        methods: {
 					changeIndex(i){
