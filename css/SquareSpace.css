@@ -1,0 +1,296 @@
+/* 这一块是用户信息的样式 */
+.space-user-infobg{
+	height:130px;
+	width: 300px;
+	background-color: #302D38;
+	opacity: 0.8;
+	position: absolute;
+	top: 100px;
+	left: 30px;
+	z-index: 79;
+	border-radius: 20px;
+}
+.space-user-infotitle{
+	position: absolute;
+	top: 100px;
+	left: 30px;
+	/* background-color: black; */
+	height: 50px;
+	width: 300px;
+	z-index: 80;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-around; */
+}
+.space-user-infotitle img{
+	width: 25px;
+	height: 25px;
+	margin-left: 20px;
+}
+.user-info-title-text{
+	color: white;
+	margin-left: 20px;
+}
+.space-user-infounderline{
+	height: 1px;
+	width: 270px;
+	z-index: 80;
+	position: absolute;
+	top: 145px;
+	left: 45px;
+	background-color: #CAC4D0;
+	opacity: 0.8;
+}
+.space-user-infodetail{
+	z-index: 80;
+	position: absolute;
+	top: 150px;
+	left: 30px;
+	width: 300px;
+	height: 80px;
+	/* background-color: #fff; */
+	display: flex;
+	align-items: center;
+}
+.space-user-infohead{
+	/* background-color: #995BF0; */
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.space-user-infohead img{
+	width: 100%;
+	height: 100%;
+}
+.space-user-infonameandpage{
+	/* background-color: #995BF0; */
+	width: 200px;
+	height: 60px;
+	
+}
+.space-user-infofirstrow{
+	margin-left: 20px;
+	letter-spacing: 0.05em;
+	color: white;
+	font-weight: 400;
+}
+.space-user-infosecondline{
+	display: flex;
+	width: 100%;
+	height: 40px;
+	/* background-color: #3ACEFD; */
+	align-items: center;
+}
+.space-user-infolevel{
+	margin-left: 20px;
+	width: 50px;
+	height: 25px;
+	background-color: #7D7884;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border-radius: 100000000px;
+}
+.spacce-user-infoentry{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100000000px;
+	margin-left: 20px;
+	margin-left: 20px;
+	width: 100px;
+	height: 25px;
+	/* background-color: #7D7884; */
+	border: border: 1px solid;
+	color: white;
+	font-size: 14px;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+}
+
+/* 以下为square页面的样式 */
+.nav-menu-zw{
+	height: 75px;
+	width: 100%;
+}
+
+.square-area{
+	width: 100vw;
+	height: calc(100vh - 75px);
+	/* background-color: antiquewhite; */
+	background: url(../img/Squarebg.png);
+	background-repeat: no-repeat;
+}
+
+/* 接下来为聊天框样式 */
+.chatting {
+    position: absolute;
+    width: 450px;
+    left: 20px;
+    top: 500px;
+	z-index: 80;
+}
+
+.chatting p {
+    position: relative;
+    left: 20px;
+    margin-bottom: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    color: #C1BBBB;
+}
+
+.chatting span {
+    margin-right: 20px;
+    /* margin-bottom: 10px; */
+
+
+
+    background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.chatting #bar {
+    position: relative;
+    height: 40px;
+    width: 550px;
+    background: #302D38;
+
+    border: #302D38;
+    border-radius: 25px;
+}
+
+#bar #discription {
+    display: inline-block;
+    line-height: 38px;
+}
+
+#bar #button {
+    position: relative;
+    left: 390px;
+    top: 0px;
+    height: 30px;
+    width: 85px;
+    display: inline-block;
+
+    line-height: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+
+    border: #995BF0;
+    border-radius: 19px;
+
+}
+
+.square-image{
+	/* background: url(../img/squareLayer.png); */
+	position: absolute;
+	right: 50px;
+	top: 150px;
+	width: 900px;
+	height: 500px;
+	/* background-color: aqua; */
+}
+
+.square-image img{
+	height: 100%;
+	width: 100%;
+}
+
+.square-location-area1{
+	/* background-color: aquamarine; */
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	right: 125px;
+	top: 150px;
+	z-index: 50;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.square-location-title{
+	color: #fff;
+}
+
+.square-location-img{
+	width: 100px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.square-location-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.square-location-area2{
+	/* background-color: aquamarine; */
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	right: 280px;
+	top: 70px;
+	z-index: 50;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.square-location-area3{
+	/* background-color: aquamarine; */
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	right: 805px;
+	top: 70px;
+	z-index: 50;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.square-location-area1:hover{
+	transition: 0.2s;
+	/* 过度时间 */
+	transform: scale(1.3);
+}
+.square-location-area2:hover{
+	transition: 0.2s;
+	/* 过度时间 */
+	transform: scale(1.3);
+}
+.square-location-area3:hover{
+	transition: 0.2s;
+	/* 过度时间 */
+	transform: scale(1.3);
+}

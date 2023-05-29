@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GameAssetDetail</title>
+		<link rel="stylesheet" href="./css/navbar.css">
+		<link rel="stylesheet" href="./css/GameAssetDetail.css">
+		<script src="./lib/vue-v2.6.14.js"></script>
+	</head>
+	<body>
+		<!-- 引入nav-menu -->
+		<div class="nav-menu">
+			<div class="nav-leftArea">
+				<div class="nav-COANLogo">
+					<img src="img/logohqbsecai 1.png" alt="" id="nav-COANLogo">
+				</div>
+				<div class="nav-COANTitle">
+					<div class="nav-titleText"" id="nav-COANTitle">COAN</div>
+				</div>
+				<div class="nav-searchArea">
+					<div class="nav-searchAreaAndIcon">
+						<input type="text" class="nav-searchBar" placeholder="搜你想要">
+						<div class="nav-searchImg">
+							<img src="img/searchIcon.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-rightArea">
+				<div class="nav-menuEntry">
+					<!-- <div class="menuItem" id="menuItem0">NFT交易区</div> -->
+					<div class="nav-menuItem" id="nav-menuItem1">
+						
+						<div class="nav-dropdown">
+						    <button class="nav-dropbtn">游戏资产交易
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="nav-dropdown-content">
+						      <a href="NormalGameAssetTrading.html">普通游戏资产</a>
+						      <a href="MetaGameAssetTrading.html" style="font-size: 15px;">元宇宙游戏资产</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem0">
+						<div class="nav-dropdown">
+						    <button class="nav-dropbtn">NFT艺术品
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="nav-dropdown-content">
+						      <a href="NFTArts.html">NFT艺术品</a>
+						      <a href="NFTAuthoring.html">创作者专区</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem2">COAN Daily</div>
+					<div class="nav-menuItem" id="nav-menuItem3">COAN Space</div>
+				</div>
+				<div class="nav-loginAndRegistArea">
+					<div class="nav-userheadArea" id="nav-userhead">
+						<img src="img/userhead.png" alt="" >
+					</div>
+					<div class="nav-loginAndRegistText" id="nav-usertitle">登录</div>
+				</div>
+				<div class="nav-contactUs" id="nav-ContactLogo">
+					<img src="img/contactUs.png" alt="" >
+					<div class="nav-contactText">联系我们</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-menu-zw" style="width: 100vw;height: 75px;">
+		</div>
+		<!-- vue -->
+		<div id="app" class="container">
+			<div class="container-left-area">
+				<!-- 图片 -->
+				<div class="assetImg-area">
+					<img :src="assetImgSrc" alt="" class="assetImg">
+				</div>
+				<!-- 信息 -->
+				<div class="assettitle-area">
+					<div class="asset-title">
+						花木兰·燃星之曲
+					</div>
+					<div class="asset-kind">
+						王者荣耀系列
+					</div>
+				</div>
+				<div class="asset-info-title">
+					商品详情
+				</div>
+				<div class="asset-info-line">
+
+				</div>
+				<div class="asset-detail-row">
+					<div class="asset-detail-label">
+						属性
+					</div>
+					<div class="asset-detail-tags">
+						<div class="asset-detail-tag">
+							皮肤
+						</div>
+					</div>
+				</div>
+				<div class="asset-detail-row">
+					<div class="asset-detail-label">
+						品质
+					</div>
+					<div class="asset-detail-tags">
+						<div class="asset-detail-tag">
+							全球精选
+						</div>
+					</div>
+				</div>
+				<div class="asset-detail-row">
+					<div class="asset-detail-label">
+						附加权益
+					</div>
+					<div class="asset-detail-tags">
+						<div class="asset-detail-tag">
+							配音
+						</div>
+						<div class="asset-detail-tag">
+							动作
+						</div>
+					</div>
+				</div>
+				<div class="asset-detail-row">
+					<div class="asset-detail-label">
+						上架时间
+					</div>
+					<div class="asset-detail-tags">
+						<div class="asset-detail-tag">
+							在售中
+						</div>
+					</div>
+				</div>
+				<div class="left-area-zw">
+					
+				</div>
+			</div>
+			<div class="container-right-area">
+				<div class="trade-title-area">
+					<div class="trade-title">
+						交易信息
+					</div>
+					<div class="trade-sort-btn">
+						<div class="trade-sort-btn-title">
+							综合排序
+						</div>
+					</div>
+				</div>
+				<div class="kind-choose-title-area">
+					<!-- 为什么点击回调没效果,现在成功啦 -->
+					<div :class="['buy-way-title',this.chosenIndex==0?'title-chosen':'title-unchosen' ]" @click="changeIndex(0)">
+						购买渠道
+					</div>
+					<div :class="['exchange-way-title',this.chosenIndex==1? 'title-chosen':'title-unchosen']" @click="changeIndex(1)">
+						交换渠道
+					</div>
+				</div>
+				<!-- 下划线 -->
+				<div class="kind-choose-underline-area">
+					<div :class="['buy-way-underline',this.chosenIndex==0? 'underline-chosen':'underline-unchosen']">
+						
+					</div>
+					<div :class="['exchange-way-underline',this.chosenIndex==1?  'underline-chosen':'underline-unchosen']">
+						
+					</div>
+				</div>
+				<!-- 列表1：出售列表 -->
+				<div class="sell-list-area" id="dome" v-if="this.chosenIndex==0">
+					<div class="sell-list-items" id="dome1">
+						<div class="sell-list-item" v-for="(item,index) in 10">
+							<div class="sell-list-item-leftarea">
+								<div class="sell-list-item-avater">
+									<img src="./img/img_32.png" alt="">
+								</div>
+								<div class="sell-list-item-info">
+									<div class="seller-name">
+										一颗土豆子
+									</div>
+									<div class="seller-level">
+										LV7
+									</div>
+								</div>
+							</div>
+							<div class="sell-list-item-rightarea">
+								￥200
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 列表2：交换列表 -->
+				<div class="exchange-list-area" id="dome" v-if="this.chosenIndex==1">
+					<div class="exchange-list-items" id="dome1">
+						<div class="exchange-list-item" v-for="(item,index) in 10">
+							<div class="exchange-list-item-leftarea">
+								<div class="exchange-list-item-avater">
+									<img src="./img/img_32.png" alt="">
+								</div>
+								<div class="exchange-list-item-info">
+									<div class="exchanger-name">
+										一颗土豆子
+									</div>
+									<div class="exchanger-level">
+										LV7
+									</div>
+								</div>
+							</div>
+							<div class="exchange-list-item-rightarea">
+								<img src="./img/Rectangle 42 (17).png" alt="">
+								<img src="./img/Rectangle 42 (15).png" alt="">
+								<img src="./img/Rectangle 42 (16).png" alt="">
+								<div class="item-rightarea-more">
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="buyorexchangebtn-area">
+					<button class="buyorexchangebtn">
+						{{this.chosenIndex==0?'购买':'交换'}}
+					</button> 
+				</div>
+			</div>
+			<!-- 列表展示 -->
+			
+		</div>
+		<script>
+		    const vm = new Vue({
+		        el: "#app",
+		        data: {
+					assetImgSrc:"./img/img_23.png",
+					chosenIndex:0,
+				},
+		        methods: {
+					changeIndex(i){
+						this.chosenIndex = i;
+					}
+				}
+		    })
+		</script>
+		<!-- 引入导航的js -->
+		<script src="js/navbar.js"></script>
+		
+	</body>
+</html>

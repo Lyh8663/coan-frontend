@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>游戏资产详情</title>
+		<link rel="stylesheet" href="./css/navbar.css">
+		<link rel="stylesheet" href="./css/GameAssetDetail.css">
+		<script src="./lib/vue-v2.6.14.js"></script>
+	</head>
+	<body>
+		<!-- 引入nav-menu -->
+		<div class="nav-menu">
+			<div class="nav-leftArea">
+				<div class="nav-COANLogo">
+					<img src="img/logohqbsecai 1.png" alt="" id="nav-COANLogo">
+				</div>
+				<div class="nav-COANTitle">
+					<div class="nav-titleText"" id="nav-COANTitle">COAN</div>
+				</div>
+				<div class="nav-searchArea">
+					<div class="nav-searchAreaAndIcon">
+						<input type="text" class="nav-searchBar" placeholder="搜你想要">
+						<div class="nav-searchImg">
+							<img src="img/searchIcon.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-rightArea">
+				<div class="nav-menuEntry">
+					<!-- <div class="menuItem" id="menuItem0">NFT交易区</div> -->
+					<div class="nav-menuItem" id="nav-menuItem1">
+						
+						<div class="nav-dropdown">
+						    <button class="nav-dropbtn">游戏资产交易
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="nav-dropdown-content">
+						      <a href="NormalGameAssetTrading.html">普通游戏资产</a>
+						      <a href="MetaGameAssetTrading.html" style="font-size: 15px;">元宇宙游戏资产</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem0">
+						<div class="nav-dropdown">
+						    <button class="nav-dropbtn">NFT艺术品
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="nav-dropdown-content">
+						      <a href="NFTArts.html">NFT艺术品</a>
+						      <a href="NFTAuthoring.html">创作者专区</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem2">COAN Daily</div>
+					<div class="nav-menuItem" id="nav-menuItem3">COAN Space</div>
+				</div>
+				<div class="nav-loginAndRegistArea">
+					<div class="nav-userheadArea" id="nav-userhead">
+						<img src="img/userhead.png" alt="" >
+					</div>
+					<div class="nav-loginAndRegistText" id="nav-usertitle">登录</div>
+				</div>
+				<div class="nav-contactUs" id="nav-ContactLogo">
+					<img src="img/contactUs.png" alt="" >
+					<div class="nav-contactText">联系我们</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-menu-zw" style="width: 100vw;height: 75px;">
+		</div>
+		<!-- vue -->
+		<div id="app" class="container">
+			<div class="container-left-area">
+				<!-- 图片 -->
+				<div class="assetImg-area">
+					<img :src="assetImgSrc" alt="" class="assetImg">
+				</div>
+				<!-- 信息 -->
+				<div class="assettitle-area">
+					<div class="asset-title">
+						花木兰·燃星之曲
+					</div>
+					<div class="asset-kind">
+						王者荣耀系列
+					</div>
+				</div>
+				<div class="asset-info-title">
+					商品详情
+				</div>
+				<div class="asset-info-line">
+
+				</div>
+				<div class="asset-detail-row">
+					<div class="asset-detail-label">
+						属性
+					</div>
+					<div class="asset-detail-tags">
+						<div class="asset-detail-tag">
+							皮肤
+						</div>
+					</div>
+				</div>
+				<div class="asset-detail-row">
+					<div class="asset-detail-label">
+						品质
+					</div>
+					<div class="asset-detail-tags">
+						<div class="asset-detail-tag">
+							全球精选
+						</div>
+					</div>
+				</div>
+				<div class="asset-detail-row">
+					<div class="asset-detail-label">
+						附加权益
+					</div>
+					<div class="asset-detail-tags">
+						<div class="asset-detail-tag">
+							配音
+						</div>
+						<div class="asset-detail-tag">
+							动作
+						</div>
+					</div>
+				</div>
+				<div class="asset-detail-row">
+					<div class="asset-detail-label">
+						上架时间
+					</div>
+					<div class="asset-detail-tags">
+						<div class="asset-detail-tag">
+							在售中
+						</div>
+					</div>
+				</div>
+				<div class="left-area-zw">
+					
+				</div>
+			</div>
+			<div class="container-right-area">
+				<div class="trade-title-area">
+					<div class="trade-title">
+						交易信息
+					</div>
+					<div class="trade-sort-btn">
+						<div class="trade-sort-btn-title">
+							综合排序
+						</div>
+					</div>
+				</div>
+				<div class="kind-choose-title-area">
+					<!-- 为什么点击回调没效果,现在成功啦 -->
+					<div :class="['buy-way-title',this.chosenIndex==0?'title-chosen':'title-unchosen' ]" @click="changeIndex(0)">
+						购买渠道
+					</div>
+					<div :class="['exchange-way-title',this.chosenIndex==1? 'title-chosen':'title-unchosen']" @click="changeIndex(1)">
+						交换渠道
+					</div>
+				</div>
+				<!-- 下划线 -->
+				<div class="kind-choose-underline-area">
+					<div :class="['buy-way-underline',this.chosenIndex==0? 'underline-chosen':'underline-unchosen']">
+						
+					</div>
+					<div :class="['exchange-way-underline',this.chosenIndex==1?  'underline-chosen':'underline-unchosen']">
+						
+					</div>
+				</div>
+				<!-- 列表1：出售列表 -->
+				<div class="sell-list-area" id="dome" v-if="this.chosenIndex==0">
+					<div class="sell-list-items" id="dome1">
+						<div class="sell-list-item" v-for="(item,index) in sellinfo">
+							<div class="sell-list-item-leftarea">
+								<div class="sell-list-item-avater">
+									<img :src="item.avater" alt="">
+								</div>
+								<div class="sell-list-item-info">
+									<div class="seller-name">
+										{{item.name}}
+									</div>
+									<div class="seller-level">
+										LV{{item.level}}
+									</div>
+								</div>
+							</div>
+							<div class="sell-list-item-rightarea">
+								￥{{item.price}}
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 列表2：交换列表 -->
+				<div class="exchange-list-area" id="dome" v-if="this.chosenIndex==1">
+					<div class="exchange-list-items" id="dome1">
+						<div class="exchange-list-item" v-for="(item,index) in exchangeinfo">
+							<div class="exchange-list-item-leftarea">
+								<div class="exchange-list-item-avater">
+									<img :src="item.avater" alt="">
+								</div>
+								<div class="exchange-list-item-info">
+									<div class="exchanger-name">
+										{{item.name}}
+									</div>
+									<div class="exchanger-level">
+										LV{{item.level}}
+									</div>
+								</div>
+							</div>
+							<div class="exchange-list-item-rightarea">
+								<img src="./img/Rectangle 42 (17).png" alt="">
+								<img src="./img/Rectangle 42 (15).png" alt="">
+								<img src="./img/Rectangle 42 (16).png" alt="">
+								<div class="item-rightarea-more">
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="buyorexchangebtn-area">
+					<button class="buyorexchangebtn" @click="openDialog()">
+						{{this.chosenIndex==0?'购买':'交换'}}
+					</button> 
+				</div>
+			</div>
+			<!-- 弹出框 -->
+			<div id="light" class="pay-popup">
+			    <div class="pay-title-bar">
+			    	<div class="pay-title-text">
+			    		等待支付
+			    	</div>
+					<div class="exit-btn-area" @click="closeDialog()">
+						<img src="./img/exit.png" alt="">
+					</div>
+			    </div>
+				<div class="price-need-pay-area">
+					<div class="price-tag">
+						￥
+					</div>
+					<div class="price-num">
+						200
+					</div>
+				</div>
+				<div class="pay-accountAndway">
+					<div class="pay-account-row">
+						<div class="pay-account-row-label">
+							支付账号
+						</div>
+						<div class="pay-account-row-info">
+							小A (token ID：12345)
+						</div>
+					</div>
+					<div class="pay-way-row">
+						<div class="pay-way-row-label">
+							支付方式
+						</div>
+						<div class="pay-way-row-info">
+							<img src="img/qianbaoicon.png" alt="">
+							<div class="pay-way-row-info-text">
+								COAN钱包
+							</div>
+						</div>
+					</div>
+					<div class="popup-underline">
+						
+					</div>
+					<div class="recommend-pay-way-row">
+						<div class="recommend-pay-way-row-label">
+							推荐支付方式
+						</div>
+						<div class="pay-way-row-info">
+							
+						</div>
+					</div>
+					<div class="recommend-pay-way-area">
+						<div class="recommend-pay-way-leftarea">
+							<img src="./img/qianbaoicon.png" alt="">
+							<div class="recommend-pay-way-text">
+								COAN钱包 （余额：114514.00）
+							</div>
+						</div>
+						<div class="recommend-pay-way-rightarea">
+							<img src="./img/chosenicon.png" alt="">
+						</div>
+					</div>
+					<div class="recommend-pay-way-row">
+						<div class="recommend-pay-way-row-label">
+							余额不够了？可以适用一下方式充值余额
+						</div>
+						<div class="pay-way-row-info">
+							
+						</div>
+					</div>
+					<div class="recharge-ways-area">
+						<div class="recharge-way">
+							<img src="./img/charge_zfb.png" alt="">
+							<div class="recharge-way-name">
+								支付宝充值
+							</div>
+						</div>
+						<div class="recharge-way">
+							<img src="./img/charge_wx.png" alt="">
+							<div class="recharge-way-name">
+								微信充值
+							</div>
+						</div>
+						<div class="recharge-way">
+							<img src="./img/charge_wy.png" style="height: 6rem;" alt="">
+							<div class="recharge-way-name">
+								银联充值
+							</div>
+						</div>
+					</div>
+					<div class="popup-confirm-btn-area">
+						<button class="popup-confirm-btn">确认支付</button>
+					</div>
+				</div>
+		    </div> 
+			<div id="black-bg">
+				
+			</div>
+		</div>
+		<script>
+		    const vm = new Vue({
+		        el: "#app",
+		        data: {
+					assetImgSrc:"./img/img_23.png",
+					chosenIndex:0,
+					sellinfo:[
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+					],
+					exchangeinfo:[
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/img_32.png',
+							name:'觅2',
+							level:8,
+							price:99.9
+						},
+						{
+							avater:'./img/2.png',
+							name:'逗比的雀巢',
+							level:1,
+							price:199.9
+						},
+						{
+							avater:'./img/Daily_recommendation_1.png',
+							name:'绫人太太啊',
+							level:3,
+							price:110
+						},
+						{
+							avater:'./img/img_11.png',
+							name:'薪儿姐师尊',
+							level:9,
+							price:114
+						},
+						{
+							avater:'./img/img_1.png',
+							name:'Zhan|',
+							level:7,
+							price:514
+						},
+						{
+							avater:'./img/Rectangle 42 (35).png',
+							name:'卓卓脑婆',
+							level:6,
+							price:120
+						},
+						{
+							avater:'./img/img_27.png',
+							name:'Yaw自律',
+							level:4,
+							price:130
+						},
+						{
+							avater:'./img/img_25.png',
+							name:'老番茄',
+							level:5,
+							price:20
+						},
+					],
+				},
+		        methods: {
+					changeIndex(i){
+						this.chosenIndex = i;
+					},
+					closeDialog(){
+						document.getElementById('light').style.display='none';
+						document.getElementById('black-bg').style.display='none';
+					},
+					openDialog(){
+						document.getElementById('light').style.display='block';
+						document.getElementById('black-bg').style.display='block';
+					}
+				}
+		    })
+		</script>
+		<!-- 引入导航的js -->
+		<script src="js/navbar.js"></script>
+		
+	</body>
+</html>
