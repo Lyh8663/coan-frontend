@@ -678,8 +678,8 @@ textarea.form-control {
 
 .image > figure {
     margin-right: .5rem;
-    width: 4rem;
-    height: 4rem;
+    width: 51.46px;
+    height: 51.46px;
     border: 1px solid #8f63e8;
 }
 
@@ -695,7 +695,7 @@ textarea.form-control {
 }
 
 ._43 {
-    padding: .75rem .5rem;
+    padding: 10px 5px;
 }
 
 .image figcaption {
@@ -705,19 +705,27 @@ textarea.form-control {
 }
 
 ._34 {
-    padding: .5rem .75rem;
+    /*padding: .5rem .75rem;*/
+    padding: 5px 10px;
+
 }
 
 ._11 {
-    padding: .5rem;
+    /*padding: .5rem;*/
+    padding: 8px 8px;
+
 }
 
 ._169 {
-    padding: 1rem .5rem;
+    /*padding: 1rem .5rem;*/
+    padding: 1px 11.5px;
+
 }
 
 ._916 {
-    padding: .5rem 1rem;
+    /*padding: .5rem 1rem;*/
+    padding: 11.5px 1px;
+
 }
 
 .img {
