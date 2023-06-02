@@ -1,0 +1,84 @@
+/* 用于占位 */
+.nav-menu-zw {
+    height: 75px;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #1c1b1f no-repeat url("../img/背景.png");
+}
+
+body {
+    font-size: 14px;
+}
+
+.container {
+    width: 76rem;
+    margin: 0 auto;
+	margin-top: 1.5rem;
+	background-color: aquamarine;
+}
+
+.pi-top-area{
+	width: 100%;
+	height: 10rem;
+	background-color: #302D38;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.top-area-leftpart{
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+}
+
+.user-avater{
+	width: 7.5rem;
+	height:7.5rem;
+	background-color: aliceblue;
+	border-radius: 1000000px;
+	overflow: hidden;
+}
+
+.user-avater img{
+	height: 100%;
+	width: 100%;
+}
+
+.toparea-user-info{
+	margin-left: 2rem;
+}
+
+.first-row{
+	display: flex;
+	align-items: center;
+}
+
+.toparea-user-info-name{
+	font-size: 28px;
+	color: white;
+}
+
+.toparea-user-info-level{
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	width: 3rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	margin-left: 1rem;
+}
+
+.top-area-rightpart{
+	margin-right: 2rem;
+}

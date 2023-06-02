@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人中心</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no">
+		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/PersonalCenter.css">
+		<script src="./lib/vue-v2.6.14.js"></script>
+	</head>
+	<body>
+		<!-- 引入nav-menu -->
+		<div class="nav-menu">
+			<div class="nav-leftArea">
+				<div class="nav-COANLogo">
+					<img src="img/logohqbsecai 1.png" alt="" id="nav-COANLogo">
+				</div>
+				<div class="nav-COANTitle">
+					<div class="nav-titleText"" id="nav-COANTitle">COAN</div>
+				</div>
+				<div class="nav-searchArea">
+					<div class="nav-searchAreaAndIcon">
+						<input type="text" class="nav-searchBar" placeholder="搜你想要">
+						<div class="nav-searchImg">
+							<img src="img/searchIcon.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-rightArea">
+				<div class="nav-menuEntry">
+					<!-- <div class="menuItem" id="menuItem0">NFT交易区</div> -->
+					<div class="nav-menuItem" id="nav-menuItem1">
+						
+						<div class="nav-dropdown">
+						    <button class="nav-dropbtn">游戏资产交易
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="nav-dropdown-content">
+						      <a href="NormalGameAssetTrading.html">普通游戏资产</a>
+						      <a href="MetaGameAssetTrading.html" style="font-size: 15px;">元宇宙游戏资产</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem0">
+						<div class="nav-dropdown">
+						    <button class="nav-dropbtn">NFT艺术品
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="nav-dropdown-content">
+						      <a href="NFTArts.html">NFT艺术品</a>
+						      <a href="NFTAuthoring.html">创作者专区</a>
+						    </div>
+						  </div>
+					</div>
+					<div class="nav-menuItem" id="nav-menuItem2">COAN Daily</div>
+					<div class="nav-menuItem" id="nav-menuItem3">COAN Space</div>
+				</div>
+				<div class="nav-loginAndRegistArea">
+					<div class="nav-userheadArea" id="nav-userhead">
+						<img src="img/userhead.png" alt="" >
+					</div>
+					<div class="nav-loginAndRegistText" id="nav-usertitle">登录</div>
+				</div>
+				<div class="nav-contactUs" id="nav-ContactLogo">
+					<img src="img/contactUs.png" alt="" >
+					<div class="nav-contactText">联系我们</div>
+				</div>
+			</div>
+		</div>
+		<!-- 中间部分 -->
+		<div class="nav-menu-zw">
+			
+		</div>
+		<div class="container" id="app">
+			<div class="pi-top-area">
+				<div class="top-area-leftpart">
+					<div class="user-avater">
+						<img src="./img/personalcenteravater.png" alt="">
+					</div>
+					<div class="toparea-user-info">
+						<div class="first-row">
+							<div class="toparea-user-info-name">
+								小A
+							</div>
+							<div class="toparea-user-info-level">
+								LV5
+							</div>
+						</div>
+						<div class="second-row">
+							tokenID:{{1234567}}
+						</div>
+						<div class="third-row">
+							<div class="toparea-user-msg-icon">
+								
+							</div>
+							<div class="toparea-user-msg">
+								这个人很懒，什么都没写
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top-area-rightpart">
+					
+				</div>
+			</div>
+		</div>
+		<script src="js/navbar.js"></script>
+		<script>
+		    const vm = new Vue({
+		        el: "#app",
+		        data: {
+					
+				},
+		        methods: {
+
+				}
+		    })
+		</script>
+	</body>
+</html>
