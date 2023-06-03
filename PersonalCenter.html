@@ -93,7 +93,7 @@
 						</div>
 						<div class="third-row">
 							<div class="toparea-user-msg-icon">
-								
+								<img src="./img/personalcentermsgicon.png" alt="">
 							</div>
 							<div class="toparea-user-msg">
 								这个人很懒，什么都没写
@@ -102,7 +102,98 @@
 					</div>
 				</div>
 				<div class="top-area-rightpart">
-					
+					<div class="btn-row">
+						<div class="tokenid-btn-area">
+							<button class="tokenid-btn">
+								可信数字身份
+							</button>
+						</div>
+						<div class="updateinfo-btn-area">
+							<button class="updateinfo-btn">
+								修改个人信息
+							</button>
+						</div>
+					</div>
+					<div class="datainfo-area">
+						<div class="follow-data-area">
+							<div class="data-num">
+								111
+							</div>
+							<div class="data-kind">
+								关注
+							</div>
+						</div>
+						<div class="fans-data-area">
+							<div class="data-num">
+								20
+							</div>
+							<div class="data-kind">
+								粉丝
+							</div>
+						</div>
+						<div class="work-data-area">
+							<div class="data-num">
+								1
+							</div>
+							<div class="data-kind">
+								作品数
+							</div>
+						</div>
+						<div class="like-data-area">
+							<div class="data-num">
+								87
+							</div>
+							<div class="data-kind">
+								点赞数
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pi-bottom-area">
+				<div class="pi-bottom-left-area">
+					<div class="pi-bottom-left-area-title">
+						个人中心
+					</div>
+					<div class="pi-bottom-left-area-underline">
+						
+					</div>
+					<div class="bottom-left-area-menu-item" v-for="(item,index) in this.menuitem" @click="changeIndex(index)">
+						<div class="menu-item-img">
+							<img :src="item.ucimg" alt="" v-if="chosenIndex!=index">
+							<img :src="item.cimg" alt="" v-if="chosenIndex==index">
+							<!-- {{chosenIndex==index}} -->
+							<!-- {{chosenIndex}} -->
+							<!-- {{index}} -->
+						</div>
+						<div :class="['menu-item-title',chosenIndex==index?'menu-item-title-chosen':'']">
+							{{item.title}}
+						</div>
+					</div>
+				</div>
+				<div class="pi-bottom-right-area">
+					<div :class="['pi-bottom-right-area-coanpoint',this.chosenIndex==0?'':'pi-bottom-right-area-displaynone']">
+						这是coan分页面
+					</div>
+					<div :class="['pi-bottom-right-area-myproperty',this.chosenIndex==1?'':'pi-bottom-right-area-displaynone']">
+						这是我的资产页面
+					</div>
+					<div :class="['pi-bottom-right-area-myemail',this.chosenIndex==2?'':'pi-bottom-right-area-displaynone']">
+						这是我的邮箱页面
+					</div>
+					<div :class="['pi-bottom-right-area-mypublic',this.chosenIndex==3?'':'pi-bottom-right-area-displaynone']">
+						这是我的发布页面
+					</div>
+					<div :class="['pi-bottom-right-area-myexchange',this.chosenIndex==4?'':'pi-bottom-right-area-displaynone']">
+						这是我想换的页面
+					</div>
+					<div :class="['pi-bottom-right-area-mygiveaway',this.chosenIndex==5?'':'pi-bottom-right-area-displaynone']">
+						这是转赠记录页面
+					</div>
+					<div :class="['pi-bottom-right-area-mybill',this.chosenIndex==6?'':'pi-bottom-right-area-displaynone']">
+						这是消费账单页面
+					</div>
+					<!-- {{this.chosenIndex}} -->
 				</div>
 			</div>
 		</div>
@@ -111,10 +202,43 @@
 		    const vm = new Vue({
 		        el: "#app",
 		        data: {
-					
+					//表示目前选中的菜单编号，0表示coan分，1表示我的资产等
+					chosenIndex:0,
+					//菜单渲染列表
+					menuitem:[{
+						title: "COAN分",
+						ucimg:"./img/coanpointunchosen.png",
+						cimg:"./img/coanpointchosen.png"
+					},{
+						title: "我的资产",
+						ucimg:"./img/mypropertyunchosen.png",
+						cimg:"./img/mypropertychosen.png"
+					},{
+						title: "我的邮箱",
+						ucimg:"./img/myemailunchosen.png",
+						cimg:"./img/myemailchosen.png"
+					},{
+						title: "我的发布",
+						ucimg:"./img/mypublicunchosen.png",
+						cimg:"./img/mypublicunchosen.png"
+					},{
+						title: "我想换的",
+						ucimg:"./img/myexchangeunchosen.png",
+						cimg:"./img/myexchangeunchosen.png"
+					},{
+						title: "转赠记录",
+						ucimg:"./img/mygiveawayunchosen.png",
+						cimg:"./img/mygiveawayunchosen.png"
+					},{
+						title: "消费账单",
+						ucimg:"./img/mybillunchosen.png",
+						cimg:"./img/mybillunchosen.png"
+					}]
 				},
 		        methods: {
-
+					changeIndex(i){
+						this.chosenIndex = i;
+					}
 				}
 		    })
 		</script>
