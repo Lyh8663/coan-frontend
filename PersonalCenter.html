@@ -173,10 +173,413 @@
 				</div>
 				<div class="pi-bottom-right-area">
 					<div :class="['pi-bottom-right-area-coanpoint',this.chosenIndex==0?'':'pi-bottom-right-area-displaynone']">
-						这是coan分页面
+						<div class="coanpoint-area-title">
+							COAN分
+						</div>
+						<div class="coanpoint-area-underline">
+							
+						</div>
+						<div class="coanpoint-area-my-score-area">
+							<div class="coanpoint-area-my-score-area-title">
+								我的评分
+							</div>
+							<div class="coanpoint-area-my-score-area-myinfo">
+								<div class="coanpoint-area-my-score-area-myavaterandlevel">
+									<div class="coanpoint-area-my-score-area-myavater">
+										<img src="./img/personalcenteravater.png" alt="">
+									</div>
+									<div class="coanpoint-area-my-score-area-level">
+										LV 5
+									</div>
+								</div>
+								<div class="coanpoint-area-my-score-area-scoreandprogressbar">
+									<div class="coanpoint-area-my-score-area-score">
+										{{coanscore}}
+									</div>
+									<div class="coanpoint-area-my-score-area-progressbar">
+										<div class="progress-item">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="coanpoint-standard-title">
+							COAN分评价标准
+						</div>
+						<div class="coanpoint-standard-rules">
+							<div class="rules-first">
+								<div class="rules-first-left">
+									初始分
+								</div>
+								<div class="rules-first-middle">
+									实名认证后获得
+								</div>
+								<div class="rules-first-right">
+									100分
+								</div>
+							</div>
+							<div class="rules-second">
+								<div class="rules-second-left">
+									加分项
+								</div>
+								<div class="rules-second-middle">
+									<div>
+										正常交易
+									</div>
+									<br>
+									<div>
+										虚拟钱包使用时长
+									</div>
+								</div>
+								<div class="rules-second-right">
+									<div>
+										单次+0.5分
+									</div>
+									<br>
+									<div>
+										满一年+2分
+									</div>
+								</div>
+							</div>
+							<div class="rules-third">
+								<div class="rules-third-left">
+									减分项
+								</div>
+								<div class="rules-third-middle">
+									<div>
+										非正常交易
+									</div>
+									<br>
+									<div>
+										不正当发言
+									</div>
+									<br>
+									<div>
+										信用违约
+									</div>
+								</div>
+								<div class="rules-third-right">
+									<div>
+										单次-10分
+									</div>
+									<br>
+									<div>
+										单次-2分
+									</div>
+									<br>
+									<div>
+										单次-2分
+									</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 					<div :class="['pi-bottom-right-area-myproperty',this.chosenIndex==1?'':'pi-bottom-right-area-displaynone']">
-						这是我的资产页面
+						<div class="myproperty-area-title">
+							我的资产
+						</div>
+						<div class="myproperty-area-underline">
+							
+						</div>
+						<div class="myproperty-area-myewallet">
+							<div class="mywallet-left-area">
+								<div class="mywallet-title-pic">
+									
+								</div>
+								<div class="mywallet-title-text">
+									电子钱包
+								</div>
+							</div>
+							<div class="mywallet-right-area">
+								<div class="mywallet-managepwd-area">
+									<button class="mywallet-managepwd-btn">
+										密钥管理
+									</button>
+								</div>
+								<div class="mywallet-watchdetail-area">
+									<button class="mywallet-watchdetail-btn">
+										钱包明细
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="myproperty-area-mywallet-detail">
+							<div class="mywallet-detail-leftarea">
+								<div class="mywallet-detail-title">
+									您的余额
+								</div>
+								<div class="balance-area">
+									<div class="balance-num">
+										110
+									</div>
+									<div class="balance-tag">
+										RMB
+									</div>
+								</div>
+								<div class="mywallet-detail-btn-area">
+									<button class="rechargebtn">
+										充值
+									</button>
+									<button class="getcashbtn">
+										提现
+									</button>
+								</div>
+							</div>
+							<div class="mywallet-detail-rightarea">
+								<div class="mywallet-detail-tips">
+									Tips
+								</div>
+								<div class="mywallet-detail-tips-content">
+									如果您想在本平台进行交易，需要先向电子钱包进行充值。 本平台的电子钱包可以绑定银行卡，方便您充值和提现。 （COAN国内版仅支持人民币。）
+								</div>
+							</div>
+						</div>
+						<div class="myproperty-area-underline">
+							
+						</div>
+						<div class="myproperty-area-display">
+							<div class="display-left-area">
+								<div class="display-title-pic">
+									
+								</div>
+								<div class="display-title-text">
+									资产展示
+								</div>
+							</div>
+							<div class="display-right-area">
+								<div class="display-managenft-area">
+									<button class="display-managenft-btn">
+										管理我的NFT
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="nftasset-area">
+							<div class="nftasset-row">
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset1.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset2.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset3.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset4.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="nftasset-row">
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset5.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset6.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset7.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset8.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="nftasset-row">
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset9.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset10.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset11.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nftasset-item">
+									<div class="nftasset-item-pic">
+										<img src="./img/nftasset12.png" alt="">
+									</div>
+									<div class="nftasset-item-detail">
+										<div class="nftasset-item-name">
+											0083
+										</div>
+										<div class="nftasset-item-numberarea">
+											<div class="nftasset-item-tag">
+												数量
+											</div>
+											<div class="nftasset-item-num">
+												1份
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div :class="['pi-bottom-right-area-myemail',this.chosenIndex==2?'':'pi-bottom-right-area-displaynone']">
 						这是我的邮箱页面
@@ -202,8 +605,10 @@
 		    const vm = new Vue({
 		        el: "#app",
 		        data: {
+					//表示用户当前的coan分
+					coanscore:96,
 					//表示目前选中的菜单编号，0表示coan分，1表示我的资产等
-					chosenIndex:0,
+					chosenIndex:1,
 					//菜单渲染列表
 					menuitem:[{
 						title: "COAN分",

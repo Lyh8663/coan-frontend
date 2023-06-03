@@ -278,7 +278,554 @@ body {
 	width: 53.5rem;
 }
 
+.pi-bottom-right-area-coanpoint{
+	width: 100%;
+	height: 32rem;
+	overflow-y: scroll;
+}
 
+.pi-bottom-right-area-coanpoint::-webkit-scrollbar-track{background-color:#28262F;}
+.pi-bottom-right-area-coanpoint::-webkit-scrollbar{width:10px;}
+.pi-bottom-right-area-coanpoint::-webkit-scrollbar-thumb{background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+border-radius: 8px;
+transform: rotate(-180deg);;border-radius:100000px;}
+
+.coanpoint-area-title{
+	font-size: 24px;
+	color: white;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.coanpoint-area-underline{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 90%;
+	margin-left: 0%;
+	background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 10.73%, #995BF0 58.18%, rgba(110, 153, 246, 0) 102.75%);
+	height: 2px;
+}
+
+.coanpoint-area-my-score-area{
+	height: 7rem;
+	width: 90%;
+	margin-left: 5%;
+	/* background-color: #6E99F6; */
+	border: white solid 1px;
+	border-radius: 10px;
+}
+
+.coanpoint-area-my-score-area-title{
+	color: white;
+	font-size: 16px;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
+}
+
+.coanpoint-area-my-score-area-myinfo{
+	display: flex;
+	align-items: center;
+}
+
+.coanpoint-area-my-score-area-myavaterandlevel{
+	margin-top: 0.5rem;
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.coanpoint-area-my-score-area-myavater{
+	height: 3rem;
+	width: 3rem;
+}
+
+.coanpoint-area-my-score-area-myavater img{
+	height: 100%;
+	width: 100%;
+}
+
+.coanpoint-area-my-score-area-level{
+	color: white;
+}
+
+.coanpoint-area-my-score-area-scoreandprogressbar{
+	/* display: ; */
+	margin-left: 2rem;
+}
+
+.coanpoint-area-my-score-area-score{
+	font-size: 20px;
+	color: white;
+}
+
+.coanpoint-area-my-score-area-progressbar{
+	height: 2rem;
+	width: 20rem;
+	background-color: rgba(218, 212, 243, 0.4);
+}
+
+.progress-item{
+	height: 100%;
+	background: linear-gradient(97.33deg, rgba(58, 206, 253, 0.6) 26.97%, rgba(110, 153, 246, 0.6) 53.31%, rgba(131, 123, 243, 0.6) 75.94%, rgba(153, 91, 240, 0.6) 92.08%);
+	width: 19.2rem;
+}
+
+.coanpoint-standard-title{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2rem;
+	color: white;
+	font-size: 18px;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.coanpoint-standard-rules{
+	width: 90%;
+	margin-left: 5%;
+	/* height: 3rem; */
+	/* background-color: #3ACEFD; */
+}
+
+.rules-first{
+	display: flex;
+	height: 3rem;
+}
+
+.rules-first-left{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-first-middle{
+	flex: 6;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-first-right{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-second{
+	display: flex;
+	height: 6rem;
+	margin-top: 1rem;
+}
+
+.rules-second-left{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-second-middle{
+	flex: 6;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-second-right{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-third{
+	display: flex;
+	height: 9rem;
+	margin-top: 1rem;
+}
+
+.rules-third-left{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-third-middle{
+	flex: 6;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-third-right{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.pi-bottom-right-area-myproperty{
+	width: 100%;
+	height: 32rem;
+	overflow-y: scroll;
+}
+
+.pi-bottom-right-area-myproperty::-webkit-scrollbar-track{background-color:#28262F;}
+.pi-bottom-right-area-myproperty::-webkit-scrollbar{width:10px;}
+.pi-bottom-right-area-myproperty::-webkit-scrollbar-thumb{background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+border-radius: 8px;
+transform: rotate(-180deg);;border-radius:100000px;}
+
+.myproperty-area-title{
+	font-size: 24px;
+	color: white;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.myproperty-area-underline{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 90%;
+	margin-left: 0%;
+	background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 10.73%, #995BF0 58.18%, rgba(110, 153, 246, 0) 102.75%);
+	height: 2px;
+}
+
+.myproperty-area-myewallet{
+	width: 90%;
+	margin-left: 5%;
+	height: 2rem;
+	/* background-color: #3ACEFD; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mywallet-left-area{
+	display: flex;
+	align-items: center;
+}
+
+.mywallet-title-pic{
+	height: 1.5rem;
+	width: 0.4rem;
+	/* background-color: #995BF0; */
+	/* background-color: #6E99F6; */
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+	border-radius: 2px;
+	transform: rotate(-180deg);
+}
+
+.mywallet-title-text{
+	color: white;
+	font-size: 18px;
+	margin-left: .5rem;
+}
+
+.mywallet-right-area{
+	display: flex;
+	align-items: center;
+}
+
+.mywallet-managepwd-area{
+	height: 1.5rem;
+	width: 6rem;
+	background-color: #6E99F6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mywallet-managepwd-btn{
+	border: none;
+	height:1.2rem;
+	width: 94%;
+	color: white;
+	background-color: #302D38;
+}
+
+.mywallet-watchdetail-area{
+	height: 1.5rem;
+	width: 6rem;
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+	border-radius: 2px;
+	/* transform: rotate(-180deg); */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+}
+
+.mywallet-watchdetail-btn{
+	border: none;
+	height:1.2rem;
+	width: 94%;
+	color: white;
+	background-color: #302D38;
+}
+
+.myproperty-area-mywallet-detail{
+	width: 90%;
+	margin-left: 5%;
+	height: 10rem;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mywallet-detail-leftarea{
+	height:100%;
+	margin-left: 1rem;
+}
+
+.mywallet-detail-title{
+	color: white;
+	font-size: 18px;
+}
+
+.balance-area{
+	display: flex;
+	align-items: flex-end;
+	margin-top: .75rem;
+}
+
+.balance-num{
+	color: white;
+	font-size: 60px;
+}
+
+.balance-tag{
+	color: white;
+	font-size: 18px;
+	margin-left: 2rem;
+}
+
+.mywallet-detail-btn-area{
+	display: flex;
+	margin-top: .75rem;
+}
+
+.rechargebtn{
+	border: none;
+	width: 4rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+}
+
+.getcashbtn{
+	border: none;
+	width: 4rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	border-radius: 4px;
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+}
+
+.mywallet-detail-rightarea{
+	background: rgba(137, 132, 152, 0.2);
+	border-radius: 10px;
+}
+
+.mywallet-detail-tips{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18rem;
+	font-size: 18px;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+.mywallet-detail-tips-content{
+	height: 7.5rem;
+	/* background-color: #3AE6FD; */
+	width: 16rem;
+	color: white;
+	font-size: 16px;
+	margin-left: 1rem;
+	/* margin-top: 1rem; */
+}
+
+.myproperty-area-display{
+	width: 90%;
+	margin-left: 5%;
+	height: 2rem;
+	/* background-color: #3ACEFD; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.display-left-area{
+	display: flex;
+	align-items: center;
+}
+
+.display-title-pic{
+	height: 1.5rem;
+	width: 0.4rem;
+	/* background-color: #995BF0; */
+	/* background-color: #6E99F6; */
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+	border-radius: 2px;
+	transform: rotate(-180deg);
+}
+
+.display-title-text{
+	color: white;
+	font-size: 18px;
+	margin-left: .5rem;
+}
+
+.display-right-area{
+	display: flex;
+	align-items: center;
+}
+
+.display-managenft-area{
+	height: 1.5rem;
+	width: 8rem;
+	/* background-color: #6E99F6; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+}
+
+.display-managenft-btn{
+	border: none;
+	height:1.2rem;
+	width: 94%;
+	color: white;
+	background-color: #302D38;
+}
+
+.nftasset-area{
+	width: 90%;
+	margin-left: 5%;
+}
+
+.nftasset-row{
+	width: 100%;
+	height: 13rem;
+	/* background-color: #6E99F6; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: .75rem;
+}
+
+.nftasset-item{
+	height: 100%;
+	width: 23%;
+	background-color: #37363A;
+	/* background-color: #6E99F6; */
+}
+
+.nftasset-item-pic{
+	width: 100%;
+	height: 75%;
+	background-color: #FFFFFF;
+}
+
+.nftasset-item-pic img{
+	height: 100%;
+	width: 100%;
+}
+
+.nftasset-item-detail{
+	margin-left: .5rem;
+}
+
+.nftasset-item-name{
+	color: white;
+	font-size: 20px;
+}
+
+.nftasset-item-numberarea{
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.nftasset-item-tag{
+	width: 3rem;
+	height: 1.3rem;
+	background: rgba(217, 217, 217, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1000px;
+}
+
+.nftasset-item-num{
+	margin-left: .5rem;
+}
 
 /* 这个要放文件的最底下 */
 .menu-item-title-chosen{
@@ -294,3 +841,4 @@ body {
 .pi-bottom-right-area-displaynone{
 	display: none;
 }
+
