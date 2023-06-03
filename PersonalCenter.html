@@ -582,7 +582,54 @@
 						</div>
 					</div>
 					<div :class="['pi-bottom-right-area-myemail',this.chosenIndex==2?'':'pi-bottom-right-area-displaynone']">
-						这是我的邮箱页面
+						<div class="myproperty-area-email">
+							我的邮箱
+						</div>
+						<div class="myproperty-area-underline">
+							
+						</div>
+						<div class="myemail-content">
+							<div class="myemail-content-leftarea">
+								<div :class="['receive-email',emailIndex==0?'email-menu-item-chosen':'']" @click="changeEmailIndex(0)">
+									收件箱（3）
+								</div>
+								<div :class="['caogao-email',emailIndex==1?'email-menu-item-chosen':'']" @click="changeEmailIndex(1)">
+									草稿箱（1）
+								</div>
+								<div :class="['sent-email',emailIndex==2?'email-menu-item-chosen':'']" @click="changeEmailIndex(2)">
+									已发送（2）
+								</div>
+								<div :class="['sent-email',emailIndex==3?'email-menu-item-chosen':'']" @click="changeEmailIndex(3)">
+									写信
+								</div>
+							</div>
+							<div class="myemail-content-rightarea">
+								<div :class="['receive-email-content',emailIndex==0?'':'email-displaynone']">
+									<div class="emailitem" v-for="(item,index) in emailReceived">
+										<div class="emailitem-left">
+											您收到一条来自用户
+											<div class="emailitem-username">
+												{{ item.username }}
+											</div>
+											的交换请求
+										</div>
+										<div class="emailitem-right">
+											<button class="emailitem-checkbtn">查看</button>
+											<button class="emailitem-deletebtn">删除</button>
+										</div>
+									</div>
+								</div>
+								<div :class="['caogao-email-content',emailIndex==1?'':'email-displaynone']">
+									这是草稿箱内容
+								</div>
+								<div :class="['sent-email-content',emailIndex==2?'':'email-displaynone']">
+									这是已发送内容
+								</div>
+								<div :class="['sent-email-content',emailIndex==3?'':'email-displaynone']">
+									这是写信的内容
+								</div>
+							</div>
+						</div>
 					</div>
 					<div :class="['pi-bottom-right-area-mypublic',this.chosenIndex==3?'':'pi-bottom-right-area-displaynone']">
 						这是我的发布页面
@@ -605,10 +652,23 @@
 		    const vm = new Vue({
 		        el: "#app",
 		        data: {
+					//表示用户收到的邮件信息
+					emailReceived:[{
+						username:'逗比的雀巢',
+						url:'#'
+					},{
+						username:'老番茄',
+						url:'#'
+					},{
+						username:'觅2',
+						url:'#'
+					}],
+					//表示用户当前地邮箱菜单编号
+					emailIndex:0,
 					//表示用户当前的coan分
 					coanscore:96,
 					//表示目前选中的菜单编号，0表示coan分，1表示我的资产等
-					chosenIndex:1,
+					chosenIndex:2,
 					//菜单渲染列表
 					menuitem:[{
 						title: "COAN分",
@@ -643,6 +703,9 @@
 		        methods: {
 					changeIndex(i){
 						this.chosenIndex = i;
+					},
+					changeEmailIndex(i){
+						this.emailIndex = i;
 					}
 				}
 		    })

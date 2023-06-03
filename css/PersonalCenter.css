@@ -827,6 +827,129 @@ transform: rotate(-180deg);;border-radius:100000px;}
 	margin-left: .5rem;
 }
 
+.myproperty-area-email{
+	font-size: 24px;
+	color: white;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.myemail-content{
+	width: 90%;
+	margin-left: 5%;
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+}
+
+.myemail-content-leftarea{
+	height: 25rem;
+	width: 20%;
+	/* background-color: #837BF3; */
+}
+
+.receive-email{
+	color:white;
+	font-size: 18px;
+}
+
+.receive-email:hover{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.caogao-email{
+	color:white;
+	font-size: 18px;
+	margin-top: .75rem;
+}
+
+.caogao-email:hover{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.sent-email{
+	color: white;
+	font-size: 18px;
+	margin-top: .75rem;
+}
+
+.sent-email:hover{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.myemail-content-rightarea{
+	width: 75%;
+	margin-right: 1rem;
+}
+
+.emailitem{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.emailitem-left{
+	display: flex;
+	color: white;
+	font-size: 18px;
+	/* margin-top: 0.3rem; */
+	margin-bottom: 0.6rem;
+	background-color: #37363A;
+	height: 2.5rem;
+	align-items: center;
+	padding-left: .6rem;
+	border-radius: 6px;
+	width: 30rem;
+}
+
+.emailitem-username{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+	margin-left: .3rem;
+	margin-right: .3rem;
+}
+
+.emailitem-right button{
+	border: none;
+	background-color: #302D38;
+	color: white;
+	font-size: 16px;
+}
+
+.emailitem-checkbtn{
+	margin-right: .5rem;
+}
+
+.emailitem-checkbtn:hover{
+	/* 渐变1 */
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.emailitem-deletebtn:hover{
+	color: crimson;
+}
+
 /* 这个要放文件的最底下 */
 .menu-item-title-chosen{
 	/* 渐变1 */
@@ -842,3 +965,14 @@ transform: rotate(-180deg);;border-radius:100000px;}
 	display: none;
 }
 
+.email-menu-item-chosen{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.email-displaynone{
+	display: none;
+}
