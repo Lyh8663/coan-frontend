@@ -1279,6 +1279,142 @@ transform: rotate(-180deg);;border-radius:100000px;}
 	opacity: 0.6;
 }
 
+/* 邮件弹出框的样式 */
+.emaildetail-popup { 
+    /* display: none; */
+/*    position: absolute; 
+	margin-left: 13rem;
+	margin-top: 3rem; */
+	position: fixed;
+	top: 10rem;
+	left: calc(50vw - 25rem);
+	margin: auto 0;
+    width: 50rem; 
+    height: 38rem; 
+	/* margin: 0 auto; */
+    /* padding: 20px; */
+    /* border: 10px solid orange; */
+    background-color: #302D38; 
+    z-index:1001; 
+    overflow: hidden; 
+	border-radius: 20px;
+	border: #837BF3 solid 0.2rem;
+} 
+
+.email-detail-msg{
+	/* background-color: #6E99F6; */
+	width: 45rem;
+	height: 8rem;
+	margin-left: 2.5rem;
+	margin-top: 3rem;
+	overflow-y: scroll;
+	font-size: 20px;
+	color: white;
+}
+
+.email-detail-msg::-webkit-scrollbar-track{background-color:#28262F;}
+.email-detail-msg::-webkit-scrollbar{width:10px;}
+.email-detail-msg::-webkit-scrollbar-thumb{background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+border-radius: 8px;
+transform: rotate(-180deg);;border-radius:100000px;}
+
+.email-detail-sendername{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.email-detail-receivername{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.email-detail-exchangedisplay{
+	width: 45rem;
+	height: 15rem;
+	margin-left: 2.5rem;
+	/* background-color: #6E99F6; */
+	margin-top: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.email-detail-senderprop{
+	height: 100%;
+	width: 17rem;
+	/* background-color: #837BF3; */
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.email-detail-senderprop img{
+	width: 100%;
+	height: 100%;
+}
+
+.email-detail-exchangeicon{
+	height: 100%;
+	width: 5rem;
+	/* background-color: #837BF3; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.email-detail-receiverprop{
+	height: 100%;
+	width: 17rem;
+	/* background-color: #837BF3; */
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.email-detail-receiverprop img{
+	width: 100%;
+	height: 100%;
+}
+
+.email-detail-btnarea{
+	width: 45rem;
+	margin-left: 2.5rem;
+	height: 3.5rem;
+	/* background-color: #3ACEFD; */
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.email-detail-agreebtn{
+	border: none;
+	height: 3rem;
+	width: 10rem;
+	font-size: 20px;
+	border-radius: 10px;
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	margin-right: 2rem;
+}
+
+.email-detail-refusebtn{
+	border: none;
+	height: 3rem;
+	width: 10rem;
+	font-size: 20px;
+	border-radius: 10px;
+	color: white;
+	background-color: #D9D9D9B2;
+	margin-left: 2rem;
+}
+
 /* 这个要放文件的最底下 */
 .menu-item-title-chosen{
 	/* 渐变1 */

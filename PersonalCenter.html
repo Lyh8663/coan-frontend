@@ -614,7 +614,7 @@
 											的交换请求
 										</div>
 										<div class="emailitem-right">
-											<button class="emailitem-checkbtn">查看</button>
+											<button class="emailitem-checkbtn" @click="openExchangeEmailDialog()">查看</button>
 											<button class="emailitem-deletebtn">删除</button>
 										</div>
 									</div>
@@ -754,6 +754,38 @@
 					</div>
 				</div>
 			</div> 
+			<div id="emaildetail" class="emaildetail-popup">
+				<div class="recharge-title-bar">
+					<div class="recharge-title-text">
+						来自用户：<span class="email-detail-sendername">&nbsp;觅2&nbsp;</span>
+					</div>
+					<div class="exit-btn-area" @click="closeExchangeEmailDialog()">
+						<img src="./img/exit.png" alt="">
+					</div>
+				</div>
+				<div class="email-detail-msg">
+					尊敬的<span class="email-detail-receivername">&nbsp;小A&nbsp;</span>：
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你好，我在游戏资产区发现你正希望换出这件商品，我愿意使用如下商品进行交换。这两件商品的价值相似，稀有度也相近，因此这次交换是几乎等价的，我诚挚希望您能够和我进行资产的交换。
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;除此之外，我认为你是这个游戏的骨干玩家，希望能够与你交个朋友，在游戏世界中一起互动切磋，请问你意下如何？
+				</div>
+				<div class="email-detail-exchangedisplay">
+					<div class="email-detail-senderprop">
+						<img src="./img/senderprop.png" alt="">
+					</div>
+					<div class="email-detail-exchangeicon">
+						<img src="./img/exchangeicon.png" alt="">
+					</div>
+					<div class="email-detail-receiverprop">
+						<img src="./img/receiverprop.png" alt="">
+					</div>
+				</div>
+				<div class="email-detail-btnarea">
+					<button class="email-detail-agreebtn" @click="agreeExchange()">同意</button>
+					<button class="email-detail-refusebtn" @click="closeExchangeEmailDialog()">拒绝</button>
+				</div>
+			</div>
 			<div id="black-bg">
 				
 			</div>
@@ -820,6 +852,20 @@
 					}]
 				},
 		        methods: {
+					//邮件信息弹出窗相关函数
+					closeExchangeEmailDialog(){
+						document.getElementById('emaildetail').style.display='none';
+						document.getElementById('black-bg').style.display='none';
+					},
+					openExchangeEmailDialog(){
+						document.getElementById('emaildetail').style.display='block';
+						document.getElementById('black-bg').style.display='block';
+					},
+					//交换邮件中，点击同意按钮的函数
+					agreeExchange(){
+						alert("交换成功！")
+						this.closeExchangeEmailDialog();
+					},
 					//判断输入是否为正整数的函数
 					isNum(s){
 						if(s!=null){
