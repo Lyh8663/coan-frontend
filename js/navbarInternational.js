@@ -103,7 +103,7 @@ nav_COANTitle.addEventListener("click", function(){
 nav_userhead.addEventListener("click", function(){
 	console.log("国际版的登录/用户区被点击了")
 	if(window.sessionStorage.getItem("username")!=null){//已经登录了
-		window.location.href = "Self-infomationInternational.html";
+		window.location.href = "PersonalCenter.html";
 		return;
 	}
     window.location.href="LoginAndRegist.html";
@@ -112,7 +112,7 @@ nav_userhead.addEventListener("click", function(){
 nav_usertitle.addEventListener("click", function(){
 	console.log("国际版的登录/用户区被点击了")
 	if(window.sessionStorage.getItem("username")!=null){//已经登录了
-		window.location.href = "Self-infomationInternational.html";
+		window.location.href = "PersonalCenter.html";
 		return;
 	}
     window.location.href="LoginAndRegist.html";

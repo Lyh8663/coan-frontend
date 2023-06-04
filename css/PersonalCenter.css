@@ -787,6 +787,10 @@ transform: rotate(-180deg);;border-radius:100000px;}
 	/* background-color: #6E99F6; */
 }
 
+.nftasset-item:hover{
+	border: #837BF3 solid 0.5px;
+}
+
 .nftasset-item-pic{
 	width: 100%;
 	height: 75%;
@@ -1281,7 +1285,7 @@ transform: rotate(-180deg);;border-radius:100000px;}
 
 /* 邮件弹出框的样式 */
 .emaildetail-popup { 
-    /* display: none; */
+    display: none;
 /*    position: absolute; 
 	margin-left: 13rem;
 	margin-top: 3rem; */
@@ -1413,6 +1417,126 @@ transform: rotate(-180deg);;border-radius:100000px;}
 	color: white;
 	background-color: #D9D9D9B2;
 	margin-left: 2rem;
+}
+
+/* 资产弹出框的样式 */
+.nftdetail-popup { 
+    display: none;
+/*    position: absolute; 
+	margin-left: 13rem;
+	margin-top: 3rem; */
+	position: fixed;
+	top: 10rem;
+	left: calc(50vw - 30rem);
+	margin: auto 0;
+    width: 60rem; 
+    height: 38rem; 
+	/* margin: 0 auto; */
+    /* padding: 20px; */
+    /* border: 10px solid orange; */
+    background-color: #302D38; 
+    z-index:1001; 
+    overflow: hidden; 
+	border-radius: 20px;
+	border: #837BF3 solid 0.2rem;
+} 
+
+.nftdetail-popup-content{
+	width: 52rem;
+	height: 30rem;
+	/* background-color: #3ACEFD; */
+	margin-left: 4rem;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nftdetail-popup-content-leftarea{
+	height: 100%;
+	width: 25rem;
+	background-color: #37363A;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.nftdetail-popup-content-leftarea img{
+	width: 100%;
+	height: 100%;
+}
+
+.nftdetail-popup-content-rightarea{
+	height: 100%;
+	width: 25rem;
+	/* background-color: #3ACEFD; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.nftdetail-popup-content-tag{
+	color: white;
+	font-size: 20px;
+}
+
+.nftdetail-popup-content-kind{
+	margin-left: 1rem;
+	font-size: 18px;
+	width: 8rem;
+	background-color: #BEB8D1;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border-radius: 10px;
+}
+
+.nftdetail-popup-content-underline{
+	height: 1px;
+	width:25rem;
+	background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 10.73%, #995BF0 58.18%, rgba(110, 153, 246, 0) 102.75%);
+}
+
+.nftdetail-popup-content-giveawayarea{
+	height: 3rem;
+	width: 25rem;
+	/* background-color: #3ACEFD; */
+	margin-left: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content-giveawayarea-inputarea{
+	height: 100%;
+	width: 15rem;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-giveawayarea-input{
+	border:none;
+	height: 90%;
+	width: 98%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	background-color: #302D38;
+}
+
+.content-giveawayarea-inputbtn{
+	height: 100%;
+	width: 5rem;
+	border-radius: 10px;
+	font-size: 16px;
+	color: white;
+	border: none;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	letter-spacing: 0.2rem;
 }
 
 /* 这个要放文件的最底下 */

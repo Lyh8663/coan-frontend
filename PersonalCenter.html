@@ -104,7 +104,7 @@
 				<div class="top-area-rightpart">
 					<div class="btn-row">
 						<div class="tokenid-btn-area">
-							<button class="tokenid-btn">
+							<button class="tokenid-btn" @click="toTokenID()">
 								可信数字身份
 							</button>
 						</div>
@@ -358,7 +358,7 @@
 						</div>
 						<div class="nftasset-area">
 							<div class="nftasset-row">
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset1.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset1.png" alt="">
 									</div>
@@ -376,7 +376,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset2.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset2.png" alt="">
 									</div>
@@ -394,7 +394,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset3.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset3.png" alt="">
 									</div>
@@ -412,7 +412,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset4.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset4.png" alt="">
 									</div>
@@ -432,7 +432,7 @@
 								</div>
 							</div>
 							<div class="nftasset-row">
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset5.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset5.png" alt="">
 									</div>
@@ -450,7 +450,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset6.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset6.png" alt="">
 									</div>
@@ -468,7 +468,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset7.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset7.png" alt="">
 									</div>
@@ -486,7 +486,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset8.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset8.png" alt="">
 									</div>
@@ -506,7 +506,7 @@
 								</div>
 							</div>
 							<div class="nftasset-row">
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset9.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset9.png" alt="">
 									</div>
@@ -524,7 +524,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset10.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset10.png" alt="">
 									</div>
@@ -542,7 +542,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset11.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset11.png" alt="">
 									</div>
@@ -560,7 +560,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="nftasset-item">
+								<div class="nftasset-item" @click="nftassetClicked('./img/nftasset12.png')">
 									<div class="nftasset-item-pic">
 										<img src="./img/nftasset12.png" alt="">
 									</div>
@@ -786,6 +786,52 @@
 					<button class="email-detail-refusebtn" @click="closeExchangeEmailDialog()">拒绝</button>
 				</div>
 			</div>
+			<div class="nftdetail-popup" id="nftdetail">
+				<div class="recharge-title-bar">
+					<div class="recharge-title-text">
+						资产详情
+					</div>
+					<div class="exit-btn-area" @click="closeNFTAssetDetailDialog()">
+						<img src="./img/exit.png" alt="">
+					</div>
+				</div>
+				<div class="nftdetail-popup-content">
+					<div class="nftdetail-popup-content-leftarea">
+						<img :src="usernftassetimg" alt="">
+					</div>
+					<div class="nftdetail-popup-content-rightarea">
+						<div class="nftdetail-popup-content-tag">
+							标签
+						</div>
+						<div class="nftdetail-popup-content-kind">
+							我的资产
+						</div>
+						<div class="nftdetail-popup-content-tag">
+							属性
+						</div>
+						<div class="nftdetail-popup-content-kind">
+							NFT插画
+						</div>
+						<div class="nftdetail-popup-content-tag">
+							数量
+						</div>
+						<div class="nftdetail-popup-content-kind">
+							1
+						</div>
+						<div class="nftdetail-popup-content-underline">
+							
+						</div>
+						<div class="nftdetail-popup-content-giveawayarea">
+							<div class="content-giveawayarea-inputarea">
+								<input class="content-giveawayarea-input" type="text" placeholder="输入您想转赠用户的ID">
+							</div>
+							<button class="content-giveawayarea-inputbtn">
+								转赠
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div id="black-bg">
 				
 			</div>
@@ -795,6 +841,8 @@
 		    const vm = new Vue({
 		        el: "#app",
 		        data: {
+					//表示用户当前正在查看的资产图片
+					usernftassetimg:'./img/nftasset1.png',
 					//表示用户的资产
 					userbalance:114514,
 					//表示用户充值自己输入的金额
@@ -819,7 +867,7 @@
 					//表示用户当前的coan分
 					coanscore:96,
 					//表示目前选中的菜单编号，0表示coan分，1表示我的资产等
-					chosenIndex:2,
+					chosenIndex:0,
 					//菜单渲染列表
 					menuitem:[{
 						title: "COAN分",
@@ -852,6 +900,24 @@
 					}]
 				},
 		        methods: {
+					//nft资产卡片被点击的函数
+					nftassetClicked(url){
+						this.usernftassetimg = url;
+						this.openNFTAssetDetailDialog();
+					},
+					//nft资产详情弹出框相关函数
+					closeNFTAssetDetailDialog(){
+						document.getElementById('nftdetail').style.display='none';
+						document.getElementById('black-bg').style.display='none';
+					},
+					openNFTAssetDetailDialog(){
+						document.getElementById('nftdetail').style.display='block';
+						document.getElementById('black-bg').style.display='block';
+					},
+					//可信数字身份按钮被点击，跳转到可信数字身份页面
+					toTokenID(){
+						 window.location.href="TrustedDigitalIdentity.html"
+					},
 					//邮件信息弹出窗相关函数
 					closeExchangeEmailDialog(){
 						document.getElementById('emaildetail').style.display='none';
