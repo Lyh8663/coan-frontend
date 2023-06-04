@@ -1,0 +1,1567 @@
+/* 用于占位 */
+.nav-menu-zw {
+    height: 75px;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #1c1b1f no-repeat url("../img/背景.png");
+}
+
+body {
+    font-size: 14px;
+}
+
+.container {
+    width: 76rem;
+    margin: 0 auto;
+	margin-top: 1.5rem;
+	/* background-color: aquamarine; */
+}
+
+.pi-top-area{
+	width: 100%;
+	height: 11rem;
+	background-color: #302D38;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.top-area-leftpart{
+	display: flex;
+	align-items: center;
+	margin-left: 4rem;
+}
+
+.user-avater{
+	width: 7.5rem;
+	height:7.5rem;
+	background-color: aliceblue;
+	border-radius: 1000000px;
+	overflow: hidden;
+}
+
+.user-avater img{
+	height: 100%;
+	width: 100%;
+}
+
+.toparea-user-info{
+	margin-left: 2rem;
+}
+
+.first-row{
+	display: flex;
+	align-items: center;
+}
+
+.toparea-user-info-name{
+	font-size: 28px;
+	color: white;
+}
+
+.toparea-user-info-level{
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	width: 3rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	margin-left: 1rem;
+}
+
+.second-row{
+	color: #FFFFFF;
+	font-weight: 300;
+	font-size: 18px;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+}
+
+.third-row{
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+.toparea-user-msg-icon img{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.toparea-user-msg{
+	color: #FFFFFF;
+	margin-left: 15px;
+	font-size: 18px;
+}
+
+.top-area-rightpart{
+	margin-right: 4rem;
+	display: flex;
+	flex-direction: column;
+	/* align-items: flex-end; */
+	justify-content: flex-end;
+	/* background-color: #837BF3; */
+	height: 10rem;
+	margin-bottom: 1.5rem;
+}
+
+.btn-row{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.tokenid-btn-area{
+	height: 2.5rem;
+	width: 9rem;
+	background: linear-gradient(97.33deg, rgba(58, 206, 253, 0.6) 26.97%, rgba(110, 153, 246, 0.6) 53.31%, rgba(131, 123, 243, 0.6) 75.94%, rgba(153, 91, 240, 0.6) 92.08%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1000px;
+}
+
+.tokenid-btn{
+	border:none;
+	height: 90%;
+	width: 97%;
+	border-radius: 1000px;
+	background-color: #302D38;
+	color: white;
+}
+
+.updateinfo-btn-area{
+	height: 2.5rem;
+	width: 9rem;
+	background: linear-gradient(97.33deg, rgba(58, 206, 253, 0.6) 26.97%, rgba(110, 153, 246, 0.6) 53.31%, rgba(131, 123, 243, 0.6) 75.94%, rgba(153, 91, 240, 0.6) 92.08%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1000px;
+	margin-left: 30px;
+}
+
+.updateinfo-btn{
+	border:none;
+	height: 90%;
+	width: 97%;
+	border-radius: 1000px;
+	background-color: #302D38;
+	color: white;
+}
+
+.datainfo-area{
+	display: flex;
+	align-items: center;
+}
+
+.follow-data-area{
+	color: white;
+	height: 5rem;
+	width: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.fans-data-area{
+	color: white;
+	height: 5rem;
+	width: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.work-data-area{
+	color: white;
+	height: 5rem;
+	width: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.like-data-area{
+	color: white;
+	height: 5rem;
+	width: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.data-num{
+	font-size: 18px;
+}
+
+.data-kind{
+	font-size: 18px;
+}
+
+.pi-bottom-area{
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+	margin-top: 1.5rem;
+}
+
+.pi-bottom-left-area{
+	background-color: #302D38;
+	width: 20rem;
+	height: 32rem;
+}
+
+.pi-bottom-left-area-title{
+	color: white;
+	font-size: 24px;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.pi-bottom-left-area-underline{
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	width: 80%;
+	margin-left: 10%;
+	background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 10.73%, #995BF0 58.18%, rgba(110, 153, 246, 0) 102.75%);
+	height: 2px;
+}
+
+.bottom-left-area-menu-item{
+	display: flex;
+	/* background-color: #3ACEFD; */
+	height:3.2rem;
+	margin-top: .5rem;
+	align-items: center;
+}
+
+.bottom-left-area-menu-item:hover{
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+}
+
+.menu-item-img{
+	margin-left: 4rem;
+	height: 2rem;
+	width: 2rem;
+}
+
+.menu-item-img img{
+	height: 100%;
+	width: 100%;
+}
+
+.menu-item-title{
+	color: white;
+	font-size: 18px;
+	margin-left: 1rem;
+	letter-spacing: 0.1rem;
+	/* background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%); */
+}
+
+.pi-bottom-right-area{
+	background-color: #302D38;
+	width: 53.5rem;
+}
+
+.pi-bottom-right-area-coanpoint{
+	width: 100%;
+	height: 32rem;
+	overflow-y: scroll;
+}
+
+.pi-bottom-right-area-coanpoint::-webkit-scrollbar-track{background-color:#28262F;}
+.pi-bottom-right-area-coanpoint::-webkit-scrollbar{width:10px;}
+.pi-bottom-right-area-coanpoint::-webkit-scrollbar-thumb{background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+border-radius: 8px;
+transform: rotate(-180deg);;border-radius:100000px;}
+
+.coanpoint-area-title{
+	font-size: 24px;
+	color: white;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.coanpoint-area-underline{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 90%;
+	margin-left: 0%;
+	background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 10.73%, #995BF0 58.18%, rgba(110, 153, 246, 0) 102.75%);
+	height: 2px;
+}
+
+.coanpoint-area-my-score-area{
+	height: 7rem;
+	width: 90%;
+	margin-left: 5%;
+	/* background-color: #6E99F6; */
+	border: white solid 1px;
+	border-radius: 10px;
+}
+
+.coanpoint-area-my-score-area-title{
+	color: white;
+	font-size: 16px;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
+}
+
+.coanpoint-area-my-score-area-myinfo{
+	display: flex;
+	align-items: center;
+}
+
+.coanpoint-area-my-score-area-myavaterandlevel{
+	margin-top: 0.5rem;
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.coanpoint-area-my-score-area-myavater{
+	height: 3rem;
+	width: 3rem;
+}
+
+.coanpoint-area-my-score-area-myavater img{
+	height: 100%;
+	width: 100%;
+}
+
+.coanpoint-area-my-score-area-level{
+	color: white;
+}
+
+.coanpoint-area-my-score-area-scoreandprogressbar{
+	/* display: ; */
+	margin-left: 2rem;
+}
+
+.coanpoint-area-my-score-area-score{
+	font-size: 20px;
+	color: white;
+}
+
+.coanpoint-area-my-score-area-progressbar{
+	height: 2rem;
+	width: 20rem;
+	background-color: rgba(218, 212, 243, 0.4);
+}
+
+.progress-item{
+	height: 100%;
+	background: linear-gradient(97.33deg, rgba(58, 206, 253, 0.6) 26.97%, rgba(110, 153, 246, 0.6) 53.31%, rgba(131, 123, 243, 0.6) 75.94%, rgba(153, 91, 240, 0.6) 92.08%);
+	width: 19.2rem;
+}
+
+.coanpoint-standard-title{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2rem;
+	color: white;
+	font-size: 18px;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.coanpoint-standard-rules{
+	width: 90%;
+	margin-left: 5%;
+	/* height: 3rem; */
+	/* background-color: #3ACEFD; */
+}
+
+.rules-first{
+	display: flex;
+	height: 3rem;
+}
+
+.rules-first-left{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-first-middle{
+	flex: 6;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-first-right{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-second{
+	display: flex;
+	height: 6rem;
+	margin-top: 1rem;
+}
+
+.rules-second-left{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-second-middle{
+	flex: 6;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-second-right{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-third{
+	display: flex;
+	height: 9rem;
+	margin-top: 1rem;
+}
+
+.rules-third-left{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-third-middle{
+	flex: 6;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 16px;
+}
+
+.rules-third-right{
+	flex: 1;
+	background: rgba(218, 212, 243, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	color: white;
+	font-size: 16px;
+}
+
+.pi-bottom-right-area-myproperty{
+	width: 100%;
+	height: 32rem;
+	overflow-y: scroll;
+}
+
+.pi-bottom-right-area-myproperty::-webkit-scrollbar-track{background-color:#28262F;}
+.pi-bottom-right-area-myproperty::-webkit-scrollbar{width:10px;}
+.pi-bottom-right-area-myproperty::-webkit-scrollbar-thumb{background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+border-radius: 8px;
+transform: rotate(-180deg);;border-radius:100000px;}
+
+.myproperty-area-title{
+	font-size: 24px;
+	color: white;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.myproperty-area-underline{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 90%;
+	margin-left: 0%;
+	background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 10.73%, #995BF0 58.18%, rgba(110, 153, 246, 0) 102.75%);
+	height: 2px;
+}
+
+.myproperty-area-myewallet{
+	width: 90%;
+	margin-left: 5%;
+	height: 2rem;
+	/* background-color: #3ACEFD; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mywallet-left-area{
+	display: flex;
+	align-items: center;
+}
+
+.mywallet-title-pic{
+	height: 1.5rem;
+	width: 0.4rem;
+	/* background-color: #995BF0; */
+	/* background-color: #6E99F6; */
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+	border-radius: 2px;
+	transform: rotate(-180deg);
+}
+
+.mywallet-title-text{
+	color: white;
+	font-size: 18px;
+	margin-left: .5rem;
+}
+
+.mywallet-right-area{
+	display: flex;
+	align-items: center;
+}
+
+.mywallet-managepwd-area{
+	height: 1.5rem;
+	width: 6rem;
+	background-color: #6E99F6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mywallet-managepwd-btn{
+	border: none;
+	height:1.2rem;
+	width: 94%;
+	color: white;
+	background-color: #302D38;
+}
+
+.mywallet-watchdetail-area{
+	height: 1.5rem;
+	width: 6rem;
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+	border-radius: 2px;
+	/* transform: rotate(-180deg); */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+}
+
+.mywallet-watchdetail-btn{
+	border: none;
+	height:1.2rem;
+	width: 94%;
+	color: white;
+	background-color: #302D38;
+}
+
+.myproperty-area-mywallet-detail{
+	width: 90%;
+	margin-left: 5%;
+	height: 10rem;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mywallet-detail-leftarea{
+	height:100%;
+	margin-left: 1rem;
+}
+
+.mywallet-detail-title{
+	color: white;
+	font-size: 18px;
+}
+
+.balance-area{
+	display: flex;
+	align-items: flex-end;
+	margin-top: .75rem;
+}
+
+.balance-num{
+	color: white;
+	font-size: 60px;
+}
+
+.balance-tag{
+	color: white;
+	font-size: 18px;
+	margin-left: 2rem;
+}
+
+.mywallet-detail-btn-area{
+	display: flex;
+	margin-top: .75rem;
+}
+
+.rechargebtn{
+	border: none;
+	width: 4rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+}
+
+.getcashbtn{
+	border: none;
+	width: 4rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	border-radius: 4px;
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+}
+
+.mywallet-detail-rightarea{
+	background: rgba(137, 132, 152, 0.2);
+	border-radius: 10px;
+}
+
+.mywallet-detail-tips{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18rem;
+	font-size: 18px;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+.mywallet-detail-tips-content{
+	height: 7.5rem;
+	/* background-color: #3AE6FD; */
+	width: 16rem;
+	color: white;
+	font-size: 16px;
+	margin-left: 1rem;
+	/* margin-top: 1rem; */
+}
+
+.myproperty-area-display{
+	width: 90%;
+	margin-left: 5%;
+	height: 2rem;
+	/* background-color: #3ACEFD; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.display-left-area{
+	display: flex;
+	align-items: center;
+}
+
+.display-title-pic{
+	height: 1.5rem;
+	width: 0.4rem;
+	/* background-color: #995BF0; */
+	/* background-color: #6E99F6; */
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+	border-radius: 2px;
+	transform: rotate(-180deg);
+}
+
+.display-title-text{
+	color: white;
+	font-size: 18px;
+	margin-left: .5rem;
+}
+
+.display-right-area{
+	display: flex;
+	align-items: center;
+}
+
+.display-managenft-area{
+	height: 1.5rem;
+	width: 8rem;
+	/* background-color: #6E99F6; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+}
+
+.display-managenft-btn{
+	border: none;
+	height:1.2rem;
+	width: 94%;
+	color: white;
+	background-color: #302D38;
+}
+
+.nftasset-area{
+	width: 90%;
+	margin-left: 5%;
+}
+
+.nftasset-row{
+	width: 100%;
+	height: 13rem;
+	/* background-color: #6E99F6; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: .75rem;
+}
+
+.nftasset-item{
+	height: 100%;
+	width: 23%;
+	background-color: #37363A;
+	/* background-color: #6E99F6; */
+}
+
+.nftasset-item:hover{
+	border: #837BF3 solid 0.5px;
+}
+
+.nftasset-item-pic{
+	width: 100%;
+	height: 75%;
+	background-color: #FFFFFF;
+}
+
+.nftasset-item-pic img{
+	height: 100%;
+	width: 100%;
+}
+
+.nftasset-item-detail{
+	margin-left: .5rem;
+}
+
+.nftasset-item-name{
+	color: white;
+	font-size: 20px;
+}
+
+.nftasset-item-numberarea{
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.nftasset-item-tag{
+	width: 3rem;
+	height: 1.3rem;
+	background: rgba(217, 217, 217, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1000px;
+}
+
+.nftasset-item-num{
+	margin-left: .5rem;
+}
+
+.myproperty-area-email{
+	font-size: 24px;
+	color: white;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.myemail-content{
+	width: 90%;
+	margin-left: 5%;
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+}
+
+.myemail-content-leftarea{
+	height: 25rem;
+	width: 20%;
+	/* background-color: #837BF3; */
+}
+
+.receive-email{
+	color:white;
+	font-size: 18px;
+}
+
+.receive-email:hover{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.caogao-email{
+	color:white;
+	font-size: 18px;
+	margin-top: .75rem;
+}
+
+.caogao-email:hover{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.sent-email{
+	color: white;
+	font-size: 18px;
+	margin-top: .75rem;
+}
+
+.sent-email:hover{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.myemail-content-rightarea{
+	width: 75%;
+	margin-right: 1rem;
+}
+
+.emailitem{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.emailitem-left{
+	display: flex;
+	color: white;
+	font-size: 18px;
+	/* margin-top: 0.3rem; */
+	margin-bottom: 0.6rem;
+	background-color: #37363A;
+	height: 2.5rem;
+	align-items: center;
+	padding-left: .6rem;
+	border-radius: 6px;
+	width: 30rem;
+}
+
+.emailitem-username{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+	margin-left: .3rem;
+	margin-right: .3rem;
+}
+
+.emailitem-right button{
+	border: none;
+	background-color: #302D38;
+	color: white;
+	font-size: 16px;
+}
+
+.emailitem-checkbtn{
+	margin-right: .5rem;
+}
+
+.emailitem-checkbtn:hover{
+	/* 渐变1 */
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.emailitem-deletebtn:hover{
+	color: crimson;
+}
+
+/* 充值弹出框的样式 */
+.recharge-popup { 
+    display: none;
+/*    position: absolute; 
+	margin-left: 13rem;
+	margin-top: 3rem; */
+	position: fixed;
+	top: 10rem;
+	left: calc(50vw - 25rem);
+	margin: auto 0;
+    width: 50rem; 
+    height: 38rem; 
+	/* margin: 0 auto; */
+    /* padding: 20px; */
+    /* border: 10px solid orange; */
+    background-color: #302D38; 
+    z-index:1001; 
+    overflow: hidden; 
+	border-radius: 20px;
+	border: #837BF3 solid 0.2rem;
+} 
+
+.recharge-title-bar{
+	height: 3rem;
+	width: 100%;
+	/* background-color: #3ACEFD; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.recharge-title-text{
+	color:white;
+	font-size: 20px;
+	margin-left: 2.5rem;
+	letter-spacing: 0.05rem;
+	/* background-color: #3ACEFD; */
+	margin-top: 0.5rem;
+}
+
+.exit-btn-area{
+	height: 100%;
+	width: 4rem;
+	/* background-color: #6E99F6; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.exit-btn-area:hover{
+	background-color: brown;
+}
+
+.exit-btn-area img{
+	height: 1.5rem;
+}
+
+.price-need-pay-area{
+	height: 6rem;
+	/* background-color: #3ACEFD; */
+	/* width: 20rem; */
+	/* margin-left: 15rem; */
+	/* background-color: #3ACEFD; */
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	/* margin-top: 1rem; */
+}
+
+.price-tag{
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 10px;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.price-num{
+	font-weight: 600;
+	font-size: 80px;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	letter-spacing: 0.1rem;
+}
+
+.recharge-accountAndway{
+	margin-top: 3rem;
+}
+
+.recharge-account-row{
+	width: 45rem;
+	margin-left: 2.5rem;
+	height: 2.5rem;
+	/* background-color: #6E99F6; */
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.recharge-account-row-label{
+	color:white;
+	font-size: 18px;
+	letter-spacing: 0.05rem;
+}
+
+.recharge-account-row-info{
+	color:white;
+	font-size: 18px;
+}
+
+.wallet-balance-row{
+	width: 45rem;
+	margin-left: 2.5rem;
+	height: 2.5rem;
+	/* background-color: #6E99F6; */
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wallet-balance-row-label{
+	color:white;
+	font-size: 18px;
+	letter-spacing: 0.05rem;
+}
+
+.wallet-balance-row-info{
+	color: white;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wallet-balance-row-info img{
+	height: 2rem;
+	width: 2rem;
+	margin-right: 0.5rem;
+}
+
+.popup-underline{
+	background: linear-gradient(270deg, rgba(202, 196, 208, 0) 0%, rgba(202, 196, 208, 0.3) 26.03%, rgba(202, 196, 208, 0.3) 51.53%, rgba(202, 196, 208, 0.3) 77.03%, rgba(202, 196, 208, 0) 102%);
+	height: 0.3rem;
+	width: 40rem;
+	margin-left: 5rem;
+}
+
+.charge-num-row{
+	width: 45rem;
+	margin-left: 2.5rem;
+	height: 2.5rem;
+	/* background-color: #6E99F6; */
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.charge-num-row-label{
+	color:white;
+	font-size: 18px;
+	letter-spacing: 0.05rem;
+	/* margin-left: 2.5rem; */
+}
+
+.recommend-pay-way-area{
+	width: 45rem;
+	margin-left: 2.5rem;
+	height: 4.5rem;
+	background-color: #454151;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px;
+}
+
+.recommend-pay-way-leftarea{
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.recommend-pay-way-leftarea img{
+	height: 2rem;
+	width: 2rem;
+	margin-right: 0.5rem;
+}
+
+.recommend-pay-way-text{
+	color: white;
+	font-size: 18px;
+}
+
+.recommend-pay-way-rightarea img{
+	height: 2rem;
+	width: 2rem;
+	/* margin-right: 0.5rem; */
+	margin-right: 1rem;
+}
+
+.recharge-ways-area{
+	width: 45rem;
+	margin-left: 2.5rem;
+	height: 4.5rem;
+	/* background-color: #6E99F6; */
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.recharge-num-item{
+	/* background-color: #3ACEFD; */
+	background-color: #454151;
+	width: 10.5rem;
+	height: 100%;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	overflow: hidden;
+	color: white;
+}
+
+.recharge-num-itemchosen{
+	border: #837BF3 solid 0.5px;
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.recharge-num-input{
+	width: 100%;
+	border:none;
+	font-size: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+	background-color: #454151;
+	color: white;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.recharge-way{
+	height: 100%;
+	flex:1;
+	/* background-color: aquamarine; */
+	background-color: #454151;
+	border-radius: 10px;
+	/* padding: 1rem; */
+	/* margin: 1rem; */
+	display: flex;
+	align-items: center;
+}
+
+.recharge-waychosen{
+	border: #837BF3 solid 0.5px;
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.recharge-way img{
+	height: 3.5rem;
+	margin-left: 0.5rem;
+}
+
+.recharge-way:nth-child(2){
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.recharge-way-name{
+	color: white;
+	font-size: 18px;
+	margin-left: 2rem;
+}
+
+.popup-confirm-btn-area{
+	width: 45rem;
+	margin-left: 2.5rem;
+	height: 3.5rem;
+	/* background-color: #837BF3; */
+	margin-top: 1rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.popup-confirm-btn{
+	border: none;
+	height: 80%;
+	width: 10rem;
+	color: white;
+	font-size: 18px;
+	border-radius: 1000000000px;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	margin-top: 4rem;
+}
+
+#black-bg{
+	top: 0;
+	left: 0;
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.6;
+}
+
+/* 邮件弹出框的样式 */
+.emaildetail-popup { 
+    display: none;
+/*    position: absolute; 
+	margin-left: 13rem;
+	margin-top: 3rem; */
+	position: fixed;
+	top: 10rem;
+	left: calc(50vw - 25rem);
+	margin: auto 0;
+    width: 50rem; 
+    height: 38rem; 
+	/* margin: 0 auto; */
+    /* padding: 20px; */
+    /* border: 10px solid orange; */
+    background-color: #302D38; 
+    z-index:1001; 
+    overflow: hidden; 
+	border-radius: 20px;
+	border: #837BF3 solid 0.2rem;
+} 
+
+.email-detail-msg{
+	/* background-color: #6E99F6; */
+	width: 45rem;
+	height: 8rem;
+	margin-left: 2.5rem;
+	margin-top: 3rem;
+	overflow-y: scroll;
+	font-size: 20px;
+	color: white;
+}
+
+.email-detail-msg::-webkit-scrollbar-track{background-color:#28262F;}
+.email-detail-msg::-webkit-scrollbar{width:10px;}
+.email-detail-msg::-webkit-scrollbar-thumb{background: linear-gradient(0deg, #3AE6FD 0%, #995BF0 100%);
+border-radius: 8px;
+transform: rotate(-180deg);;border-radius:100000px;}
+
+.email-detail-sendername{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.email-detail-receivername{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.email-detail-exchangedisplay{
+	width: 45rem;
+	height: 15rem;
+	margin-left: 2.5rem;
+	/* background-color: #6E99F6; */
+	margin-top: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.email-detail-senderprop{
+	height: 100%;
+	width: 17rem;
+	/* background-color: #837BF3; */
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.email-detail-senderprop img{
+	width: 100%;
+	height: 100%;
+}
+
+.email-detail-exchangeicon{
+	height: 100%;
+	width: 5rem;
+	/* background-color: #837BF3; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.email-detail-receiverprop{
+	height: 100%;
+	width: 17rem;
+	/* background-color: #837BF3; */
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.email-detail-receiverprop img{
+	width: 100%;
+	height: 100%;
+}
+
+.email-detail-btnarea{
+	width: 45rem;
+	margin-left: 2.5rem;
+	height: 3.5rem;
+	/* background-color: #3ACEFD; */
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.email-detail-agreebtn{
+	border: none;
+	height: 3rem;
+	width: 10rem;
+	font-size: 20px;
+	border-radius: 10px;
+	color: white;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	margin-right: 2rem;
+}
+
+.email-detail-refusebtn{
+	border: none;
+	height: 3rem;
+	width: 10rem;
+	font-size: 20px;
+	border-radius: 10px;
+	color: white;
+	background-color: #D9D9D9B2;
+	margin-left: 2rem;
+}
+
+/* 资产弹出框的样式 */
+.nftdetail-popup { 
+    display: none;
+/*    position: absolute; 
+	margin-left: 13rem;
+	margin-top: 3rem; */
+	position: fixed;
+	top: 10rem;
+	left: calc(50vw - 30rem);
+	margin: auto 0;
+    width: 60rem; 
+    height: 38rem; 
+	/* margin: 0 auto; */
+    /* padding: 20px; */
+    /* border: 10px solid orange; */
+    background-color: #302D38; 
+    z-index:1001; 
+    overflow: hidden; 
+	border-radius: 20px;
+	border: #837BF3 solid 0.2rem;
+} 
+
+.nftdetail-popup-content{
+	width: 52rem;
+	height: 30rem;
+	/* background-color: #3ACEFD; */
+	margin-left: 4rem;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nftdetail-popup-content-leftarea{
+	height: 100%;
+	width: 25rem;
+	background-color: #37363A;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.nftdetail-popup-content-leftarea img{
+	width: 100%;
+	height: 100%;
+}
+
+.nftdetail-popup-content-rightarea{
+	height: 100%;
+	width: 25rem;
+	/* background-color: #3ACEFD; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.nftdetail-popup-content-tag{
+	color: white;
+	font-size: 20px;
+}
+
+.nftdetail-popup-content-kind{
+	margin-left: 1rem;
+	font-size: 18px;
+	width: 8rem;
+	background-color: #BEB8D1;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border-radius: 10px;
+}
+
+.nftdetail-popup-content-underline{
+	height: 1px;
+	width:25rem;
+	background: linear-gradient(96.85deg, rgba(58, 206, 253, 0) 10.73%, #995BF0 58.18%, rgba(110, 153, 246, 0) 102.75%);
+}
+
+.nftdetail-popup-content-giveawayarea{
+	height: 3rem;
+	width: 25rem;
+	/* background-color: #3ACEFD; */
+	margin-left: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content-giveawayarea-inputarea{
+	height: 100%;
+	width: 15rem;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-giveawayarea-input{
+	border:none;
+	height: 90%;
+	width: 98%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	background-color: #302D38;
+}
+
+.content-giveawayarea-inputbtn{
+	height: 100%;
+	width: 5rem;
+	border-radius: 10px;
+	font-size: 16px;
+	color: white;
+	border: none;
+	background: linear-gradient(97.33deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%, #995BF0 92.08%);
+	letter-spacing: 0.2rem;
+}
+
+/* 这个要放文件的最底下 */
+.menu-item-title-chosen{
+	/* 渐变1 */
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.pi-bottom-right-area-displaynone{
+	display: none;
+}
+
+.email-menu-item-chosen{
+	background: linear-gradient(0deg, #3ACEFD 26.97%, #6E99F6 53.31%, #837BF3 75.94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.email-displaynone{
+	display: none;
+}
