@@ -312,14 +312,14 @@
 								</div>
 								<div class="balance-area">
 									<div class="balance-num">
-										110
+										{{userbalance}}
 									</div>
 									<div class="balance-tag">
 										RMB
 									</div>
 								</div>
 								<div class="mywallet-detail-btn-area">
-									<button class="rechargebtn">
+									<button class="rechargebtn" @click="openRechargeDialog()">
 										充值
 									</button>
 									<button class="getcashbtn">
@@ -645,6 +645,117 @@
 					</div>
 					<!-- {{this.chosenIndex}} -->
 				</div>
+
+			</div>
+			<!-- 充值弹出框 -->
+			<div id="light" class="recharge-popup">
+			    <div class="recharge-title-bar">
+			    	<div class="recharge-title-text">
+			    		钱包充值
+			    	</div>
+					<div class="exit-btn-area" @click="closeRechargeDialog()">
+						<img src="./img/exit.png" alt="">
+					</div>
+			    </div>
+				<!-- <div class="price-need-pay-area">
+					<div class="price-tag">
+						￥
+					</div>
+					<div class="price-num">
+						200
+					</div>
+				</div> -->
+				<div class="recharge-accountAndway">
+					<div class="recharge-account-row">
+						<div class="recharge-account-row-label">
+							充值账号
+						</div>
+						<div class="recharge-account-row-info">
+							小A (token ID：12345)
+						</div>
+					</div>
+					<div class="wallet-balance-row">
+						<div class="wallet-balance-row-label">
+							钱包余额
+						</div>
+						<div class="wallet-balance-row-info">
+							<img src="img/qianbaoicon.png" alt="">
+							<div class="wallet-balance-row-info-text">
+								￥{{userbalance}}
+							</div>
+						</div>
+					</div>
+					<div class="popup-underline">
+						
+					</div>
+					<div class="charge-num-row">
+						<div class="charge-num-row-label">
+							充值金额
+						</div>
+						<div class="pay-way-row-info">
+							
+						</div>
+					</div>
+					<!-- <div class="recommend-pay-way-area">
+						<div class="recommend-pay-way-leftarea">
+							<img src="./img/qianbaoicon.png" alt="">
+							<div class="recommend-pay-way-text">
+								COAN钱包 （余额：114514.00）
+							</div>
+						</div>
+						<div class="recommend-pay-way-rightarea">
+							<img src="./img/chosenicon.png" alt="">
+						</div>
+					</div> -->
+					<div class="recharge-ways-area">
+						<div :class="['recharge-num-item',RechargeNumChosenIndex==0?'recharge-num-itemchosen':'']" @click="changeRechargeNumIndex(0)">
+							￥50
+						</div>
+						<div :class="['recharge-num-item',RechargeNumChosenIndex==1?'recharge-num-itemchosen':'']" @click="changeRechargeNumIndex(1)">
+							￥100
+						</div>
+						<div :class="['recharge-num-item',RechargeNumChosenIndex==2?'recharge-num-itemchosen':'']" @click="changeRechargeNumIndex(2)">
+							￥200
+						</div>
+						<div class="recharge-num-item" @click="changeRechargeNumIndex(-1)">
+							<input v-model="rechargeMoney" class="recharge-num-input" type="text" placeholder="其他金额">
+						</div>
+					</div>
+					<div class="charge-num-row">
+						<div class="charge-num-row-label">
+							充值方式
+						</div>
+						<div class="pay-way-row-info">
+							
+						</div>
+					</div>
+					<div class="recharge-ways-area">
+						<div :class="['recharge-way',RechargeWayChosenIndex==0?'recharge-waychosen':'']" @click="changeRechargeWayIndex(0)">
+							<img src="./img/charge_zfb.png" alt="">
+							<div class="recharge-way-name">
+								支付宝充值
+							</div>
+						</div>
+						<div :class="['recharge-way',RechargeWayChosenIndex==1?'recharge-waychosen':'']" @click="changeRechargeWayIndex(1)">
+							<img src="./img/charge_wx.png" alt="">
+							<div class="recharge-way-name">
+								微信充值
+							</div>
+						</div>
+						<div :class="['recharge-way',RechargeWayChosenIndex==2?'recharge-waychosen':'']" @click="changeRechargeWayIndex(2)">
+							<img src="./img/charge_wy.png" style="height: 6rem;" alt="">
+							<div class="recharge-way-name">
+								银联充值
+							</div>
+						</div>
+					</div>
+					<div class="popup-confirm-btn-area">
+						<button class="popup-confirm-btn" @click="chargeConfirmBtnClicked()">确认支付</button>
+					</div>
+				</div>
+			</div> 
+			<div id="black-bg">
+				
 			</div>
 		</div>
 		<script src="js/navbar.js"></script>
@@ -652,6 +763,14 @@
 		    const vm = new Vue({
 		        el: "#app",
 		        data: {
+					//表示用户的资产
+					userbalance:114514,
+					//表示用户充值自己输入的金额
+					rechargeMoney:'其他金额',
+					//表示用户充值选中的充值途径
+					RechargeWayChosenIndex:0,
+					//表示用户充值选中的充值金额
+					RechargeNumChosenIndex:0,
 					//表示用户收到的邮件信息
 					emailReceived:[{
 						username:'逗比的雀巢',
@@ -701,11 +820,57 @@
 					}]
 				},
 		        methods: {
+					//判断输入是否为正整数的函数
+					isNum(s){
+						if(s!=null){
+						    var r,re;
+						    re = /\d*/i; //\d表示数字,*表示匹配多个数字
+						    r = s.match(re);
+						    return (r==s)?true:false;
+						}
+						return false;
+					},
+					//充值界面点击充值时的函数
+					chargeConfirmBtnClicked(){
+						//点击充值，我的钱应该增多
+						if(this.RechargeNumChosenIndex==0){
+							//充了50
+							this.userbalance += 50;
+						}else if(this.RechargeNumChosenIndex==1){
+							//充了100
+							this.userbalance += 100;
+						}else if(this.RechargeNumChosenIndex==2){
+							//充了200
+							this.userbalance += 200;
+						}else{
+							//首先进行数字判断
+							if(!this.isNum(this.rechargeMoney)){
+								alert("请输入正确的金额！")
+							}
+							//充值自定义额度
+							this.userbalance += this.rechargeMoney;
+						}
+						alert("支付成功")
+					},
+					changeRechargeWayIndex(i){
+						this.RechargeWayChosenIndex = i;
+					},
+					changeRechargeNumIndex(i){
+						this.RechargeNumChosenIndex = i;
+					},
 					changeIndex(i){
 						this.chosenIndex = i;
 					},
 					changeEmailIndex(i){
 						this.emailIndex = i;
+					},
+					closeRechargeDialog(){
+						document.getElementById('light').style.display='none';
+						document.getElementById('black-bg').style.display='none';
+					},
+					openRechargeDialog(){
+						document.getElementById('light').style.display='block';
+						document.getElementById('black-bg').style.display='block';
 					}
 				}
 		    })
