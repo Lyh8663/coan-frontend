@@ -61,9 +61,9 @@ nav_menuItem3.onmouseout = function(){
 // });
 
 //NFT艺术品区
-nav_menuItem1.addEventListener("click", function(){
-    window.location.href="NFTArts.html";
-});
+// nav_menuItem1.addEventListener("click", function(){
+//     window.location.href="NFTArts.html";
+// });
 
 //COAN Daily
 nav_menuItem2.addEventListener("click", function(){
