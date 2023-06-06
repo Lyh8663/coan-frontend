@@ -219,12 +219,12 @@
 					</div>
 				</div>
 				<div class="buyorexchangebtn-area">
-					<button class="buyorexchangebtn" @click="openDialog()">
+					<button class="buyorexchangebtn" @click="openDialog()" >
 						{{this.chosenIndex==0?'购买':'交换'}}
 					</button> 
 				</div>
 			</div>
-			<!-- 弹出框 -->
+			<!-- 弹出框 购买 -->
 			<div id="light" class="pay-popup">
 			    <div class="pay-title-bar">
 			    	<div class="pay-title-text">
@@ -320,6 +320,72 @@
 			<div id="black-bg">
 				
 			</div>
+
+			<!-- 弹出框 交换 -->
+			<div id="light1" class="change-popup">
+				<div class="pay-title-bar">
+					<div class="pay-title-text">
+						交换详情
+					</div>
+					<div class="exit-btn-area" @click="closeDialog()">
+						<img src="./img/exit.png" alt="">
+					</div>
+				</div>
+
+				<div class="recommend-pay-way-area" style="height: 4rem">
+					<div class="recommend-pay-way-leftarea">
+						<img src="./img/yonghutouxiang.png" alt="">
+						<div class="recommend-pay-way-text">
+							一颗土豆子
+						</div>
+						<div class="seller-level" style="margin-left: 5px">
+							LV7
+						</div>
+					</div>
+					<div class="change-user">
+						<span>交换发起人</span>
+					</div>
+				</div>
+
+				<div class="recharge-ways-area1">
+					<div class="change-game-assets-left">
+						<div class="change-game-up-word">交换条件</div>
+						<img src="./img/normalgameassets17.png" alt="">
+						<div class="" style="color: white">王者荣耀</div>
+						<div class="" style="color: white;font-size: 20px;font-weight: bold">
+							无限倾心 项羽
+						</div>
+					</div>
+
+					<div class="exchange-icon">
+						<image src="./img/exchangeicon.png" alt=""></image>
+					</div>
+
+					<div class="change-game-assets-right">
+						<div class="change-game-up-word">交换目标</div>
+						<img src="./img/normalgameassets16.png" alt="">
+						<div class="" style="color: white">王者荣耀</div>
+						<div class="" style="color: white;font-size: 20px;font-weight: bold">
+							燃星之曲 花木兰
+						</div>
+					</div>
+				</div>
+
+				<div class="myAssets">
+					<span>我的资产</span>
+					<image src="./img/right.png"></image>
+				</div>
+
+				<div class="form-group form-group-static">
+					<textarea class="form-control" rows="5" placeholder="输入交换请求"></textarea>
+				</div>
+
+				<div class="popup-confirm-btn-area">
+					<button class="popup-confirm-btn" style="margin-bottom: 5%">提交申请</button>
+				</div>
+
+			</div>
+
 		</div>
 		<script>
 		    const vm = new Vue({
@@ -625,13 +691,24 @@
 						this.chosenIndex = i;
 					},
 					closeDialog(){
-						document.getElementById('light').style.display='none';
-						document.getElementById('black-bg').style.display='none';
+						if (this.chosenIndex == 0){
+							document.getElementById('light').style.display='none';
+							document.getElementById('black-bg').style.display='none';
+						}else if (this.chosenIndex == 1){
+							document.getElementById('light1').style.display='none';
+							document.getElementById('black-bg').style.display='none';
+						}
+
 					},
 					openDialog(){
-						document.getElementById('light').style.display='block';
-						document.getElementById('black-bg').style.display='block';
-					}
+						if (this.chosenIndex == 0){
+							document.getElementById('light').style.display='block';
+							document.getElementById('black-bg').style.display='block';
+						}else if(this.chosenIndex == 1){
+							document.getElementById('light1').style.display='block';
+							document.getElementById('black-bg').style.display='block';
+						}
+					},
 				}
 		    })
 		</script>
