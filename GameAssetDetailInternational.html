@@ -15,7 +15,7 @@
 					<img src="img/logohqbsecai 1.png" alt="" id="nav-COANLogo">
 				</div>
 				<div class="nav-COANTitle">
-					<div class="nav-titleText"" id="nav-COANTitle">COAN</div>
+					<div class="nav-titleText" id="nav-COANTitle">COAN</div>
 				</div>
 				<div class="nav-searchArea">
 					<div class="nav-searchAreaAndIcon">
@@ -29,35 +29,39 @@
 			<div class="nav-rightArea">
 				<div class="nav-menuEntry">
 					<!-- <div class="menuItem" id="menuItem0">NFT交易区</div> -->
+					<div class="nav-menuItem" id="nav-menuItem4">
+						虚拟资产交易
+					</div>
 					<div class="nav-menuItem" id="nav-menuItem1">
-						
 						<div class="nav-dropdown">
-						    <button class="nav-dropbtn">游戏资产交易
-						      <i class="fa fa-caret-down"></i>
-						    </button>
-						    <div class="nav-dropdown-content">
-						      <a href="NormalGameAssetTrading.html">普通游戏资产</a>
-						      <a href="MetaGameAssetTrading.html" style="font-size: 15px;">元宇宙游戏资产</a>
-						    </div>
-						  </div>
+							<button class="nav-dropbtn">游戏资产交易
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="nav-dropdown-content">
+								<a href="NormalGameAssetTradingInternational.html">普通游戏资产</a>
+								<a href="MetaGameAssetTradingInternational.html" style="font-size: 15px;">元宇宙游戏资产</a>
+							</div>
+						</div>
 					</div>
 					<div class="nav-menuItem" id="nav-menuItem0">
 						<div class="nav-dropdown">
-						    <button class="nav-dropbtn">NFT艺术品
-						      <i class="fa fa-caret-down"></i>
-						    </button>
-						    <div class="nav-dropdown-content">
-						      <a href="NFTArts.html">NFT艺术品</a>
-						      <a href="NFTAuthoring.html">创作者专区</a>
-						    </div>
-						  </div>
+							<button class="nav-dropbtn">NFT艺术品
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="nav-dropdown-content">
+								<a href="NFTArtsInternational.html">NFT艺术品</a>
+								<a href="NFTAuthoringInternational.html">创作者专区</a>
+							</div>
+						</div>
 					</div>
-					<div class="nav-menuItem" id="nav-menuItem2">COAN Daily</div>
+					<div class="nav-menuItem" id="nav-menuItem2">
+						COAN Daily
+					</div>
 					<div class="nav-menuItem" id="nav-menuItem3">COAN Space</div>
 				</div>
 				<div class="nav-loginAndRegistArea">
 					<div class="nav-userheadArea" id="nav-userhead">
-						<img src="img/userhead.png" alt="" >
+						<img src="img/userhead.png" alt="" id="userheadPic">
 					</div>
 					<div class="nav-loginAndRegistText" id="nav-usertitle">登录</div>
 				</div>
@@ -191,8 +195,8 @@
 					</div>
 				</div>
 				<!-- 列表2：交换列表 -->
-				<div class="exchange-list-area" id="dome" v-if="this.chosenIndex==1">
-					<div class="exchange-list-items" id="dome1">
+				<div class="exchange-list-area" v-if="this.chosenIndex==1">
+					<div class="exchange-list-items">
 						<div class="exchange-list-item" v-for="(item,index) in 10">
 							<div class="exchange-list-item-leftarea">
 								<div class="exchange-list-item-avater">
