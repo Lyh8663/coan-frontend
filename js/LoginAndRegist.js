@@ -66,6 +66,7 @@ function login(){
 					location.href="RealNameAuthentication.html";
 					alert("welcome! Dear "+ res.data.userInfo.username);
 				}
+				location.href="RealNameAuthentication.html";
 				/*
 				"userInfo": {
 				            "id": 1638489971167010817,

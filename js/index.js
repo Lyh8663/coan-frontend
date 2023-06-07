@@ -7,5 +7,5 @@ entryButton1.onmouseout = function(){
 	entryButton1.className = 'entryButton1';
 }
 entryButton1.onclick = function(){
-	window.location.href = 'LoginAndRegist.html';
+	window.location.href = 'LoginAndRegistZH.html';
 }

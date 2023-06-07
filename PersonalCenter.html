@@ -81,7 +81,7 @@
 					</div>
 					<div class="toparea-user-info">
 						<div class="first-row">
-							<div class="toparea-user-info-name">
+							<div class="toparea-user-info-name" id="pc_username">
 								小A
 							</div>
 							<div class="toparea-user-info-level">
@@ -825,7 +825,7 @@
 							<div class="content-giveawayarea-inputarea">
 								<input class="content-giveawayarea-input" type="text" placeholder="输入您想转赠用户的ID">
 							</div>
-							<button class="content-giveawayarea-inputbtn">
+							<button class="content-giveawayarea-inputbtn"@click="giveawayBTNClicked()">
 								转赠
 							</button>
 						</div>
@@ -836,7 +836,9 @@
 				
 			</div>
 		</div>
+		<!-- <script src="js/PersonalCenter.js"></script> -->
 		<script src="js/navbar.js"></script>
+		<script src="js/PersonalCenter.js"></script>
 		<script>
 		    const vm = new Vue({
 		        el: "#app",
@@ -900,6 +902,11 @@
 					}]
 				},
 		        methods: {
+					//转赠按钮被点击的事件
+					giveawayBTNClicked(){
+						alert("转赠成功！");
+						this.closeNFTAssetDetailDialog();
+					},
 					//nft资产卡片被点击的函数
 					nftassetClicked(url){
 						this.usernftassetimg = url;
@@ -984,7 +991,7 @@
 						document.getElementById('light').style.display='block';
 						document.getElementById('black-bg').style.display='block';
 					}
-				}
+				},
 		    })
 		</script>
 	</body>
