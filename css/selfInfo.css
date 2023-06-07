@@ -114,7 +114,7 @@
     color: #FFFFFF;
 }
 
-.up #icon1 {
+.up .icon1 {
     background-image: url(../img/self_icon.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -126,7 +126,7 @@
     top: 140px;
 }
 
-.up #icon2 {
+.up .icon2 {
     position: relative;
     width: 73px;
     height: 30px;
@@ -150,7 +150,7 @@
     color: #FFFFFF;
 }
 
-#icon2 p {
+.icon2 p {
     position: absolute;
     left: 25%;
     line-height: 30px;
@@ -491,7 +491,7 @@
     border-radius: 10px;
 }
 
-.down-right-fabu #icon2 {
+.down-right-fabu .icon2 {
     position: absolute;
     width: 28px;
     height: 28px;
@@ -501,7 +501,7 @@
     opacity: 0.6;
 }
 
-.down-right-fabu #icon3 {
+.down-right-fabu .icon3 {
     box-sizing: border-box;
 
     position: absolute;
@@ -531,7 +531,7 @@
     color: #FFFFFF;
 }
 
-.down-right-fabu #icon3 p {
+.down-right-fabu .icon3 p {
     text-align: center;
 }
 
@@ -671,7 +671,7 @@
     /* left: 7%; */
 }
 
-.down-right-zichan #icon1 {
+.down-right-zichan .icon1 {
     position: absolute;
     width: 5px;
     height: 34px;
@@ -891,7 +891,7 @@
     /* left: 7%; */
 }
 
-.down-right-zichan #icon2 {
+.down-right-zichan .icon2 {
     position: absolute;
     width: 5px;
     height: 34px;
