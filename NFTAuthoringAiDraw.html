@@ -9,6 +9,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no">
 		<script src="./lib/vue-v2.6.14.js"></script>
+		<!-- 使用cdn的方式引入jquery -->
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script> 
 	</head>
     <body onclick="hidePopup()">
         <!-- 引入nav-menu -->
@@ -157,7 +159,7 @@
 
                                                 <div style="margin-bottom: 70px" class="form-group">
                                                     <div class="generate" style="float: left;margin-left: 5%" @click="toPaintingPage()">像素板在线绘画</div>
-                                                    <div class="generate" style="float: right;margin-right: 5%">开始生成</div>
+                                                    <div class="generate" style="float: right;margin-right: 5%" @click="uploadAndCreate()">开始生成</div>
                                                 </div>
                                             </div>
 
@@ -244,9 +246,30 @@
                     </div>
                 </div>
             </div>
+			<div class="nftdetail-popup" id="nftdetail">
+				<div class="recharge-title-bar">
+					<div class="recharge-title-text">
+						资产详情
+					</div>
+					<div class="exit-btn-area" @click="closeNFTAssetDetailDialog()">
+						<img src="./img/exit.png" alt="">
+					</div>
+				</div>
+				<div style="width:100%;height:30rem;display: flex;align-items: center;justify-content: center;">
+					<img :src="createdPic" alt="" style="height: 70%;width: 50%;">
+				</div>
+				<div style="width:100%;display:flex;align-items: center;justify-content: center;">
+					<button class="generate" @click="save()">下载</button>
+				</div>
+			</div>
+			<div id="black-bg">
+				
+			</div>
         </div>
+		
         <!-- 引入导航的js -->
         <script src="js/navbar.js"></script>
+		<!-- <script src=”https://unpkg.com/axios/dist/axios.min.js”></script> -->
 		<script>
 			const vm = new Vue({
 				el: "#app",
@@ -263,24 +286,72 @@
 					modelpicbase64:[],
 					//表示生成的模型名
 					modelpicResultname:'',
+					//表示传上来的目标图片base64
+					createpicbase64:'',
+					//表示返回的生成图像
+					createdPic:''
 				},
 				methods:{
+					//下载
+					save() {
+	 					var url = this.createdPic; // 获取图片地址
+	 					var a = document.createElement('a'); // 创建一个a节点插入的document
+	 					var event = new MouseEvent('click') // 模拟鼠标click点击事件
+	 					a.download = 'AI生成图像' // 设置a节点的download属性值
+	 					a.href = url; // 将图片的src赋值给a节点的href
+	 					a.dispatchEvent(event)
+ 					},
+					//nft资产详情弹出框相关函数
+					closeNFTAssetDetailDialog(){
+						document.getElementById('nftdetail').style.display='none';
+						document.getElementById('black-bg').style.display='none';
+					},
+					openNFTAssetDetailDialog(){
+						document.getElementById('nftdetail').style.display='block';
+						document.getElementById('black-bg').style.display='block';
+					},
+					//上传并生成
+					uploadAndCreate(){
+						var that = this;
+						alert("正在生成图像，请稍等...")
+						$.ajax({
+            				url:"http://127.0.0.1:8000/test/",
+            				type:"post",
+            				data:{
+                				image:this.createpicbase64,
+                				count: 1
+            				},
+            				dataType:"text",
+            				xhrFields:{
+                				withCredentials:true
+            				},
+            				success:function(data){
+                				//"data:image/jpeg;base64," + data
+								that.createdPic = "data:image/jpeg;base64," + data;
+								that.openNFTAssetDetailDialog();
+            				}
+        				});
+					},
 					//上传并训练
 					uploadAndTrain(){
+						alert("请等待模型生成")
+						//alert("点击按钮")
+						var that = this;
+						////////////////////////////
 						$.ajax({
 						    url:"http://127.0.0.1:8000/upload/",
 						    type:"POST",
 						    data:{
-						        images: this.modelpicbase64
+						        images: that.modelpicbase64
 						    },
 						    dataType:"text",
 						    xhrFields:{
 						        withCredentials:true
 						    },
 						    success:function(data){
-						        // console.log(data);
+						        console.log("success!");
 						        // info(data);
-								var that = this;
+								// alert("Success!");
 								$.ajax({
 								    url:"http://127.0.0.1:8000/train/",
 								    type:"get",
@@ -292,12 +363,12 @@
 								    },
 								    success:function(data){
 								        if(data===""){
-								            info("模型生成失败！")
+								            alert("模型生成失败！")
 								        }else{
 											// document.getElementById("modelName").innerHTML=data;
 											//将生成的模型名渲染上去
 											that.modelpicResultname = data;
-											info("模型生成成功！")
+											alert("模型生成成功！")
 								        }
 								    }
 								});
@@ -362,14 +433,6 @@
 							// 清除背景图片:
 							preview_create.style.backgroundImage = '';
 							let file = createpicUpload.files[0];
-							// 获取了图片内容
-							//大小限制的代码
-							// let size = file.size;
-							// if (size >= 1 * 1024 * 1024) {
-								// alert('文件大小超出限制');
-								// info.innerHTML = '文件大小超出限制';
-								// return false;
-							// }
 							
 							// 读取文件:
 							let reader = new FileReader();
@@ -382,6 +445,7 @@
 									preview_create.src = data
 									//控制开关从隐藏变成展示
 									that.isCreateUploaded = 1;
+									that.createpicbase64 = data;
 								}
 								
 							};
@@ -402,7 +466,7 @@
 						modelpicUpload.addEventListener('change', function() {
 							// 清除背景图片:
 							preview_model.style.backgroundImage = '';
-							let file = modelpicUpload.files[0];
+							var file = modelpicUpload.files[0];
 							that.numofmodel = modelpicUpload.files.length;
 							
 							// 获取了图片内容
@@ -434,7 +498,11 @@
 								
 							};
 							// 以DataURL的形式读取文件:
-							reader.readAsDataURL(file);
+							
+							for(var i = 0;i<that.numofmodel;i++){
+								file = modelpicUpload.files[i];
+								reader.readAsDataURL(file);
+							}
 							// alert(file.name)
 						})
 						
