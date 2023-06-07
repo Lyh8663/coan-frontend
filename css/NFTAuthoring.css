@@ -940,3 +940,29 @@ textarea.form-control {
     text-fill-color: transparent;
     /*transition: 0.5s;*/
 }
+
+.display-preview-model{
+	/* display: none; */
+	/* width: 200px; */
+	height: 100%;
+	/* margin-top: 30px; */
+	/* height: 250px; */
+}
+
+.displaynone{
+	display: none;
+}
+
+.img{
+	border-radius: 5px;
+	height: 250px;
+}
+
+.NFTImg{
+	margin-top: 30px;
+}
+
+.NFTImg-title{
+	color: #CAC4D0;
+	margin-top: 5px;
+}
